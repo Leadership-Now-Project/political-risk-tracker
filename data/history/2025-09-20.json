@@ -1,0 +1,22 @@
+{
+  "date": "2025-09-20",
+  "scores": {
+    "elections": 5,
+    "rule-of-law": 4,
+    "national-security": 4,
+    "regulatory-stability": 4,
+    "trade-policy": 4,
+    "government-contracts": 3,
+    "fiscal-policy": 4,
+    "media-freedom": 4,
+    "civil-discourse": 5,
+    "institutional-integrity": 4
+  },
+  "domainScores": {
+    "rule-of-law": 4.33,
+    "operating-economic": 3.75,
+    "societal-institutional": 4.33
+  },
+  "overallScore": 4.1,
+  "riskLevel": "Moderate"
+}

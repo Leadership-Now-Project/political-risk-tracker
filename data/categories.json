@@ -1,0 +1,144 @@
+{
+  "categories": [
+    {
+      "id": "elections",
+      "name": "Elections",
+      "domain": "rule-of-law",
+      "domainName": "Rule of Law & National Security",
+      "description": "Interference, disenfranchisement, term limit circumvention",
+      "rubric": {
+        "1-2": "Normal democratic activity, minor procedural disputes",
+        "3-4": "Elevated litigation, some restrictive laws passed",
+        "5-6": "Significant restrictions enacted, credible interference allegations",
+        "7-8": "Systematic disenfranchisement efforts, defiance of election outcomes",
+        "9-10": "Overt attempts to overturn results, term limit violations"
+      }
+    },
+    {
+      "id": "rule-of-law",
+      "name": "Rule of Law",
+      "domain": "rule-of-law",
+      "domainName": "Rule of Law & National Security",
+      "description": "Judicial independence, constitutional adherence, equal application of law",
+      "rubric": {
+        "1-2": "Strong judicial independence, consistent constitutional interpretation",
+        "3-4": "Politicization of judicial appointments, selective enforcement concerns",
+        "5-6": "Court packing attempts, significant constitutional challenges ignored",
+        "7-8": "Judicial decisions routinely defied, pardons used to obstruct justice",
+        "9-10": "Complete breakdown of judicial independence, rule by decree"
+      }
+    },
+    {
+      "id": "national-security",
+      "name": "National Security Apparatus",
+      "domain": "rule-of-law",
+      "domainName": "Rule of Law & National Security",
+      "description": "Politicization of intelligence, military, and law enforcement",
+      "rubric": {
+        "1-2": "Apolitical security services, normal oversight functioning",
+        "3-4": "Increased political pressure on agencies, leadership changes post-election",
+        "5-6": "Intelligence weaponized for political purposes, loyalty tests emerging",
+        "7-8": "Security services actively targeting political opponents",
+        "9-10": "Military or intelligence used for domestic political suppression"
+      }
+    },
+    {
+      "id": "regulatory-stability",
+      "name": "Regulatory Stability",
+      "domain": "operating-economic",
+      "domainName": "Operating & Economic Environment",
+      "description": "Predictability of regulatory environment, policy consistency",
+      "rubric": {
+        "1-2": "Stable regulatory environment, predictable policy changes",
+        "3-4": "Increased regulatory uncertainty, more frequent policy reversals",
+        "5-6": "Significant regulatory unpredictability, contradictory policies",
+        "7-8": "Arbitrary enforcement, regulations used punitively against sectors",
+        "9-10": "Complete regulatory chaos, rule by fiat"
+      }
+    },
+    {
+      "id": "trade-policy",
+      "name": "Trade & Economic Policy",
+      "domain": "operating-economic",
+      "domainName": "Operating & Economic Environment",
+      "description": "Trade agreements, tariff stability, economic nationalism",
+      "rubric": {
+        "1-2": "Stable trade relationships, predictable economic policy",
+        "3-4": "Trade tensions, renegotiation of agreements",
+        "5-6": "Significant tariff actions, supply chain disruptions",
+        "7-8": "Trade wars, economic isolation policies",
+        "9-10": "Complete withdrawal from global economic system"
+      }
+    },
+    {
+      "id": "government-contracts",
+      "name": "Government Contracts & Procurement",
+      "domain": "operating-economic",
+      "domainName": "Operating & Economic Environment",
+      "description": "Fair contracting, political favoritism, procurement integrity",
+      "rubric": {
+        "1-2": "Transparent procurement, merit-based contracting",
+        "3-4": "Concerns about political favoritism, some no-bid contracts",
+        "5-6": "Systematic favoritism to political allies, blacklisting critics",
+        "7-8": "Contracts contingent on political support, widespread corruption",
+        "9-10": "Complete cronyism, state resources distributed to loyalists"
+      }
+    },
+    {
+      "id": "fiscal-policy",
+      "name": "Fiscal & Monetary Policy",
+      "domain": "operating-economic",
+      "domainName": "Operating & Economic Environment",
+      "description": "Federal Reserve independence, debt sustainability, fiscal responsibility",
+      "rubric": {
+        "1-2": "Independent central bank, sustainable fiscal trajectory",
+        "3-4": "Political pressure on Fed, elevated but manageable deficits",
+        "5-6": "Credible threats to Fed independence, unsustainable fiscal path",
+        "7-8": "Fed independence compromised, debt crisis emerging",
+        "9-10": "Political control of monetary policy, fiscal collapse"
+      }
+    },
+    {
+      "id": "media-freedom",
+      "name": "Media Freedom",
+      "domain": "societal-institutional",
+      "domainName": "Societal & Institutional Integrity",
+      "description": "Press freedom, journalist safety, information environment",
+      "rubric": {
+        "1-2": "Robust press freedom, healthy media ecosystem",
+        "3-4": "Increased hostility toward press, some access restrictions",
+        "5-6": "Systematic delegitimization of media, credentialing threats",
+        "7-8": "Legal harassment of journalists, significant access denials",
+        "9-10": "Press actively suppressed, journalists imprisoned or harmed"
+      }
+    },
+    {
+      "id": "civil-discourse",
+      "name": "Civil Discourse & Social Cohesion",
+      "domain": "societal-institutional",
+      "domainName": "Societal & Institutional Integrity",
+      "description": "Political polarization, violence, social stability",
+      "rubric": {
+        "1-2": "Healthy political debate, manageable disagreements",
+        "3-4": "Elevated polarization, rhetoric increasingly heated",
+        "5-6": "Dehumanizing rhetoric normalized, sporadic political violence",
+        "7-8": "Political violence increasing, armed groups mobilizing",
+        "9-10": "Widespread political violence, civil conflict"
+      }
+    },
+    {
+      "id": "institutional-integrity",
+      "name": "Institutional Integrity",
+      "domain": "societal-institutional",
+      "domainName": "Societal & Institutional Integrity",
+      "description": "Civil service independence, inspector general function, oversight capacity",
+      "rubric": {
+        "1-2": "Independent civil service, robust oversight mechanisms",
+        "3-4": "Political pressure on civil servants, some oversight weakening",
+        "5-6": "Loyalty tests for officials, IGs marginalized",
+        "7-8": "Mass purges of career officials, oversight eliminated",
+        "9-10": "Complete politicization of government, no independent oversight"
+      }
+    }
+  ]
+}
