@@ -124,3 +124,26 @@ export interface HistoricalPeriodChange {
 export interface HistoricalChangesData {
   changes: HistoricalPeriodChange[];
 }
+
+// Scenario modeling types
+export type Likelihood = 'low' | 'moderate' | 'high';
+
+export interface ScenarioImpact {
+  category: string;
+  delta: number;
+  reason: string;
+}
+
+export interface ScenarioEvent {
+  id: string;
+  label: string;
+  category: string;
+  domain: DomainId;
+  likelihood: Likelihood;
+  impacts: ScenarioImpact[];
+}
+
+export interface ScenariosData {
+  events: ScenarioEvent[];
+  likelihoodDescriptions: Record<Likelihood, string>;
+}

@@ -44,6 +44,12 @@ export default function RootLayout({
                   >
                     Historical View
                   </Link>
+                  <Link
+                    href="/scenarios"
+                    className="text-white hover:text-gold transition-colors text-sm font-medium px-4 py-2"
+                  >
+                    Scenarios
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center gap-4">
