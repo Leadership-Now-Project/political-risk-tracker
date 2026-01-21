@@ -63,59 +63,77 @@
       "lastUpdated": "2026-01-20"
     },
     "trade-policy": {
-      "score": 6,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
-        "[PLACEHOLDER - needs current source] 'Liberation Day' tariffs imposed universal 10% tariff on all imports starting April 2025, with additional country-specific tariffs",
-        "[PLACEHOLDER - needs current source] Trade partners retaliated with counter-tariffs; supply chain disruptions increased costs for businesses and consumers",
-        "[PLACEHOLDER - needs current source] Ongoing trade agreement renegotiations and unpredictable tariff policies created market volatility"
+        "'Liberation Day' tariffs (April 2, 2025) imposed 10% baseline tariff on nearly all imports plus country-specific tariffs up to 49%; CSIS modeling projects 1% GDP reduction (~$300B annual loss) and 9.5% price increases (CSIS)",
+        "US-China retaliatory spiral raised US tariffs on Chinese goods to 145% and Chinese tariffs on US goods to 125%; trade deficit through May 2025 was $175B larger than prior year (CFR)",
+        "Court of International Trade ruled tariffs exceeded presidential authority (May 2025); appeals court allowed tariffs to remain pending Supreme Court review; 73% of Americans expect price surge (Reuters/Ipsos)"
       ],
-      "sources": [],
+      "sources": [
+        "https://www.csis.org/analysis/liberation-day-tariffs-explained",
+        "https://www.cfr.org/articles/what-trump-trade-policy-has-achieved-liberation-day",
+        "https://www.npr.org/2025/04/02/nx-s1-5345802/trump-tariffs-liberation-day"
+      ],
       "lastUpdated": "2026-01-20"
     },
     "government-contracts": {
       "score": 6,
       "trend": "increasing",
       "keyFindings": [
-        "[PLACEHOLDER - needs current source] Major donors appointed to oversight roles for their own businesses; inspectors general investigating donor companies were fired",
-        "[PLACEHOLDER - needs current source] Cryptocurrency deregulation coincided with Trump family digital currency ventures; regulators challenging allied companies dismissed",
-        "[PLACEHOLDER - needs current source] Procurement decisions increasingly contingent on political loyalty rather than merit-based evaluation"
+        "Public Citizen found 16 of 24 White House ballroom project donors have government contracts; these companies received over $279B in federal contracts over past five years (Public Citizen/Common Dreams)",
+        "Over half of ballroom donor companies face federal enforcement actions including labor rights cases, SEC enforcement, and antitrust actions; Lockheed among 14 facing NLRB unfair labor practice cases (Washington Post)",
+        "DOGE-led consolidation terminated or economized 6,000+ contracts; Executive Order mandates GSA consolidation of procurement with projected $50B annual savings claim (White House Fact Sheet)"
       ],
-      "sources": [],
+      "sources": [
+        "https://www.commondreams.org/news/trump-ballroom-funding",
+        "https://newrepublic.com/post/202670/trump-ballroom-donors-government-contracts-investigations",
+        "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-enforces-requirement-of-cost-effective-commercial-solutions-in-federal-contracts/"
+      ],
       "lastUpdated": "2026-01-20"
     },
     "fiscal-policy": {
       "score": 7,
       "trend": "increasing",
       "keyFindings": [
-        "[PLACEHOLDER - needs current source] Extended government shutdown disrupted federal services and delayed release of economic data including jobs and inflation reports",
-        "[PLACEHOLDER - needs current source] Administration sought to fire Federal Reserve officials and threatened prosecution of Fed Chair, signaling interference with central bank independence",
-        "[PLACEHOLDER - needs current source] Political brinkmanship over budgets and debt ceiling created ongoing fiscal uncertainty"
+        "Trump attempted to fire Fed Governor Lisa Cook over unproven fraud claims—unprecedented action testing presidential power over central bank; case likely heading to Supreme Court (NBC News)",
+        "DOJ probe of Federal Reserve marks escalation; Fed Chair Powell accused administration of using prosecutors to interfere with rate decisions; Powell vowed to 'stand firm in face of threats' (NPR)",
+        "Administration appointed Stephen Miran to Fed board while he retained administration position; Miran cast sole dissent on rate cut wanting deeper reduction; economists warn interference threatens market stability (Center for American Progress)"
       ],
-      "sources": [],
+      "sources": [
+        "https://www.nbcnews.com/business/economy/trump-lisa-cook-federal-reserve-whats-next-what-to-know-rcna227263",
+        "https://www.npr.org/2026/01/13/nx-s1-5674777/trump-federal-reserve-jerome-powell",
+        "https://www.americanprogress.org/article/the-trump-administrations-interference-with-federal-reserve-independence-carries-significant-risks/"
+      ],
       "lastUpdated": "2026-01-20"
     },
     "media-freedom": {
       "score": 7,
       "trend": "increasing",
       "keyFindings": [
-        "[PLACEHOLDER - needs current source] Federal funding threats against universities allowing protests; ordered review of billions in grants to Columbia University",
-        "[PLACEHOLDER - needs current source] Pentagon imposed new press credential rules requiring pre-approval before releasing unclassified information; reporters refusing lost access",
-        "[PLACEHOLDER - needs current source] Increased legal and financial pressure on independent media and academic institutions"
+        "Committee to Protect Journalists reports press freedom 'no longer a given in the United States'; FCC Chair opened investigations into ABC, NBC, CBS, and local outlets (CPJ/ACLU)",
+        "Harvard rejected administration demands on admissions/hiring; administration terminated $2.2B in grants (April 2025) and barred new grants (May 2025); Princeton president called cuts 'greatest threat since Red Scare' (CNN)",
+        "Seven universities rejected 'Compact for Academic Excellence' requiring enrollment caps and DEI elimination; Cornell faces $1B+ funding pause, Northwestern nearly $800M (Inside Higher Ed)"
       ],
-      "sources": [],
+      "sources": [
+        "https://www.aclu.org/news/free-speech/trumps-attacks-on-press-freedom-escalate-npr-pbs-funding-cuts-explained",
+        "https://www.cnn.com/2025/10/16/us/trump-universities-compact-funding",
+        "https://www.insidehighered.com/news/government/politics-elections/2025/04/18/what-know-about-trumps-funding-threats-colleges"
+      ],
       "lastUpdated": "2026-01-20"
     },
     "civil-discourse": {
-      "score": 6,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "Threats against federal judges more than tripled over past decade; 2025 on pace to surpass previous highs according to U.S. Marshals Service data (NYC Bar Association)",
-        "[PLACEHOLDER - needs current source] Pardons issued for January 6 participants; dehumanizing rhetoric toward political opponents normalized",
-        "[PLACEHOLDER - needs current source] Law enforcement directed to investigate philanthropic and civil society groups as potential domestic terror threats"
+        "Pardons issued for ~1,500 January 6 defendants including Oath Keepers/Proud Boys leaders convicted of seditious conspiracy; DOJ official called it 'green light' to political violence (NPR)",
+        "Historians warn pardons follow authoritarian playbook; pardoned defendants called for retribution against prosecutors and police who testified; counterterrorism researchers say move encourages future political violence (Stanford Law)"
       ],
       "sources": [
-        "https://www.nycbar.org/press-releases/deputy-attorney-generals-war-on-the-judiciary-is-an-assault-on-judicial-independence/"
+        "https://www.nycbar.org/press-releases/deputy-attorney-generals-war-on-the-judiciary-is-an-assault-on-judicial-independence/",
+        "https://www.npr.org/2025/01/22/nx-s1-5269909/trumps-jan-6-pardons-have-historians-concerned-about-tolerance-of-political-violence",
+        "https://law.stanford.edu/podcast/trumps-pardons-political-violence-hate-groups-and-the-rule-of-law/"
       ],
       "lastUpdated": "2026-01-20"
     },
@@ -123,11 +141,13 @@
       "score": 9,
       "trend": "increasing",
       "keyFindings": [
-        "Intelligence Authorization Act for FY2026 mandates annual surveys on analytic objectivity and bias, plus training on reporting politicization concerns (Senate Intelligence Committee)",
-        "[PLACEHOLDER - needs current source] Multiple inspectors general removed; DEI offices dissolved across federal agencies",
-        "[PLACEHOLDER - needs current source] Schedule F reinstatement proposed to enable mass replacement of career civil servants with political appointees"
+        "17 inspectors general fired via email on January 24, 2025 citing 'changing priorities'; federal judge ruled firings unlawful but declined reinstatement; Council of IGs stated action not 'legally sufficient' (Lawfare)",
+        "Schedule F revival will strip civil service protections from estimated 50,000 federal employees; OPM rule creates 'Schedule Policy/Career' classification enabling rapid termination of career staff (Federal News Network)",
+        "Intelligence Authorization Act for FY2026 mandates annual surveys on analytic objectivity and bias, reflecting Congressional concern over politicization of intelligence agencies (Senate Intelligence Committee)"
       ],
       "sources": [
+        "https://www.lawfaremedia.org/article/trump-fired-17-inspectors-general-was-it-legal",
+        "https://federalnewsnetwork.com/workforce/2025/04/trump-administration-estimates-50000-federal-employees-will-lose-civil-service-protections/",
         "https://www.intelligence.senate.gov/2025/12/18/intelligence-authorization-act-for-fiscal-year-2026-division-f-of-the-national-defense-authorization-act-for-fiscal-year-2026-public-law-119-60-dec-18-2025-119th-congress-in/"
       ],
       "lastUpdated": "2026-01-20"
@@ -135,9 +155,9 @@
   },
   "domainScores": {
     "rule-of-law": 8.0,
-    "operating-economic": 6.25,
-    "societal-institutional": 7.33
+    "operating-economic": 6.5,
+    "societal-institutional": 7.67
   },
-  "overallScore": 7.1,
+  "overallScore": 7.3,
   "riskLevel": "High"
 }
