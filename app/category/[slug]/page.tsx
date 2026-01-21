@@ -157,6 +157,27 @@ export default async function CategoryPage({ params }: PageProps) {
                 </li>
               ))}
             </ul>
+            {/* Sources */}
+            {score.sources && score.sources.length > 0 && (
+              <div className="mt-6 pt-4 border-t border-navy/10">
+                <h3 className="text-sm font-semibold text-navy dark:text-cream mb-2">Sources</h3>
+                <ul className="space-y-1">
+                  {score.sources.map((source, index) => (
+                    <li key={index}>
+                      <a
+                        href={source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-gold hover:text-gold-dark hover:underline break-all"
+                      >
+                        {new URL(source).hostname.replace('www.', '')}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <p className="mt-4 text-sm text-navy/50 dark:text-cream/50">
               Last updated: {score.lastUpdated}
             </p>

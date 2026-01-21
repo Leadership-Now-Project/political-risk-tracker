@@ -3,111 +3,141 @@
   "assessmentPeriod": "2025-01-20 to 2026-01-20",
   "scores": {
     "elections": {
-      "score": 6,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
-        "Multiple states enacted new voting restrictions affecting mail-in ballots and early voting periods",
-        "Ongoing litigation challenging election results in several swing states",
-        "Election officials in key counties facing increased threats and resignations"
+        "At least 16 states enacted 29 restrictive voting laws in 2025, with 28 taking effect before the 2026 midterms; since 2020, at least 30 states have enacted 108 restrictive laws (Brennan Center, Oct 2025)",
+        "Seven states passed stricter voter ID laws requiring birth certificates or passports; 27 states considered proof-of-citizenship requirements (Voting Rights Lab, 2025)",
+        "DOJ requested voter registration files from most states searching for ineligible voters; SAVE Act requiring documentary proof of citizenship stalled in Senate but pursued via executive order (Brennan Center)"
+      ],
+      "sources": [
+        "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-october-2025",
+        "https://votingrightslab.org/report/2025-legislative-sessions-to-date-key-election-policy-trends/",
+        "https://www.aljazeera.com/news/2025/11/4/could-trump-curb-voters-rights-before-2026-us-midterms"
       ],
       "lastUpdated": "2026-01-20"
     },
     "rule-of-law": {
-      "score": 5,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
-        "Expanded use of presidential pardons for political allies",
-        "Federal court decisions on executive authority increasingly challenged",
-        "DOJ independence questioned amid high-profile investigations"
+        "Deputy AG Todd Blanche declared administration at 'war' with federal judiciary at Federalist Society conference (Nov 2025); NYC Bar Association condemned remarks as assault on judicial independence",
+        "More than 100 DOJ prosecutors and career lawyers resigned since Jan 2025—far exceeding normal turnover—citing political interference and pressure to drop cases involving Trump allies (Al Jazeera)",
+        "DOJ fired top career ethics official and purged officials involved in Trump-related investigations; AG Bondi ordered prosecutors to drop charges against NYC Mayor Eric Adams, prompting resignations"
+      ],
+      "sources": [
+        "https://www.nycbar.org/press-releases/deputy-attorney-generals-war-on-the-judiciary-is-an-assault-on-judicial-independence/",
+        "https://www.aljazeera.com/news/longform/2025/12/30/how-has-trumps-second-term-transformed-the-us-justice-department-in-2025",
+        "https://www.ibanet.org/US-presidency-weaponised-Department-of-Justice-investigations-prompt-concerns-over-independence"
       ],
       "lastUpdated": "2026-01-20"
     },
     "national-security": {
-      "score": 5,
-      "trend": "stable",
+      "score": 8,
+      "trend": "increasing",
       "keyFindings": [
-        "Intelligence community leadership changes following election",
-        "Increased scrutiny of agency communications and leaks",
-        "Military leadership emphasizing apolitical stance"
+        "DNI Gabbard fired top two National Intelligence Council officials after they refused to revise Venezuela gang assessment to support administration deportation narrative (Just Security)",
+        "Sen. Warner warned of 'systematic undermining' of intelligence community independence through firings, revoked clearances, and retaliatory reassignments silencing decades of expertise (Sept 2025)",
+        "CIA offered buyouts to entire workforce (Feb 2025); intelligence resources diverted to support Greenland annexation proposal rather than monitoring adversaries like China, Iran, Russia (Foreign Affairs)"
+      ],
+      "sources": [
+        "https://www.justsecurity.org/114297/trump-administration-politicized-intelligence/",
+        "https://www.warner.senate.gov/public/index.cfm/2025/9/on-senate-floor-warner-warns-of-intelligence-politicization",
+        "https://www.foreignaffairs.com/united-states/trump-breaking-american-intelligence"
       ],
       "lastUpdated": "2026-01-20"
     },
     "regulatory-stability": {
-      "score": 4,
+      "score": 6,
       "trend": "increasing",
       "keyFindings": [
-        "Executive orders reversing prior administration policies across agencies",
-        "Regulatory uncertainty in energy, tech, and financial sectors",
-        "Industry groups reporting longer planning horizons due to policy flux"
+        "President signed 229 executive orders, 57 memoranda, and 118 proclamations in first year—dramatically increasing tempo and detail of directives compared to prior administrations (Ballotpedia)",
+        "AI Executive Order (Dec 2025) established federal framework and litigation task force to challenge state AI laws; reversed Biden-era AI safeguards (Sidley Austin)",
+        "Supreme Court hearing Trump v. Slaughter on authority to fire independent agency heads—outcome affects SEC, FTC, FERC regulated businesses (Holland & Knight)"
+      ],
+      "sources": [
+        "https://ballotpedia.org/Donald_Trump's_executive_orders_and_actions,_2025-2026",
+        "https://www.sidley.com/en/insights/newsupdates/2025/12/unpacking-the-december-11-2025-executive-order",
+        "https://www.globalpolicywatch.com/2026/01/the-trump-administrations-enhanced-use-of-executive-orders/"
       ],
       "lastUpdated": "2026-01-20"
     },
     "trade-policy": {
-      "score": 5,
-      "trend": "stable",
+      "score": 6,
+      "trend": "increasing",
       "keyFindings": [
-        "New tariffs imposed on select trading partners",
-        "Supply chain reshoring initiatives creating transition costs",
-        "Trade agreement renegotiations ongoing with major partners"
+        "[PLACEHOLDER - needs current source] 'Liberation Day' tariffs imposed universal 10% tariff on all imports starting April 2025, with additional country-specific tariffs",
+        "[PLACEHOLDER - needs current source] Trade partners retaliated with counter-tariffs; supply chain disruptions increased costs for businesses and consumers",
+        "[PLACEHOLDER - needs current source] Ongoing trade agreement renegotiations and unpredictable tariff policies created market volatility"
       ],
+      "sources": [],
       "lastUpdated": "2026-01-20"
     },
     "government-contracts": {
-      "score": 4,
+      "score": 6,
       "trend": "increasing",
       "keyFindings": [
-        "Several large contracts awarded to companies with political connections",
-        "Small business set-aside compliance under review",
-        "Whistleblower complaints regarding procurement processes increased"
+        "[PLACEHOLDER - needs current source] Major donors appointed to oversight roles for their own businesses; inspectors general investigating donor companies were fired",
+        "[PLACEHOLDER - needs current source] Cryptocurrency deregulation coincided with Trump family digital currency ventures; regulators challenging allied companies dismissed",
+        "[PLACEHOLDER - needs current source] Procurement decisions increasingly contingent on political loyalty rather than merit-based evaluation"
       ],
+      "sources": [],
       "lastUpdated": "2026-01-20"
     },
     "fiscal-policy": {
-      "score": 5,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
-        "National debt exceeding 130% of GDP",
-        "Political pressure on Federal Reserve interest rate decisions",
-        "Budget reconciliation process increasingly contentious"
+        "[PLACEHOLDER - needs current source] Extended government shutdown disrupted federal services and delayed release of economic data including jobs and inflation reports",
+        "[PLACEHOLDER - needs current source] Administration sought to fire Federal Reserve officials and threatened prosecution of Fed Chair, signaling interference with central bank independence",
+        "[PLACEHOLDER - needs current source] Political brinkmanship over budgets and debt ceiling created ongoing fiscal uncertainty"
       ],
+      "sources": [],
       "lastUpdated": "2026-01-20"
     },
     "media-freedom": {
-      "score": 5,
-      "trend": "stable",
+      "score": 7,
+      "trend": "increasing",
       "keyFindings": [
-        "White House press briefing access remains contentious",
-        "Several journalists denied credentials citing security concerns",
-        "SLAPP lawsuits against news organizations increasing"
+        "[PLACEHOLDER - needs current source] Federal funding threats against universities allowing protests; ordered review of billions in grants to Columbia University",
+        "[PLACEHOLDER - needs current source] Pentagon imposed new press credential rules requiring pre-approval before releasing unclassified information; reporters refusing lost access",
+        "[PLACEHOLDER - needs current source] Increased legal and financial pressure on independent media and academic institutions"
       ],
+      "sources": [],
       "lastUpdated": "2026-01-20"
     },
     "civil-discourse": {
       "score": 6,
       "trend": "increasing",
       "keyFindings": [
-        "Political violence incidents at protests and public events",
-        "Social media platforms struggling with political misinformation",
-        "Poll showing record levels of distrust between partisan groups"
+        "Threats against federal judges more than tripled over past decade; 2025 on pace to surpass previous highs according to U.S. Marshals Service data (NYC Bar Association)",
+        "[PLACEHOLDER - needs current source] Pardons issued for January 6 participants; dehumanizing rhetoric toward political opponents normalized",
+        "[PLACEHOLDER - needs current source] Law enforcement directed to investigate philanthropic and civil society groups as potential domestic terror threats"
+      ],
+      "sources": [
+        "https://www.nycbar.org/press-releases/deputy-attorney-generals-war-on-the-judiciary-is-an-assault-on-judicial-independence/"
       ],
       "lastUpdated": "2026-01-20"
     },
     "institutional-integrity": {
-      "score": 5,
+      "score": 9,
       "trend": "increasing",
       "keyFindings": [
-        "Multiple inspector general positions remain unfilled",
-        "Schedule F executive order discussions resurface",
-        "Senior career officials departing citing political pressure"
+        "Intelligence Authorization Act for FY2026 mandates annual surveys on analytic objectivity and bias, plus training on reporting politicization concerns (Senate Intelligence Committee)",
+        "[PLACEHOLDER - needs current source] Multiple inspectors general removed; DEI offices dissolved across federal agencies",
+        "[PLACEHOLDER - needs current source] Schedule F reinstatement proposed to enable mass replacement of career civil servants with political appointees"
+      ],
+      "sources": [
+        "https://www.intelligence.senate.gov/2025/12/18/intelligence-authorization-act-for-fiscal-year-2026-division-f-of-the-national-defense-authorization-act-for-fiscal-year-2026-public-law-119-60-dec-18-2025-119th-congress-in/"
       ],
       "lastUpdated": "2026-01-20"
     }
   },
   "domainScores": {
-    "rule-of-law": 5.33,
-    "operating-economic": 4.5,
-    "societal-institutional": 5.33
+    "rule-of-law": 8.0,
+    "operating-economic": 6.25,
+    "societal-institutional": 7.33
   },
-  "overallScore": 5.0,
-  "riskLevel": "Elevated"
+  "overallScore": 7.1,
+  "riskLevel": "High"
 }

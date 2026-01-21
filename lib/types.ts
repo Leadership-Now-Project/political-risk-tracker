@@ -36,6 +36,7 @@ export interface CategoryScore {
   score: number;
   trend: Trend;
   keyFindings: string[];
+  sources?: string[];
   lastUpdated: string;
 }
 

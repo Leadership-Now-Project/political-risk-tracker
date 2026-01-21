@@ -1,0 +1,113 @@
+{
+  "assessmentDate": "2026-01-20",
+  "assessmentPeriod": "2025-01-20 to 2026-01-20",
+  "scores": {
+    "elections": {
+      "score": 6,
+      "trend": "increasing",
+      "keyFindings": [
+        "Multiple states enacted new voting restrictions affecting mail-in ballots and early voting periods",
+        "Ongoing litigation challenging election results in several swing states",
+        "Election officials in key counties facing increased threats and resignations"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "rule-of-law": {
+      "score": 5,
+      "trend": "increasing",
+      "keyFindings": [
+        "Expanded use of presidential pardons for political allies",
+        "Federal court decisions on executive authority increasingly challenged",
+        "DOJ independence questioned amid high-profile investigations"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "national-security": {
+      "score": 5,
+      "trend": "stable",
+      "keyFindings": [
+        "Intelligence community leadership changes following election",
+        "Increased scrutiny of agency communications and leaks",
+        "Military leadership emphasizing apolitical stance"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "regulatory-stability": {
+      "score": 4,
+      "trend": "increasing",
+      "keyFindings": [
+        "Executive orders reversing prior administration policies across agencies",
+        "Regulatory uncertainty in energy, tech, and financial sectors",
+        "Industry groups reporting longer planning horizons due to policy flux"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "trade-policy": {
+      "score": 5,
+      "trend": "stable",
+      "keyFindings": [
+        "New tariffs imposed on select trading partners",
+        "Supply chain reshoring initiatives creating transition costs",
+        "Trade agreement renegotiations ongoing with major partners"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "government-contracts": {
+      "score": 4,
+      "trend": "increasing",
+      "keyFindings": [
+        "Several large contracts awarded to companies with political connections",
+        "Small business set-aside compliance under review",
+        "Whistleblower complaints regarding procurement processes increased"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "fiscal-policy": {
+      "score": 5,
+      "trend": "increasing",
+      "keyFindings": [
+        "National debt exceeding 130% of GDP",
+        "Political pressure on Federal Reserve interest rate decisions",
+        "Budget reconciliation process increasingly contentious"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "media-freedom": {
+      "score": 5,
+      "trend": "stable",
+      "keyFindings": [
+        "White House press briefing access remains contentious",
+        "Several journalists denied credentials citing security concerns",
+        "SLAPP lawsuits against news organizations increasing"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "civil-discourse": {
+      "score": 6,
+      "trend": "increasing",
+      "keyFindings": [
+        "Political violence incidents at protests and public events",
+        "Social media platforms struggling with political misinformation",
+        "Poll showing record levels of distrust between partisan groups"
+      ],
+      "lastUpdated": "2026-01-20"
+    },
+    "institutional-integrity": {
+      "score": 5,
+      "trend": "increasing",
+      "keyFindings": [
+        "Multiple inspector general positions remain unfilled",
+        "Schedule F executive order discussions resurface",
+        "Senior career officials departing citing political pressure"
+      ],
+      "lastUpdated": "2026-01-20"
+    }
+  },
+  "domainScores": {
+    "rule-of-law": 5.33,
+    "operating-economic": 4.5,
+    "societal-institutional": 5.33
+  },
+  "overallScore": 5.0,
+  "riskLevel": "Elevated"
+}
