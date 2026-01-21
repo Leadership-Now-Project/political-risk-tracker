@@ -1,0 +1,113 @@
+{
+  "changes": [
+    {
+      "period": "July 2025",
+      "date": "2025-07-20",
+      "overallScore": 5.8,
+      "overallChange": null,
+      "summary": "Baseline assessment following inauguration period",
+      "keyDevelopments": [
+        "New administration's first six months established policy direction",
+        "Initial executive orders on immigration, trade, and regulatory reform",
+        "DOJ leadership transition completed with new priorities announced"
+      ],
+      "categoryChanges": []
+    },
+    {
+      "period": "August 2025",
+      "date": "2025-08-20",
+      "overallScore": 6.0,
+      "overallChange": 0.2,
+      "summary": "Escalation of executive actions and early institutional friction",
+      "keyDevelopments": [
+        "First wave of inspector general dismissals announced",
+        "Trade tariff increases on China and European goods",
+        "Congressional oversight requests increasingly ignored"
+      ],
+      "categoryChanges": [
+        { "category": "institutional-integrity", "from": 7, "to": 8, "rationale": "Firing of 17 inspectors general in single action; courts ruled action unlawful but declined to order reinstatement" },
+        { "category": "trade-policy", "from": 5, "to": 6, "rationale": "Liberation Day tariffs announced; 10% baseline on all imports with higher rates for China" }
+      ]
+    },
+    {
+      "period": "September 2025",
+      "date": "2025-09-20",
+      "overallScore": 6.3,
+      "overallChange": 0.3,
+      "summary": "Intelligence community concerns emerge; regulatory shifts accelerate",
+      "keyDevelopments": [
+        "Sen. Warner's floor speech warning of intelligence politicization",
+        "CIA workforce buyout offer to entire agency",
+        "Schedule F executive order reinstated, reclassifying career positions"
+      ],
+      "categoryChanges": [
+        { "category": "national-security", "from": 6, "to": 7, "rationale": "DNI began reassigning analysts who produced assessments contradicting administration narratives; security clearance revocations increased" },
+        { "category": "regulatory-stability", "from": 5, "to": 6, "rationale": "Pace of executive orders accelerated to 20+ per month; contradictory guidance created compliance uncertainty" }
+      ]
+    },
+    {
+      "period": "October 2025",
+      "date": "2025-10-20",
+      "overallScore": 6.6,
+      "overallChange": 0.3,
+      "summary": "Election administration concerns intensify ahead of midterms",
+      "keyDevelopments": [
+        "16 states enacted 29 new restrictive voting laws",
+        "DOJ requested voter registration files from most states",
+        "University funding threats escalated with Harvard grant termination"
+      ],
+      "categoryChanges": [
+        { "category": "elections", "from": 6, "to": 7, "rationale": "Wave of state voting restrictions took effect; proof-of-citizenship requirements advanced in multiple states" },
+        { "category": "media-freedom", "from": 6, "to": 7, "rationale": "FCC opened investigations into major networks; university compact demands issued with funding consequences" }
+      ]
+    },
+    {
+      "period": "November 2025",
+      "date": "2025-11-20",
+      "overallScore": 6.9,
+      "overallChange": 0.3,
+      "summary": "Judicial conflicts escalate; DOJ independence concerns mount",
+      "keyDevelopments": [
+        "Deputy AG declared administration 'at war' with federal judiciary",
+        "100+ DOJ prosecutors resigned citing political interference",
+        "Threats against federal judges tripled from prior decade"
+      ],
+      "categoryChanges": [
+        { "category": "rule-of-law", "from": 7, "to": 8, "rationale": "NYC Bar Association condemned DOJ 'war on judiciary' remarks; mass prosecutor resignations over politically-motivated case decisions" },
+        { "category": "civil-discourse", "from": 6, "to": 7, "rationale": "January 6 pardons issued for ~1,500 defendants including seditious conspiracy convictions; historians warned of political violence normalization" }
+      ]
+    },
+    {
+      "period": "December 2025",
+      "date": "2025-12-20",
+      "overallScore": 7.1,
+      "overallChange": 0.2,
+      "summary": "Federal Reserve independence threatened; year-end institutional strain",
+      "keyDevelopments": [
+        "Attempt to fire Fed Governor Lisa Cook",
+        "DOJ probe of Federal Reserve announced",
+        "Intelligence Authorization Act included politicization safeguards"
+      ],
+      "categoryChanges": [
+        { "category": "fiscal-policy", "from": 6, "to": 7, "rationale": "Unprecedented attempt to remove Fed governor; DOJ investigation of Fed signaled executive branch interference with monetary policy" },
+        { "category": "national-security", "from": 7, "to": 8, "rationale": "DNI fired National Intelligence Council officials over Venezuela assessment; intelligence resources diverted to Greenland proposal" }
+      ]
+    },
+    {
+      "period": "January 2026",
+      "date": "2026-01-20",
+      "overallScore": 7.3,
+      "overallChange": 0.2,
+      "summary": "One-year mark shows sustained institutional pressure across all domains",
+      "keyDevelopments": [
+        "Overall risk elevated to High (7.3) from Elevated baseline",
+        "All 10 categories show 'increasing' trend direction",
+        "Rule of Law domain highest at 8.0 average"
+      ],
+      "categoryChanges": [
+        { "category": "elections", "from": 7, "to": 8, "rationale": "Cumulative effect of 108 restrictive laws since 2020; 28 new restrictions taking effect before 2026 midterms" },
+        { "category": "institutional-integrity", "from": 8, "to": 9, "rationale": "Schedule F implementation affecting 50,000 federal employees; systematic replacement of career staff with political appointees" }
+      ]
+    }
+  ]
+}

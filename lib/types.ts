@@ -100,3 +100,27 @@ export interface StateRiskData {
 export interface StatesData {
   states: StateRiskData[];
 }
+
+// Historical category change with rationale
+export interface CategoryChange {
+  category: string;
+  from: number;
+  to: number;
+  rationale: string;
+}
+
+// Historical period change data
+export interface HistoricalPeriodChange {
+  period: string;
+  date: string;
+  overallScore: number;
+  overallChange: number | null;
+  summary: string;
+  keyDevelopments: string[];
+  categoryChanges: CategoryChange[];
+}
+
+// Historical changes data file structure
+export interface HistoricalChangesData {
+  changes: HistoricalPeriodChange[];
+}
