@@ -23,11 +23,11 @@ export default function RootLayout({
               <div className="flex items-center gap-8">
                 <Link href="/" className="flex items-center gap-3">
                   <Image
-                    src="/logo-white.png"
+                    src="/logo-yellow-white.png"
                     alt="Leadership Now Project"
-                    width={180}
-                    height={40}
-                    className="h-10 w-auto"
+                    width={200}
+                    height={44}
+                    className="h-11 w-auto"
                     priority
                   />
                 </Link>
@@ -66,7 +66,7 @@ export default function RootLayout({
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/logo-white.png"
+                  src="/logo-yellow-white.png"
                   alt="Leadership Now Project"
                   width={150}
                   height={34}

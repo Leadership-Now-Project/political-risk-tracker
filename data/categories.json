@@ -5,7 +5,7 @@
       "name": "Elections",
       "domain": "rule-of-law",
       "domainName": "Rule of Law & National Security",
-      "description": "Interference, disenfranchisement, term limit circumvention",
+      "description": "Electoral process integrity, voter access protections, constitutional compliance",
       "rubric": {
         "1-2": "Normal democratic activity, minor procedural disputes",
         "3-4": "Elevated litigation, some restrictive laws passed",
@@ -33,7 +33,7 @@
       "name": "National Security Apparatus",
       "domain": "rule-of-law",
       "domainName": "Rule of Law & National Security",
-      "description": "Politicization of intelligence, military, and law enforcement",
+      "description": "Independence and professionalism of security institutions",
       "rubric": {
         "1-2": "Apolitical security services, normal oversight functioning",
         "3-4": "Increased political pressure on agencies, leadership changes post-election",
@@ -117,7 +117,7 @@
       "name": "Civil Discourse & Social Cohesion",
       "domain": "societal-institutional",
       "domainName": "Societal & Institutional Integrity",
-      "description": "Political polarization, violence, social stability",
+      "description": "Public discourse quality, social trust, civic engagement",
       "rubric": {
         "1-2": "Healthy political debate, manageable disagreements",
         "3-4": "Elevated polarization, rhetoric increasingly heated",
