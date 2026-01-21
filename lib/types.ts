@@ -147,3 +147,57 @@ export interface ScenariosData {
   events: ScenarioEvent[];
   likelihoodDescriptions: Record<Likelihood, string>;
 }
+
+// Economic indicators types
+export interface IndicatorSensitivity {
+  weight: number;
+  description: string;
+}
+
+export interface RiskThreshold {
+  max: number;
+  impact: string;
+  color: string;
+}
+
+export interface IndicatorCurrentData {
+  value: number;
+  asOf: string;
+  source: string;
+  context: string;
+  priorYearValue: number;
+  priorYearDate: string;
+  yearOverYearChange: number;
+}
+
+export interface ScoreDefinition {
+  name: string;
+  definition: string;
+  interpretation: string;
+}
+
+export interface EconomicIndicator {
+  id: string;
+  name: string;
+  category: 'market' | 'economic';
+  unit: string;
+  description: string;
+  currentData: IndicatorCurrentData;
+  sensitivity: Record<string, IndicatorSensitivity>;
+  riskThresholds: {
+    low: RiskThreshold;
+    moderate: RiskThreshold;
+    high: RiskThreshold;
+    severe: RiskThreshold;
+  };
+}
+
+export interface EconomicIndicatorsData {
+  lastUpdated: string;
+  scoreDefinitions: {
+    marketImpactScore: ScoreDefinition;
+    economicImpactScore: ScoreDefinition;
+  };
+  indicators: EconomicIndicator[];
+  categoryDescriptions: Record<string, string>;
+}

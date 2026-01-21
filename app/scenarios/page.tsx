@@ -11,8 +11,16 @@ import {
 } from '@/lib/types';
 import { getRiskLevel, getScoreColor } from '@/lib/risk-levels';
 import RiskLevelBadge from '@/components/RiskLevelBadge';
+import PageNav from '@/components/PageNav';
 import currentData from '@/data/current.json';
 import scenariosData from '@/data/scenarios.json';
+
+const PAGE_SECTIONS = [
+  { id: 'comparison', label: 'Score Comparison' },
+  { id: 'custom-event', label: 'Custom Event' },
+  { id: 'predefined', label: 'Predefined Events' },
+  { id: 'results', label: 'Results' },
+];
 
 const categoryNames: Record<string, string> = {
   'elections': 'Elections',
@@ -172,17 +180,19 @@ export default function ScenariosPage() {
   const projectedRiskLevel = getRiskLevel(projected.overallScore);
 
   return (
-    <div className="space-y-8">
-      {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold text-navy dark:text-cream">Scenario Modeling</h1>
-        <p className="mt-2 text-navy/70 dark:text-cream/70">
-          Explore how potential events could affect political risk scores
-        </p>
-      </div>
+    <>
+      <PageNav sections={PAGE_SECTIONS} />
+      <div className="space-y-8">
+        {/* Header */}
+        <div>
+          <h1 className="text-3xl font-bold text-navy dark:text-cream">Scenario Modeling</h1>
+          <p className="mt-2 text-navy/70 dark:text-cream/70">
+            Explore how potential events could affect political risk scores
+          </p>
+        </div>
 
-      {/* Score Comparison Header */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Score Comparison Header */}
+        <div id="comparison" className="grid grid-cols-1 md:grid-cols-3 gap-4 scroll-mt-20">
         <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
           <div className="text-sm text-navy/60 dark:text-cream/60 mb-1">Current Score</div>
           <div className="flex items-center gap-3">
@@ -237,7 +247,7 @@ export default function ScenariosPage() {
         {/* Left Column: Event Selection */}
         <div className="space-y-6">
           {/* Custom Event Input */}
-          <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
+          <div id="custom-event" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden scroll-mt-20">
             <div className="p-4 border-b border-navy/10 bg-gradient-to-r from-gold/10 to-transparent">
               <h2 className="text-lg font-semibold text-navy dark:text-cream flex items-center gap-2">
                 <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -281,7 +291,7 @@ export default function ScenariosPage() {
           </div>
 
           {/* Predefined Events */}
-          <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
+          <div id="predefined" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden scroll-mt-20">
             <div className="p-4 border-b border-navy/10">
               <h2 className="text-lg font-semibold text-navy dark:text-cream">Predefined Events</h2>
               <div className="flex flex-wrap gap-2 mt-3">
@@ -376,7 +386,7 @@ export default function ScenariosPage() {
         </div>
 
         {/* Right Column: Results */}
-        <div className="space-y-6">
+        <div id="results" className="space-y-6 scroll-mt-20">
           {/* Selected Events */}
           {selectedEvents.length > 0 && (
             <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
@@ -558,6 +568,7 @@ export default function ScenariosPage() {
           <span>Back to Dashboard</span>
         </Link>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

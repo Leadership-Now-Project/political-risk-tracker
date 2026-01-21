@@ -14,6 +14,7 @@ import { getRiskLevel, getRiskLevelColor, getScoreColor } from '@/lib/risk-level
 import { getDomainInfo } from '@/lib/scoring';
 import TrendChart from '@/components/TrendChart';
 import RiskLevelBadge from '@/components/RiskLevelBadge';
+import PageNav from '@/components/PageNav';
 import categoriesData from '@/data/categories.json';
 import currentData from '@/data/current.json';
 import historicalChangesData from '@/data/historical-changes.json';
@@ -24,6 +25,13 @@ import history202510 from '@/data/history/2025-10-20.json';
 import history202511 from '@/data/history/2025-11-20.json';
 import history202512 from '@/data/history/2025-12-20.json';
 import history202601 from '@/data/history/2026-01-20.json';
+
+const PAGE_SECTIONS = [
+  { id: 'overall-trend', label: 'Overall Trend' },
+  { id: 'timeline', label: 'Timeline' },
+  { id: 'category-trends', label: 'Category Trends' },
+  { id: 'comparison', label: 'Score Comparison' },
+];
 
 const categoryColors: Record<string, string> = {
   elections: '#ef4444',
@@ -124,14 +132,16 @@ export default function HistoryPage() {
   });
 
   return (
-    <div className="space-y-8">
-      {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold text-navy dark:text-cream">Historical View</h1>
-        <p className="mt-2 text-navy/70 dark:text-cream/70">
-          Track risk score changes across all categories over time
-        </p>
-      </div>
+    <>
+      <PageNav sections={PAGE_SECTIONS} />
+      <div className="space-y-8">
+        {/* Header */}
+        <div>
+          <h1 className="text-3xl font-bold text-navy dark:text-cream">Historical View</h1>
+          <p className="mt-2 text-navy/70 dark:text-cream/70">
+            Track risk score changes across all categories over time
+          </p>
+        </div>
 
       {/* Domain Filter */}
       <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-4 border border-navy/10">
@@ -156,7 +166,7 @@ export default function HistoryPage() {
       </div>
 
       {/* Overall Score Trend */}
-      <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
+      <div id="overall-trend" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10 scroll-mt-20">
         <h2 className="text-lg font-semibold text-navy dark:text-cream mb-4">
           Overall Risk Score Trend
         </h2>
@@ -168,7 +178,7 @@ export default function HistoryPage() {
       </div>
 
       {/* Monthly Timeline with Rationale */}
-      <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
+      <div id="timeline" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden scroll-mt-20">
         <div className="p-6 border-b border-navy/10">
           <h2 className="text-lg font-semibold text-navy dark:text-cream">
             Monthly Assessment Timeline
@@ -314,7 +324,7 @@ export default function HistoryPage() {
       </div>
 
       {/* Category Trends Chart */}
-      <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
+      <div id="category-trends" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10 scroll-mt-20">
         <h2 className="text-lg font-semibold text-navy dark:text-cream mb-4">
           {selectedDomain === 'all'
             ? 'All Categories Trend'
@@ -324,7 +334,7 @@ export default function HistoryPage() {
       </div>
 
       {/* Comparison Table */}
-      <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light overflow-hidden border border-navy/10">
+      <div id="comparison" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light overflow-hidden border border-navy/10 scroll-mt-20">
         <div className="p-6 border-b border-navy/10">
           <h2 className="text-lg font-semibold text-navy dark:text-cream">
             Score Comparison (July 2025 vs Current)
@@ -409,6 +419,7 @@ export default function HistoryPage() {
           <span>Back to Dashboard</span>
         </Link>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

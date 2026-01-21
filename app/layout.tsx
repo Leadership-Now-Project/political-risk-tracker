@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
+import Navigation from '@/components/Navigation';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,49 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased bg-cream dark:bg-navy min-h-screen flex flex-col">
         {/* Navigation */}
-        <nav className="bg-navy/95 backdrop-blur-sm shadow-ln-medium sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
-              <div className="flex items-center gap-8">
-                <Link href="/" className="flex items-center gap-3">
-                  <Image
-                    src="/logo-yellow-white.png"
-                    alt="Leadership Now Project"
-                    width={200}
-                    height={44}
-                    className="h-11 w-auto"
-                    priority
-                  />
-                </Link>
-                <div className="hidden md:flex items-center gap-1">
-                  <Link
-                    href="/"
-                    className="text-white hover:text-gold transition-colors text-sm font-medium px-4 py-2"
-                  >
-                    Dashboard
-                  </Link>
-                  <Link
-                    href="/history"
-                    className="text-white hover:text-gold transition-colors text-sm font-medium px-4 py-2"
-                  >
-                    Historical View
-                  </Link>
-                  <Link
-                    href="/scenarios"
-                    className="text-white hover:text-gold transition-colors text-sm font-medium px-4 py-2"
-                  >
-                    Scenarios
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-xs text-gold-light uppercase tracking-wider hidden sm:inline">
-                  US Political Risk Assessment
-                </span>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Navigation />
 
         {/* Main Content */}
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">

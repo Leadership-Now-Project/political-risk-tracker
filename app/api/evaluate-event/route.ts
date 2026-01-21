@@ -99,7 +99,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const evaluation = JSON.parse(jsonMatch[0]);
+    // Sanitize JSON: remove + signs before numbers (e.g., +3 -> 3)
+    const sanitizedJson = jsonMatch[0].replace(/:\s*\+(\d)/g, ': $1');
+    const evaluation = JSON.parse(sanitizedJson);
 
     // Validate the response structure
     if (!evaluation.impacts || !Array.isArray(evaluation.impacts)) {

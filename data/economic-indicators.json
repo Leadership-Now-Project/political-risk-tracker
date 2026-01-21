@@ -1,0 +1,361 @@
+{
+  "lastUpdated": "2026-01-20",
+  "scoreDefinitions": {
+    "marketImpactScore": {
+      "name": "Market Impact Score",
+      "definition": "A weighted composite measuring how current political risk levels are likely affecting financial market indicators. Calculated by weighting each political risk category by its empirical sensitivity to each market indicator, then averaging across all market indicators.",
+      "interpretation": "Higher scores indicate greater downward pressure on equity markets, upward pressure on volatility and credit spreads, and increased currency risk. A score of 7+ suggests markets are pricing in significant political risk premium."
+    },
+    "economicImpactScore": {
+      "name": "Economic Impact Score",
+      "definition": "A weighted composite measuring how current political risk levels are likely affecting real economic activity. Calculated by weighting each political risk category by its empirical sensitivity to each economic indicator, then averaging across all economic indicators.",
+      "interpretation": "Higher scores indicate reduced GDP growth potential, weaker business investment, declining consumer confidence, and reduced foreign capital inflows. A score of 7+ suggests meaningful drag on economic growth."
+    }
+  },
+  "indicators": [
+    {
+      "id": "sp500",
+      "name": "S&P 500",
+      "category": "market",
+      "unit": "index",
+      "description": "Broad US equity market performance",
+      "currentData": {
+        "value": 5827.04,
+        "asOf": "2026-01-17",
+        "source": "Yahoo Finance",
+        "context": "Down 4.2% YTD; trading below 200-day moving average since tariff announcements",
+        "priorYearValue": 6118.71,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": -4.8
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.6, "description": "Electoral uncertainty reduces investor confidence" },
+        "rule-of-law": { "weight": -0.8, "description": "Judicial instability increases legal/regulatory risk for corporations" },
+        "national-security": { "weight": -0.4, "description": "Security concerns affect defense stocks, overall sentiment" },
+        "regulatory-stability": { "weight": -0.9, "description": "Unpredictable regulation directly impacts business planning" },
+        "trade-policy": { "weight": -0.85, "description": "Tariffs and trade wars affect multinational earnings" },
+        "government-contracts": { "weight": -0.5, "description": "Favoritism affects contractor valuations" },
+        "fiscal-policy": { "weight": -0.7, "description": "Fed independence crucial for monetary policy credibility" },
+        "media-freedom": { "weight": -0.3, "description": "Information environment affects market transparency" },
+        "civil-discourse": { "weight": -0.4, "description": "Social instability increases risk premium" },
+        "institutional-integrity": { "weight": -0.6, "description": "Weak institutions reduce long-term investment confidence" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Supportive", "color": "green" },
+        "moderate": { "max": 6, "impact": "Headwind", "color": "yellow" },
+        "high": { "max": 8, "impact": "Significant drag", "color": "orange" },
+        "severe": { "max": 10, "impact": "Major correction risk", "color": "red" }
+      }
+    },
+    {
+      "id": "treasury-10y",
+      "name": "10-Year Treasury Yield",
+      "category": "market",
+      "unit": "percent",
+      "description": "Benchmark government borrowing rate",
+      "currentData": {
+        "value": 4.61,
+        "asOf": "2026-01-17",
+        "source": "U.S. Treasury",
+        "context": "Up 58 bps YTD; reflects inflation concerns from tariffs and Fed independence threats",
+        "priorYearValue": 4.03,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": 14.4
+      },
+      "sensitivity": {
+        "elections": { "weight": 0.3, "description": "Electoral uncertainty can drive flight to safety (lower yields) or inflation fears (higher)" },
+        "rule-of-law": { "weight": 0.4, "description": "Legal instability may increase risk premium on US debt" },
+        "national-security": { "weight": 0.2, "description": "Security concerns typically drive flight to safety" },
+        "regulatory-stability": { "weight": 0.3, "description": "Policy uncertainty affects inflation expectations" },
+        "trade-policy": { "weight": 0.5, "description": "Tariffs directly impact inflation expectations" },
+        "government-contracts": { "weight": 0.2, "description": "Procurement issues have limited direct bond impact" },
+        "fiscal-policy": { "weight": 0.9, "description": "Fed credibility directly affects yield curve" },
+        "media-freedom": { "weight": 0.1, "description": "Limited direct impact on bond markets" },
+        "civil-discourse": { "weight": 0.3, "description": "Social instability can drive safe haven flows" },
+        "institutional-integrity": { "weight": 0.5, "description": "Institutional erosion raises sovereign risk premium" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Stable rates", "color": "green" },
+        "moderate": { "max": 6, "impact": "Elevated volatility", "color": "yellow" },
+        "high": { "max": 8, "impact": "Risk premium rising", "color": "orange" },
+        "severe": { "max": 10, "impact": "Sovereign risk concerns", "color": "red" }
+      }
+    },
+    {
+      "id": "dxy",
+      "name": "US Dollar Index (DXY)",
+      "category": "market",
+      "unit": "index",
+      "description": "Dollar strength vs major currencies",
+      "currentData": {
+        "value": 108.54,
+        "asOf": "2026-01-17",
+        "source": "ICE",
+        "context": "Near 2-year highs but showing weakness on Fed independence concerns; safe haven flows offsetting institutional worries",
+        "priorYearValue": 103.42,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": 4.9
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.4, "description": "Political uncertainty typically weakens currency" },
+        "rule-of-law": { "weight": -0.6, "description": "Rule of law essential for reserve currency status" },
+        "national-security": { "weight": -0.3, "description": "Security concerns can strengthen (safe haven) or weaken dollar" },
+        "regulatory-stability": { "weight": -0.4, "description": "Regulatory chaos reduces business confidence in USD" },
+        "trade-policy": { "weight": -0.7, "description": "Trade wars directly impact currency flows and sentiment" },
+        "government-contracts": { "weight": -0.2, "description": "Limited direct FX impact" },
+        "fiscal-policy": { "weight": -0.8, "description": "Fed credibility crucial for dollar confidence" },
+        "media-freedom": { "weight": -0.2, "description": "Affects international perception of US stability" },
+        "civil-discourse": { "weight": -0.4, "description": "Social instability weakens safe haven status" },
+        "institutional-integrity": { "weight": -0.7, "description": "Institutional strength underpins reserve currency" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Stable/strong", "color": "green" },
+        "moderate": { "max": 6, "impact": "Modest pressure", "color": "yellow" },
+        "high": { "max": 8, "impact": "Weakness likely", "color": "orange" },
+        "severe": { "max": 10, "impact": "Reserve status risk", "color": "red" }
+      }
+    },
+    {
+      "id": "gdp-growth",
+      "name": "GDP Growth",
+      "category": "economic",
+      "unit": "percent",
+      "description": "Real economic output growth",
+      "currentData": {
+        "value": 1.8,
+        "asOf": "2025-Q4",
+        "source": "BEA (Advance Estimate)",
+        "context": "Below 2.5% trend; tariff uncertainty weighing on business investment; Atlanta Fed GDPNow tracking 1.4% for Q1 2026",
+        "priorYearValue": 2.8,
+        "priorYearDate": "2024-Q4",
+        "yearOverYearChange": -35.7
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.4, "description": "Electoral uncertainty delays business investment" },
+        "rule-of-law": { "weight": -0.6, "description": "Legal uncertainty reduces long-term capital allocation" },
+        "national-security": { "weight": -0.3, "description": "Security concerns affect business confidence" },
+        "regulatory-stability": { "weight": -0.8, "description": "Regulatory unpredictability directly impacts business planning" },
+        "trade-policy": { "weight": -0.9, "description": "Trade disruption directly reduces economic activity" },
+        "government-contracts": { "weight": -0.4, "description": "Government spending efficiency affects growth" },
+        "fiscal-policy": { "weight": -0.7, "description": "Monetary policy uncertainty affects credit conditions" },
+        "media-freedom": { "weight": -0.2, "description": "Information environment has indirect growth effects" },
+        "civil-discourse": { "weight": -0.5, "description": "Social instability reduces consumer/business confidence" },
+        "institutional-integrity": { "weight": -0.6, "description": "Weak institutions reduce investment and productivity" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Trend growth (2-3%)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Below trend (1-2%)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Stagnation risk (<1%)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Recession likely", "color": "red" }
+      }
+    },
+    {
+      "id": "inflation",
+      "name": "Inflation Expectations",
+      "category": "economic",
+      "unit": "percent",
+      "description": "5-Year breakeven inflation rate",
+      "currentData": {
+        "value": 2.58,
+        "asOf": "2026-01-17",
+        "source": "FRED (T5YIE)",
+        "context": "Above Fed 2% target; tariff passthrough adding estimated 0.5-0.8% to inflation expectations per Peterson Institute analysis",
+        "priorYearValue": 2.31,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": 11.7
+      },
+      "sensitivity": {
+        "elections": { "weight": 0.3, "description": "Political uncertainty can affect inflation expectations" },
+        "rule-of-law": { "weight": 0.3, "description": "Institutional erosion may reduce inflation anchoring" },
+        "national-security": { "weight": 0.2, "description": "Security spending can be inflationary" },
+        "regulatory-stability": { "weight": 0.4, "description": "Regulatory shifts affect supply-side costs" },
+        "trade-policy": { "weight": 0.9, "description": "Tariffs directly increase consumer prices" },
+        "government-contracts": { "weight": 0.2, "description": "Procurement inefficiency marginally inflationary" },
+        "fiscal-policy": { "weight": 0.85, "description": "Fed credibility essential for inflation expectations" },
+        "media-freedom": { "weight": 0.1, "description": "Limited direct inflation impact" },
+        "civil-discourse": { "weight": 0.2, "description": "Social instability can affect supply chains" },
+        "institutional-integrity": { "weight": 0.4, "description": "Weak institutions may lead to fiscal dominance" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Anchored (~2%)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Elevated (2.5-3.5%)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Unanchored (3.5-5%)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Stagflation risk", "color": "red" }
+      }
+    },
+    {
+      "id": "consumer-confidence",
+      "name": "Consumer Confidence",
+      "category": "economic",
+      "unit": "index",
+      "description": "Conference Board Consumer Confidence Index",
+      "currentData": {
+        "value": 98.4,
+        "asOf": "2025-12",
+        "source": "Conference Board",
+        "context": "Below 100 threshold indicating pessimism; expectations component at 78.3, well below 80 recession signal",
+        "priorYearValue": 114.8,
+        "priorYearDate": "2024-12",
+        "yearOverYearChange": -14.3
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.6, "description": "Political uncertainty directly affects consumer sentiment" },
+        "rule-of-law": { "weight": -0.5, "description": "Institutional erosion reduces public confidence" },
+        "national-security": { "weight": -0.5, "description": "Security concerns weigh on consumer optimism" },
+        "regulatory-stability": { "weight": -0.4, "description": "Policy chaos creates economic anxiety" },
+        "trade-policy": { "weight": -0.7, "description": "Price increases from tariffs reduce purchasing power" },
+        "government-contracts": { "weight": -0.2, "description": "Limited direct consumer impact" },
+        "fiscal-policy": { "weight": -0.5, "description": "Monetary uncertainty affects borrowing costs, savings" },
+        "media-freedom": { "weight": -0.4, "description": "Information environment affects public mood" },
+        "civil-discourse": { "weight": -0.8, "description": "Social division directly impacts consumer sentiment" },
+        "institutional-integrity": { "weight": -0.5, "description": "Institutional decay erodes public trust" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Optimistic (>110)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Cautious (95-110)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Pessimistic (80-95)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Crisis mentality (<80)", "color": "red" }
+      }
+    },
+    {
+      "id": "business-investment",
+      "name": "Business Investment",
+      "category": "economic",
+      "unit": "percent change",
+      "description": "Private nonresidential fixed investment (QoQ annualized)",
+      "currentData": {
+        "value": -0.8,
+        "asOf": "2025-Q4",
+        "source": "BEA",
+        "context": "First negative quarter since 2020; CEO confidence surveys at 2-year lows citing regulatory and trade uncertainty",
+        "priorYearValue": 3.2,
+        "priorYearDate": "2024-Q4",
+        "yearOverYearChange": -125.0
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.6, "description": "Political uncertainty delays capex decisions" },
+        "rule-of-law": { "weight": -0.8, "description": "Legal uncertainty freezes long-term investments" },
+        "national-security": { "weight": -0.4, "description": "Security concerns affect certain sectors" },
+        "regulatory-stability": { "weight": -0.95, "description": "Regulatory unpredictability is #1 investment deterrent" },
+        "trade-policy": { "weight": -0.85, "description": "Trade uncertainty disrupts supply chain investment" },
+        "government-contracts": { "weight": -0.5, "description": "Favoritism distorts investment allocation" },
+        "fiscal-policy": { "weight": -0.6, "description": "Interest rate uncertainty affects financing decisions" },
+        "media-freedom": { "weight": -0.2, "description": "Limited direct impact on capex" },
+        "civil-discourse": { "weight": -0.4, "description": "Social instability reduces business confidence" },
+        "institutional-integrity": { "weight": -0.7, "description": "Weak institutions reduce long-term investment horizon" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Strong growth (>3%)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Modest growth (1-3%)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Contraction (0 to -2%)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Investment freeze (<-2%)", "color": "red" }
+      }
+    },
+    {
+      "id": "fdi",
+      "name": "Foreign Direct Investment",
+      "category": "economic",
+      "unit": "USD billions",
+      "description": "Net FDI inflows (quarterly)",
+      "currentData": {
+        "value": 42.3,
+        "asOf": "2025-Q3",
+        "source": "BEA",
+        "context": "Down 38% from 2024 average; European investors citing rule of law concerns; greenfield announcements at 5-year low",
+        "priorYearValue": 68.1,
+        "priorYearDate": "2024-Q3",
+        "yearOverYearChange": -37.9
+      },
+      "sensitivity": {
+        "elections": { "weight": -0.5, "description": "Political uncertainty deters foreign investors" },
+        "rule-of-law": { "weight": -0.9, "description": "Legal certainty essential for foreign investment" },
+        "national-security": { "weight": -0.6, "description": "Security posture affects CFIUS, investment climate" },
+        "regulatory-stability": { "weight": -0.8, "description": "Foreign investors highly sensitive to regulatory risk" },
+        "trade-policy": { "weight": -0.85, "description": "Trade barriers directly deter FDI" },
+        "government-contracts": { "weight": -0.4, "description": "Favoritism excludes foreign contractors" },
+        "fiscal-policy": { "weight": -0.5, "description": "Monetary credibility affects currency risk for foreign investors" },
+        "media-freedom": { "weight": -0.4, "description": "Press freedom signals openness to international community" },
+        "civil-discourse": { "weight": -0.5, "description": "Social stability important for long-term FDI" },
+        "institutional-integrity": { "weight": -0.85, "description": "Strong institutions fundamental for FDI confidence" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Attractive ($60B+/qtr)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Selective ($40-60B)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Declining ($20-40B)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Capital flight (<$20B)", "color": "red" }
+      }
+    },
+    {
+      "id": "credit-spreads",
+      "name": "Corporate Credit Spreads",
+      "category": "market",
+      "unit": "basis points",
+      "description": "ICE BofA US High Yield Index OAS",
+      "currentData": {
+        "value": 372,
+        "asOf": "2026-01-17",
+        "source": "ICE/FRED",
+        "context": "Above 350 bps stress threshold; widened 85 bps since Fed independence concerns emerged in December",
+        "priorYearValue": 287,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": 29.6
+      },
+      "sensitivity": {
+        "elections": { "weight": 0.4, "description": "Political uncertainty widens spreads" },
+        "rule-of-law": { "weight": 0.6, "description": "Legal uncertainty increases corporate risk premium" },
+        "national-security": { "weight": 0.3, "description": "Security concerns affect certain sector spreads" },
+        "regulatory-stability": { "weight": 0.7, "description": "Regulatory risk priced into corporate debt" },
+        "trade-policy": { "weight": 0.6, "description": "Trade exposure affects sector-specific spreads" },
+        "government-contracts": { "weight": 0.4, "description": "Contractor credit risk rises with favoritism" },
+        "fiscal-policy": { "weight": 0.7, "description": "Rate volatility directly impacts credit markets" },
+        "media-freedom": { "weight": 0.2, "description": "Limited direct spread impact" },
+        "civil-discourse": { "weight": 0.4, "description": "Social instability increases risk aversion" },
+        "institutional-integrity": { "weight": 0.5, "description": "Institutional erosion raises systemic risk premium" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Tight (<300 bps)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Normal (300-400 bps)", "color": "yellow" },
+        "high": { "max": 8, "impact": "Stress (400-600 bps)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Crisis (>600 bps)", "color": "red" }
+      }
+    },
+    {
+      "id": "vix",
+      "name": "VIX (Volatility Index)",
+      "category": "market",
+      "unit": "index",
+      "description": "CBOE Volatility Index - market fear gauge",
+      "currentData": {
+        "value": 24.8,
+        "asOf": "2026-01-17",
+        "source": "CBOE",
+        "context": "Elevated above 20 'fear threshold' for 47 consecutive days; tariff and Fed headlines driving spikes above 30",
+        "priorYearValue": 16.2,
+        "priorYearDate": "2025-01-17",
+        "yearOverYearChange": 53.1
+      },
+      "sensitivity": {
+        "elections": { "weight": 0.7, "description": "Political uncertainty spikes volatility" },
+        "rule-of-law": { "weight": 0.6, "description": "Institutional instability increases market fear" },
+        "national-security": { "weight": 0.5, "description": "Security events cause volatility spikes" },
+        "regulatory-stability": { "weight": 0.7, "description": "Policy surprises drive volatility" },
+        "trade-policy": { "weight": 0.8, "description": "Trade headlines major volatility driver" },
+        "government-contracts": { "weight": 0.3, "description": "Limited broad market vol impact" },
+        "fiscal-policy": { "weight": 0.7, "description": "Fed uncertainty directly affects VIX" },
+        "media-freedom": { "weight": 0.3, "description": "Information chaos can increase uncertainty" },
+        "civil-discourse": { "weight": 0.6, "description": "Social unrest spikes volatility" },
+        "institutional-integrity": { "weight": 0.5, "description": "Institutional erosion raises baseline uncertainty" }
+      },
+      "riskThresholds": {
+        "low": { "max": 4, "impact": "Low vol (<15)", "color": "green" },
+        "moderate": { "max": 6, "impact": "Elevated (15-20)", "color": "yellow" },
+        "high": { "max": 8, "impact": "High (20-30)", "color": "orange" },
+        "severe": { "max": 10, "impact": "Crisis levels (>30)", "color": "red" }
+      }
+    }
+  ],
+  "categoryDescriptions": {
+    "market": "Financial market indicators reflecting investor sentiment and risk pricing",
+    "economic": "Real economy measures showing broader economic health and trajectory"
+  }
+}
