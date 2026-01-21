@@ -93,6 +93,7 @@ export interface StateRiskData {
   overallRisk: number;
   trend: Trend;
   categories: Record<string, number>;
+  keyFactors: string[];
 }
 
 // States data file structure

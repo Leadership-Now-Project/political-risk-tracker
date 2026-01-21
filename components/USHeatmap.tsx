@@ -196,6 +196,21 @@ export default function USHeatmap({ states }: USHeatmapProps) {
               </button>
             </div>
 
+            {/* Key Factors */}
+            <div className="mb-4">
+              <div className="text-xs font-semibold text-navy/60 dark:text-cream/60 uppercase tracking-wider mb-2">
+                Key Factors
+              </div>
+              <ul className="space-y-1.5">
+                {selectedState.keyFactors.map((factor, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm text-navy/80 dark:text-cream/80">
+                    <span className="text-gold mt-0.5">•</span>
+                    <span>{factor}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="space-y-2">
               <div className="text-xs font-semibold text-navy/60 dark:text-cream/60 uppercase tracking-wider mb-2">
                 Category Breakdown
