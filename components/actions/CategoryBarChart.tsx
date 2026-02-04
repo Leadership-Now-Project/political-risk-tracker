@@ -7,7 +7,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import { ActionCategorySummary } from '@/lib/types';
@@ -17,32 +16,57 @@ interface CategoryBarChartProps {
   data: ActionCategorySummary[];
 }
 
+const legendItems = [
+  { label: 'Implemented', color: '#22c55e' },
+  { label: 'Blocked', color: '#ef4444' },
+  { label: 'Pending Litigation', color: '#f97316' },
+];
+
 export default function CategoryBarChart({ data }: CategoryBarChartProps) {
-  const chartData = data.map((item) => ({
-    name: getCategoryLabel(item.category),
-    Implemented: item.implemented,
-    Blocked: item.blocked,
-    'Pending Litigation': item.pendingLitigation,
-  }));
+  const chartData = data
+    .map((item) => ({
+      name: getCategoryLabel(item.category),
+      Implemented: item.implemented,
+      Blocked: item.blocked,
+      'Pending Litigation': item.pendingLitigation,
+    }))
+    .sort((a, b) => (b.Implemented + b.Blocked + b['Pending Litigation']) - (a.Implemented + a.Blocked + a['Pending Litigation']));
 
   return (
-    <div className="w-full bg-white dark:bg-navy-600 rounded-lg p-4">
-      <ResponsiveContainer width="100%" height={300}>
+    <div className="w-full">
+      {/* Legend */}
+      <div className="flex flex-wrap gap-4 mb-4">
+        {legendItems.map((item) => (
+          <div key={item.label} className="flex items-center gap-2">
+            <span
+              className="w-3 h-3 rounded-sm flex-shrink-0"
+              style={{ backgroundColor: item.color }}
+            />
+            <span className="text-sm text-navy/70 dark:text-cream/70">{item.label}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Chart */}
+      <ResponsiveContainer width="100%" height={Math.max(400, data.length * 44)}>
         <BarChart
           data={chartData}
           layout="vertical"
-          margin={{ top: 5, right: 30, left: 80, bottom: 5 }}
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#D1D7E1" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#D1D7E1" horizontal={false} />
           <XAxis
             type="number"
             tick={{ fontSize: 12, fill: '#0E2344' }}
+            allowDecimals={false}
           />
           <YAxis
             type="category"
             dataKey="name"
-            tick={{ fontSize: 11, fill: '#0E2344' }}
-            width={100}
+            tick={{ fontSize: 12, fill: '#0E2344' }}
+            width={140}
+            tickLine={false}
+            axisLine={false}
           />
           <Tooltip
             contentStyle={{
@@ -52,11 +76,11 @@ export default function CategoryBarChart({ data }: CategoryBarChartProps) {
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.12)',
             }}
             labelStyle={{ fontWeight: 'bold', color: '#0E2344' }}
+            cursor={{ fill: 'rgba(189, 170, 119, 0.1)' }}
           />
-          <Legend />
-          <Bar dataKey="Implemented" stackId="a" fill="#22c55e" />
+          <Bar dataKey="Implemented" stackId="a" fill="#22c55e" radius={[0, 0, 0, 0]} />
           <Bar dataKey="Blocked" stackId="a" fill="#ef4444" />
-          <Bar dataKey="Pending Litigation" stackId="a" fill="#f97316" />
+          <Bar dataKey="Pending Litigation" stackId="a" fill="#f97316" radius={[0, 4, 4, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div>
