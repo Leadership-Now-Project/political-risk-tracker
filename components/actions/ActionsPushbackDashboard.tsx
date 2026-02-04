@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { ActionsPushbackData, ActionCategory } from '@/lib/types';
 import { searchActionsAndPushback, filterByCategory, sortActions, sortPushback } from '@/lib/actions-utils';
 import PageNav from '@/components/PageNav';
@@ -11,7 +12,8 @@ import ActionCard from './ActionCard';
 import CaseCard from './CaseCard';
 import ActionsTable from './ActionsTable';
 import PushbackTable from './PushbackTable';
-import CategoryBarChart from './CategoryBarChart';
+
+const CategoryBarChart = dynamic(() => import('./CategoryBarChart'), { ssr: false });
 
 interface ActionsPushbackDashboardProps {
   data: ActionsPushbackData;
