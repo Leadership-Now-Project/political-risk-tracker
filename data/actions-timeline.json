@@ -1,471 +1,269 @@
 {
-  "lastUpdated": "2026-01-20",
+  "lastUpdated": "2026-02-01",
   "weeks": [
     {
       "weekOf": "2025-01-20",
-      "weekLabel": "Week of Jan 20, 2025",
+      "weekLabel": "Week 1 — Jan 20, 2025",
       "actions": [
-        {
-          "id": "action-001",
-          "title": "Executive Order on Securing the Southern Border",
-          "type": "executive-order",
-          "category": "immigration",
-          "status": "partially-implemented"
-        },
-        {
-          "id": "action-002",
-          "title": "Proclamation Declaring a National Emergency at the Southern Border",
-          "type": "proclamation",
-          "category": "immigration",
-          "status": "pending-litigation"
-        },
-        {
-          "id": "action-003",
-          "title": "Executive Order on Restoring Federal Death Penalty Enforcement",
-          "type": "executive-order",
-          "category": "judiciary",
-          "status": "implemented"
-        },
-        {
-          "id": "action-004",
-          "title": "Executive Order on Ending Birthright Citizenship for Children of Undocumented Immigrants",
-          "type": "executive-order",
-          "category": "immigration",
-          "status": "blocked"
-        }
+        { "id": "action-001", "title": "Securing the Southern Border and Border Wall", "type": "executive-order", "category": "immigration", "status": "partially-implemented" },
+        { "id": "action-002", "title": "Ending Birthright Citizenship", "type": "executive-order", "category": "immigration", "status": "blocked" },
+        { "id": "action-009", "title": "Refugee Admissions Suspension", "type": "executive-order", "category": "immigration", "status": "implemented" },
+        { "id": "action-004", "title": "Sanctuary Jurisdictions EO", "type": "executive-order", "category": "immigration", "status": "partially-implemented" },
+        { "id": "action-011", "title": "Withdrawal from Paris Climate Agreement", "type": "executive-order", "category": "environment", "status": "implemented" },
+        { "id": "action-012", "title": "National Energy Emergency", "type": "executive-order", "category": "environment", "status": "implemented" },
+        { "id": "action-013", "title": "Unleashing American Energy", "type": "executive-order", "category": "environment", "status": "implemented" },
+        { "id": "action-016", "title": "Ending Government DEI Programs (EO 14151)", "type": "executive-order", "category": "civil-rights", "status": "pending-litigation" },
+        { "id": "action-017", "title": "Ending Illegal Discrimination (EO 14173)", "type": "executive-order", "category": "civil-rights", "status": "pending-litigation" },
+        { "id": "action-021", "title": "Federal Hiring Freeze", "type": "presidential-memo", "category": "government-reform", "status": "implemented" },
+        { "id": "action-022", "title": "Schedule F Reclassification", "type": "executive-order", "category": "government-reform", "status": "partially-implemented" },
+        { "id": "action-023", "title": "Creation of DOGE", "type": "executive-order", "category": "government-reform", "status": "partially-implemented" },
+        { "id": "action-029", "title": "Rescission of 78 Biden Executive Orders", "type": "executive-order", "category": "government-reform", "status": "implemented" },
+        { "id": "action-035", "title": "January 6 Pardons", "type": "executive-order", "category": "judiciary", "status": "implemented" },
+        { "id": "action-040", "title": "Withdrawal from WHO", "type": "executive-order", "category": "healthcare", "status": "implemented" },
+        { "id": "action-049", "title": "Restoring Freedom of Speech EO", "type": "executive-order", "category": "media-press", "status": "implemented" }
       ],
       "pushback": [
-        {
-          "id": "pushback-001",
-          "title": "ACLU v. Trump - Challenge to Birthright Citizenship Order",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-004"
-        }
+        { "id": "pushback-001", "title": "CASA v. Trump — Birthright Citizenship Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-002" }
       ],
-      "summary": "President Trump signed a flurry of executive orders on his first day in office, focusing heavily on immigration enforcement and border security. The birthright citizenship order drew an immediate legal challenge from the ACLU."
+      "summary": "Day One: Trump signed a record-breaking flurry of executive orders — over 40 on inauguration day alone. Key actions included ending birthright citizenship, withdrawing from Paris and WHO, creating DOGE, rescinding 78 Biden EOs, pardoning Jan 6 participants, and declaring a border emergency. The ACLU filed immediately to block the birthright citizenship order."
     },
     {
       "weekOf": "2025-01-27",
-      "weekLabel": "Week of Jan 27, 2025",
+      "weekLabel": "Week 2 — Jan 27, 2025",
       "actions": [
-        {
-          "id": "action-005",
-          "title": "Executive Order on Withdrawing from the Paris Climate Agreement",
-          "type": "executive-order",
-          "category": "environment",
-          "status": "implemented"
-        },
-        {
-          "id": "action-006",
-          "title": "Presidential Memorandum on Federal Hiring Freeze",
-          "type": "presidential-memo",
-          "category": "government-reform",
-          "status": "implemented"
-        },
-        {
-          "id": "action-007",
-          "title": "Executive Order on Dismantling Federal DEI Programs",
-          "type": "executive-order",
-          "category": "civil-rights",
-          "status": "partially-implemented"
-        }
+        { "id": "action-041", "title": "CDC Purges and Public Health Data Removal", "type": "policy-directive", "category": "healthcare", "status": "implemented" },
+        { "id": "action-044", "title": "Foreign Aid Funding Freeze", "type": "policy-directive", "category": "foreign-policy", "status": "pending-litigation" }
       ],
       "pushback": [
-        {
-          "id": "pushback-002",
-          "title": "State of Washington v. Trump - Challenge to Border Emergency Declaration",
-          "type": "state-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-002"
-        },
-        {
-          "id": "pushback-003",
-          "title": "Judge Alsup Issues TRO on Birthright Citizenship Order",
-          "type": "judicial-ruling",
-          "caseStatus": "preliminary-injunction",
-          "relatedActionId": "action-004"
-        }
+        { "id": "pushback-002", "title": "Washington v. Trump — Birthright Citizenship Injunction", "type": "state-lawsuit", "caseStatus": "filed", "relatedActionId": "action-002" }
       ],
-      "summary": "The administration continued its rapid-fire executive action pace, targeting climate policy and federal workforce diversity. A federal judge in Seattle issued a temporary restraining order blocking the birthright citizenship executive order."
+      "summary": "Administration purged public health data from CDC and other federal websites. Secretary Rubio issued stop-work order freezing all foreign aid. Multiple states filed birthright citizenship challenges."
     },
     {
       "weekOf": "2025-02-03",
-      "weekLabel": "Week of Feb 3, 2025",
+      "weekLabel": "Weeks 3-4 — Early Feb 2025",
       "actions": [
-        {
-          "id": "action-008",
-          "title": "Agency Rule Suspending Refugee Admissions for 120 Days",
-          "type": "agency-rule",
-          "category": "immigration",
-          "status": "pending-litigation"
-        },
-        {
-          "id": "action-009",
-          "title": "Executive Order on Expanding Energy Production on Federal Lands",
-          "type": "executive-order",
-          "category": "environment",
-          "status": "implemented"
-        }
+        { "id": "action-027", "title": "Federal Employee 'Fork in the Road' Buyout", "type": "policy-directive", "category": "government-reform", "status": "implemented" },
+        { "id": "action-030", "title": "Tariffs on China, Mexico, Canada", "type": "proclamation", "category": "economic-policy", "status": "implemented" }
       ],
       "pushback": [
-        {
-          "id": "pushback-004",
-          "title": "National Immigration Law Center v. DHS - Refugee Admissions Suspension Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-008"
-        },
-        {
-          "id": "pushback-005",
-          "title": "Coalition of 18 State Attorneys General Challenge to DEI Dismantling Order",
-          "type": "state-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-007"
-        },
-        {
-          "id": "pushback-006",
-          "title": "Nationwide Protests Against Immigration Executive Orders",
-          "type": "public-protest",
-          "caseStatus": "filed",
-          "relatedActionId": "action-001"
-        }
+        { "id": "pushback-018", "title": "AFGE v. OPM — Buyout Challenge (dismissed)", "type": "federal-lawsuit", "caseStatus": "dismissed", "relatedActionId": "action-027" },
+        { "id": "pushback-012", "title": "AFL-CIO v. DOGE — Data Access Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-023" },
+        { "id": "pushback-013", "title": "AFSA/AFGE v. Trump — USAID Shutdown", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-024" },
+        { "id": "pushback-015", "title": "NTEU v. CFPB — Consumer Bureau Dismantling", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-025" },
+        { "id": "pushback-019", "title": "University of CA v. DOE — DOGE Data Access", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-028" }
       ],
-      "summary": "The administration expanded its immigration restrictions with a refugee admissions pause while opening federal lands for energy development. Legal challenges mounted as state attorneys general organized a coalition response to the DEI order."
-    },
-    {
-      "weekOf": "2025-02-10",
-      "weekLabel": "Week of Feb 10, 2025",
-      "actions": [
-        {
-          "id": "action-010",
-          "title": "Policy Directive on Restructuring the Department of Education",
-          "type": "policy-directive",
-          "category": "education",
-          "status": "under-review"
-        },
-        {
-          "id": "action-011",
-          "title": "Executive Order on Imposing Tariffs on Chinese Imports",
-          "type": "executive-order",
-          "category": "economic-policy",
-          "status": "implemented"
-        }
-      ],
-      "pushback": [
-        {
-          "id": "pushback-007",
-          "title": "Federal District Court Injunction on Refugee Admissions Pause",
-          "type": "judicial-ruling",
-          "caseStatus": "injunction-granted",
-          "relatedActionId": "action-008"
-        },
-        {
-          "id": "pushback-008",
-          "title": "Senate Democrats Introduce Resolution to Overturn Border Emergency",
-          "type": "congressional-action",
-          "caseStatus": "filed",
-          "relatedActionId": "action-002"
-        }
-      ],
-      "summary": "The administration signaled plans to restructure the Department of Education and imposed new tariffs on Chinese goods. Courts continued pushing back, with a federal judge granting an injunction against the refugee admissions suspension."
+      "summary": "OPM issued 'fork in the road' buyout offers to all federal employees. First tariffs imposed. USAID began shutting down. Lawsuits mounted against DOGE data access, CFPB dismantling, and the USAID closure. Courts began blocking some actions while declining others."
     },
     {
       "weekOf": "2025-02-17",
-      "weekLabel": "Week of Feb 17, 2025",
+      "weekLabel": "Weeks 5-6 — Mid-Late Feb 2025",
       "actions": [
-        {
-          "id": "action-012",
-          "title": "Presidential Memorandum on Reducing Federal Workforce by Attrition",
-          "type": "presidential-memo",
-          "category": "government-reform",
-          "status": "implemented"
-        }
+        { "id": "action-024", "title": "USAID Shutdown", "type": "policy-directive", "category": "government-reform", "status": "pending-litigation" },
+        { "id": "action-025", "title": "CFPB Dismantling Efforts", "type": "policy-directive", "category": "government-reform", "status": "blocked" },
+        { "id": "action-036", "title": "Perkins Coie Law Firm EO", "type": "executive-order", "category": "judiciary", "status": "pending-litigation" },
+        { "id": "action-048", "title": "White House Press Pool Takeover", "type": "policy-directive", "category": "media-press", "status": "implemented" },
+        { "id": "action-006", "title": "TPS Termination for Venezuelans", "type": "policy-directive", "category": "immigration", "status": "pending-litigation" }
       ],
       "pushback": [
-        {
-          "id": "pushback-009",
-          "title": "AFGE Union Challenge to Federal Hiring Freeze",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-006"
-        },
-        {
-          "id": "pushback-010",
-          "title": "California Legislature Passes State-Level Climate Protection Act",
-          "type": "state-legislation",
-          "caseStatus": "filed",
-          "relatedActionId": "action-005"
-        }
+        { "id": "pushback-011", "title": "NADOE v. Trump — DEI EOs Blocked", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-016" },
+        { "id": "pushback-022", "title": "Perkins Coie v. Trump", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-036" },
+        { "id": "pushback-007", "title": "National TPS Alliance — TPS Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-006" },
+        { "id": "pushback-038", "title": "CIA/ODNI Officers — Termination Challenge", "type": "federal-lawsuit", "caseStatus": "dismissed", "relatedActionId": "action-029" },
+        { "id": "pushback-031", "title": "AP v. Trump — Press Pool Exclusion", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-048" }
       ],
-      "summary": "The administration focused on government restructuring with a workforce reduction memo. Federal employee unions filed suit against the hiring freeze while California moved to enact state-level climate protections in response to the Paris Agreement withdrawal."
-    },
-    {
-      "weekOf": "2025-02-24",
-      "weekLabel": "Week of Feb 24, 2025",
-      "actions": [
-        {
-          "id": "action-013",
-          "title": "Executive Order on Restricting Transgender Military Service",
-          "type": "executive-order",
-          "category": "civil-rights",
-          "status": "pending-litigation"
-        },
-        {
-          "id": "action-014",
-          "title": "Agency Rule Revising EPA Emissions Standards",
-          "type": "agency-rule",
-          "category": "environment",
-          "status": "under-review"
-        }
-      ],
-      "pushback": [
-        {
-          "id": "pushback-011",
-          "title": "Lambda Legal v. Department of Defense - Transgender Service Ban Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-013"
-        },
-        {
-          "id": "pushback-012",
-          "title": "Fourth Circuit Upholds Injunction on Birthright Citizenship Order",
-          "type": "judicial-ruling",
-          "caseStatus": "injunction-granted",
-          "relatedActionId": "action-004"
-        }
-      ],
-      "summary": "The administration extended its social policy agenda with a transgender military service restriction and rolled back EPA emissions standards. The Fourth Circuit upheld the injunction against the birthright citizenship order, dealing a significant legal blow."
+      "summary": "The administration escalated attacks on institutions: targeting Perkins Coie, Covington & Burling, and seizing control of the press pool. Judge Abelson issued a nationwide injunction blocking DEI EOs. 4,200 USAID employees placed on leave. Shockwaves through legal community as security clearances revoked. AP barred from Oval Office."
     },
     {
       "weekOf": "2025-03-03",
-      "weekLabel": "Week of Mar 3, 2025",
+      "weekLabel": "Weeks 7-9 — Early-Mid Mar 2025",
       "actions": [
-        {
-          "id": "action-015",
-          "title": "Signing Statement on Appropriations Bill Limiting DOGE Authority",
-          "type": "signing-statement",
-          "category": "government-reform",
-          "status": "implemented"
-        }
+        { "id": "action-037", "title": "EOs Targeting WilmerHale, Jenner & Block", "type": "executive-order", "category": "judiciary", "status": "blocked" },
+        { "id": "action-038", "title": "Presidential Memo on Legal System Abuses", "type": "presidential-memo", "category": "judiciary", "status": "implemented" },
+        { "id": "action-028", "title": "DOGE Workforce Optimization and Mass Firings", "type": "policy-directive", "category": "government-reform", "status": "pending-litigation" },
+        { "id": "action-043", "title": "Election Security — Voter ID EO", "type": "executive-order", "category": "education", "status": "pending-litigation" }
       ],
       "pushback": [
-        {
-          "id": "pushback-013",
-          "title": "House Bipartisan Resolution Opposing Tariff Authority Expansion",
-          "type": "congressional-action",
-          "caseStatus": "filed",
-          "relatedActionId": "action-011"
-        },
-        {
-          "id": "pushback-014",
-          "title": "National Education Association v. Department of Education - Restructuring Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-010"
-        },
-        {
-          "id": "pushback-015",
-          "title": "Nine States File Amicus Brief Supporting Border Emergency Challenge",
-          "type": "state-lawsuit",
-          "caseStatus": "preliminary-injunction",
-          "relatedActionId": "action-002"
-        }
+        { "id": "pushback-028", "title": "Global Health Council v. State — Foreign Aid Freeze", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-044" },
+        { "id": "pushback-023", "title": "WilmerHale v. Trump — Law Firm EO", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-037" },
+        { "id": "pushback-024", "title": "Jenner & Block v. Trump — Law Firm EO", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-037" },
+        { "id": "pushback-026", "title": "California et al. v. DOE — Teacher Grants", "type": "state-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-042" }
       ],
-      "summary": "New executive actions slowed as the administration issued a signing statement asserting broad authority over the government efficiency initiative. Congressional pushback intensified with a bipartisan resolution challenging expanded tariff authority."
+      "summary": "War on law firms escalated with EOs targeting WilmerHale, Jenner & Block, and Paul Weiss. Courts issued injunctions protecting the firms. Supreme Court restored foreign aid payment order 5-4. MSPB granted stays on mass firings at USDA. Legal challenges approached 130 cases. Trump attacked judges and called for impeachment of Chief Judge Boasberg."
     },
     {
-      "weekOf": "2025-03-10",
-      "weekLabel": "Week of Mar 10, 2025",
+      "weekOf": "2025-03-14",
+      "weekLabel": "Weeks 10-11 — Mid-Late Mar 2025",
       "actions": [
-        {
-          "id": "action-016",
-          "title": "Executive Order on Reclassifying Federal Employees Under Schedule F",
-          "type": "executive-order",
-          "category": "government-reform",
-          "status": "pending-litigation"
-        }
+        { "id": "action-003", "title": "Alien Enemies Act Proclamation (Secretly Signed)", "type": "proclamation", "category": "immigration", "status": "pending-litigation" }
       ],
       "pushback": [
-        {
-          "id": "pushback-016",
-          "title": "AFGE v. OPM - Schedule F Reclassification Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-016"
-        },
-        {
-          "id": "pushback-017",
-          "title": "Federal Judge Blocks Enforcement of Transgender Military Service Restriction",
-          "type": "judicial-ruling",
-          "caseStatus": "injunction-granted",
-          "relatedActionId": "action-013"
-        },
-        {
-          "id": "pushback-018",
-          "title": "EPA Career Staff Resistance to Emissions Standards Rollback",
-          "type": "agency-resistance",
-          "caseStatus": "filed",
-          "relatedActionId": "action-014"
-        }
+        { "id": "pushback-003", "title": "J.G.G. — Alien Enemies Act Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-003" },
+        { "id": "pushback-004", "title": "Abrego Garcia — Wrongful Deportation", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-003" },
+        { "id": "pushback-030", "title": "D.V.D. — Third-Country Deportation Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-047" },
+        { "id": "pushback-015", "title": "NTEU v. CFPB — Injunction Granted", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-025" }
       ],
-      "summary": "The Schedule F executive order to reclassify federal workers as at-will employees drew immediate union lawsuits. Courts blocked the transgender military service ban while reports emerged of internal EPA resistance to emissions rollbacks."
-    },
-    {
-      "weekOf": "2025-03-17",
-      "weekLabel": "Week of Mar 17, 2025",
-      "actions": [
-        {
-          "id": "action-017",
-          "title": "Presidential Memorandum on Restricting Press Access to White House Briefings",
-          "type": "presidential-memo",
-          "category": "media-press",
-          "status": "implemented"
-        }
-      ],
-      "pushback": [
-        {
-          "id": "pushback-019",
-          "title": "White House Correspondents' Association v. Executive Office - Press Access Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-017"
-        },
-        {
-          "id": "pushback-020",
-          "title": "District Court Denies Government Motion to Dismiss Refugee Admissions Case",
-          "type": "judicial-ruling",
-          "caseStatus": "injunction-denied",
-          "relatedActionId": "action-008"
-        }
-      ],
-      "summary": "The administration moved to restrict press briefing access, prompting a First Amendment lawsuit from the White House Correspondents' Association. Courts continued to sustain challenges against the refugee admissions freeze."
-    },
-    {
-      "weekOf": "2025-03-24",
-      "weekLabel": "Week of Mar 24, 2025",
-      "actions": [
-        {
-          "id": "action-018",
-          "title": "Policy Directive on Withdrawing from World Health Organization",
-          "type": "policy-directive",
-          "category": "foreign-policy",
-          "status": "implemented"
-        }
-      ],
-      "pushback": [
-        {
-          "id": "pushback-021",
-          "title": "Senate Foreign Relations Committee Holds Hearing on WHO Withdrawal",
-          "type": "congressional-action",
-          "caseStatus": "filed",
-          "relatedActionId": "action-018"
-        },
-        {
-          "id": "pushback-022",
-          "title": "DOJ Appeals Refugee Admissions Injunction to Ninth Circuit",
-          "type": "federal-lawsuit",
-          "caseStatus": "appealed",
-          "relatedActionId": "action-008"
-        },
-        {
-          "id": "pushback-023",
-          "title": "New York and Massachusetts Pass State-Level DEI Protection Laws",
-          "type": "state-legislation",
-          "caseStatus": "filed",
-          "relatedActionId": "action-007"
-        }
-      ],
-      "summary": "The WHO withdrawal directive drew bipartisan Senate scrutiny. States increasingly moved to counter federal policy at the state level, with New York and Massachusetts enacting DEI protections in direct response to the federal rollback."
-    },
-    {
-      "weekOf": "2025-03-31",
-      "weekLabel": "Week of Mar 31, 2025",
-      "actions": [
-        {
-          "id": "action-019",
-          "title": "Executive Order on Expanding Work Requirements for Federal Assistance Programs",
-          "type": "executive-order",
-          "category": "healthcare",
-          "status": "under-review"
-        }
-      ],
-      "pushback": [
-        {
-          "id": "pushback-024",
-          "title": "National Health Law Program v. HHS - Medicaid Work Requirements Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-019"
-        },
-        {
-          "id": "pushback-025",
-          "title": "Ninth Circuit Hears Oral Arguments on Schedule F Injunction",
-          "type": "judicial-ruling",
-          "caseStatus": "appealed",
-          "relatedActionId": "action-016"
-        },
-        {
-          "id": "pushback-026",
-          "title": "Bipartisan Senate Bill to Codify Birthright Citizenship Introduced",
-          "type": "congressional-action",
-          "caseStatus": "filed",
-          "relatedActionId": "action-004"
-        }
-      ],
-      "summary": "The administration pushed expanded work requirements for Medicaid and other federal assistance. Congressional pushback grew with a bipartisan Senate effort to codify birthright citizenship while appeals courts considered multiple administration policies."
+      "summary": "The Alien Enemies Act was secretly signed on a Friday evening, with 250+ Venezuelans deported to CECOT in El Salvador over the weekend. Chief Judge Boasberg issued TROs but deportation flights were not turned back. Administration refused to provide flight details, invoking state secrets. Abrego Garcia wrongfully deported — DOJ admitted 'administrative error.' Constitutional crisis deepened."
     },
     {
       "weekOf": "2025-04-07",
-      "weekLabel": "Week of Apr 7, 2025",
+      "weekLabel": "Weeks 12-13 — Early-Mid Apr 2025",
       "actions": [
-        {
-          "id": "action-020",
-          "title": "Agency Rule Implementing New Immigration Detention Standards",
-          "type": "agency-rule",
-          "category": "immigration",
-          "status": "partially-implemented"
-        }
+        { "id": "action-037", "title": "Susman Godfrey Law Firm EO", "type": "executive-order", "category": "judiciary", "status": "blocked" }
       ],
       "pushback": [
-        {
-          "id": "pushback-027",
-          "title": "SPLC v. ICE - Immigration Detention Standards Challenge",
-          "type": "federal-lawsuit",
-          "caseStatus": "filed",
-          "relatedActionId": "action-020"
-        },
-        {
-          "id": "pushback-028",
-          "title": "Federal Court Rules Schedule F Order Exceeds Executive Authority",
-          "type": "judicial-ruling",
-          "caseStatus": "ruling-against",
-          "relatedActionId": "action-016"
-        }
+        { "id": "pushback-001", "title": "CASA — Supreme Court Rules on Injunctions", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-002" },
+        { "id": "pushback-004", "title": "Abrego Garcia — Supreme Court Orders Return", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-003" },
+        { "id": "pushback-005", "title": "J.A.V. — Alien Enemies Act Ruled Illegal (Texas)", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-003" },
+        { "id": "pushback-006", "title": "A.A.R.P. — Supreme Court Blocks Deportations 7-2", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-003" },
+        { "id": "pushback-025", "title": "Susman Godfrey — TRO Granted", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-037" }
       ],
-      "summary": "New immigration detention standards faced legal challenge from civil rights organizations. A federal court ruled the Schedule F reclassification exceeded executive authority, marking a major setback for the government reform agenda."
+      "summary": "Supreme Court issued landmark rulings: unanimously ordered Abrego Garcia returned, blocked deportations 7-2 in A.A.R.P. case. Trump-appointed Texas judge ruled the Alien Enemies Act invocation illegal. Judge Boasberg found probable cause for criminal contempt. Supreme Court in CASA limited nationwide injunctions 6-3 without ruling on birthright citizenship merits. Legal challenges exceeded 200."
     },
     {
-      "weekOf": "2025-04-14",
-      "weekLabel": "Week of Apr 14, 2025",
+      "weekOf": "2025-04-28",
+      "weekLabel": "Weeks 14-16 — Late Apr-May 2025",
+      "actions": [
+        { "id": "action-039", "title": "Unleashing America's Law Enforcement EO", "type": "executive-order", "category": "judiciary", "status": "partially-implemented" },
+        { "id": "action-050", "title": "CPB Defunding Attempt", "type": "policy-directive", "category": "media-press", "status": "pending-litigation" },
+        { "id": "action-042", "title": "Teacher Grant Terminations", "type": "policy-directive", "category": "education", "status": "blocked" }
+      ],
+      "pushback": [
+        { "id": "pushback-032", "title": "CPB v. Trump — Board Terminations", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-050" },
+        { "id": "pushback-016", "title": "New York v. McMahon — DOE Dismantling Blocked", "type": "state-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-026" },
+        { "id": "pushback-034", "title": "Defense Zones — Nearly 100 Charges Dismissed", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-001" }
+      ],
+      "summary": "Administration pushed to defund CPB and dismantle the Department of Education. Judge Joun blocked Education dismantling, finding government's true intention was to eliminate the department without authorization. CPB sued over board terminations. Nearly 100 defense zone trespass charges dismissed in New Mexico. Supreme Court heard expedited birthright citizenship arguments."
+    },
+    {
+      "weekOf": "2025-05-19",
+      "weekLabel": "Weeks 17-18 — Mid-Late May 2025",
+      "actions": [
+        { "id": "action-047", "title": "Third-Country Deportations", "type": "policy-directive", "category": "foreign-policy", "status": "blocked" }
+      ],
+      "pushback": [
+        { "id": "pushback-030", "title": "D.V.D. — Judge Finds 'Unquestionable Violation'", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-047" },
+        { "id": "pushback-009", "title": "CHNV — Supreme Court Stays Injunction 7-2", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-007" }
+      ],
+      "summary": "Government attempted to deport noncitizens to third countries they had no connection to, including South Sudan. Judge Murphy found government acted 'unquestionably in violation' of court orders. Supreme Court stayed CHNV parole injunction 7-2, allowing termination of protections for 500,000+ people. Administration stonewalled in Abrego Garcia discovery."
+    },
+    {
+      "weekOf": "2025-06-02",
+      "weekLabel": "Weeks 19-21 — Early-Mid Jun 2025",
+      "actions": [
+        { "id": "action-005", "title": "Travel Bans on 12 Countries", "type": "proclamation", "category": "immigration", "status": "partially-implemented" },
+        { "id": "action-010", "title": "Harvard Foreign Student Visa Ban", "type": "proclamation", "category": "immigration", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-003", "title": "J.G.G. — Boasberg Rules on CECOT Class", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-003" },
+        { "id": "pushback-004", "title": "Abrego Garcia Returns to U.S., Charged", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-003" },
+        { "id": "pushback-037", "title": "CPSC Commissioners — Summary Judgment", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-029" },
+        { "id": "pushback-040", "title": "Violence Against Women Act — Injunction", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-039" }
+      ],
+      "summary": "Travel bans imposed on 12 countries with 36 more threatened. Harvard visa ban issued. Abrego Garcia returned after months of litigation, immediately charged with smuggling in apparent retaliation. Boasberg ruled on CECOT class due process violations, citing Kafka's 'The Trial.' CPSC commissioners won summary judgment. Violence Against Women Act grant conditions blocked."
+    },
+    {
+      "weekOf": "2025-06-23",
+      "weekLabel": "Weeks 22-24 — Late Jun-Early Jul 2025",
       "actions": [],
       "pushback": [
-        {
-          "id": "pushback-029",
-          "title": "Supreme Court Declines Emergency Stay on Birthright Citizenship Injunction",
-          "type": "judicial-ruling",
-          "caseStatus": "injunction-granted",
-          "relatedActionId": "action-004"
-        },
-        {
-          "id": "pushback-030",
-          "title": "DOJ Appeals Schedule F Ruling to D.C. Circuit",
-          "type": "federal-lawsuit",
-          "caseStatus": "appealed",
-          "relatedActionId": "action-016"
-        }
+        { "id": "pushback-001", "title": "CASA — Supreme Court Limits Nationwide Injunctions", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-002" },
+        { "id": "pushback-025", "title": "Susman Godfrey — Permanent Injunction Granted", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-037" },
+        { "id": "pushback-041", "title": "Reuveni Whistleblower Complaint Filed", "type": "agency-resistance", "caseStatus": "filed", "relatedActionId": "action-003" },
+        { "id": "pushback-030", "title": "D.V.D. — Supreme Court Stays Injunction 6-3", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-047" }
       ],
-      "summary": "No new executive actions were issued as the administration focused on defending existing orders in court. The Supreme Court declined to intervene on the birthright citizenship injunction, leaving the lower court block in place for the foreseeable future."
+      "summary": "Supreme Court ruled 6-3 in CASA limiting nationwide injunctions without reaching birthright citizenship merits. Susman Godfrey won permanent injunction — court found EO 'violates the Constitution.' Erez Reuveni's whistleblower complaint revealed DOJ official suggested telling courts 'fuck you.' Supreme Court stayed third-country deportation injunction 6-3. Rescission package passed: $9 billion cut including $1.1B for CPB."
+    },
+    {
+      "weekOf": "2025-07-07",
+      "weekLabel": "Weeks 25-27 — Jul 2025",
+      "actions": [
+        { "id": "action-034", "title": "Pocket Rescission — $9 Billion", "type": "policy-directive", "category": "economic-policy", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-033", "title": "Post-CASA Class Certification — Birthright", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-002" },
+        { "id": "pushback-002", "title": "Ninth Circuit Affirms — Birthright EO Unconstitutional", "type": "state-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-002" },
+        { "id": "pushback-037", "title": "CPSC — Supreme Court Allows Firings", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-029" },
+        { "id": "pushback-016", "title": "DOE — Supreme Court Stays Dismantling Block 6-3", "type": "state-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-026" },
+        { "id": "pushback-029", "title": "D.C. Circuit — Foreign Aid Impoundment Unlawful", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-044" }
+      ],
+      "summary": "Despite CASA ruling, courts found new paths to block the birthright EO: nationwide class certifications and individual injunctions. Ninth Circuit became first appellate court to rule the EO unconstitutional. Supreme Court allowed CPSC firings and Education Department dismantling to proceed. D.C. Circuit ruled foreign aid impoundment violated the law. $9 billion rescission package passed."
+    },
+    {
+      "weekOf": "2025-08-04",
+      "weekLabel": "Weeks 28-30 — Aug 2025",
+      "actions": [],
+      "pushback": [
+        { "id": "pushback-003", "title": "D.C. Circuit Vacates Contempt — But Allows Proceedings", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-003" },
+        { "id": "pushback-008", "title": "TPS — Nepal/Honduras/Nicaragua Blocked", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-006" },
+        { "id": "pushback-042", "title": "State AG Coalition — Multi-Front Pushback", "type": "state-lawsuit", "caseStatus": "filed", "relatedActionId": "action-001" }
+      ],
+      "summary": "D.C. Circuit vacated Boasberg's contempt finding 2-1 but allowed proceedings to continue. Judge Thompson blocked TPS terminations for Nepal, Honduras, and Nicaragua, finding DHS Secretary motivated by 'animus against immigrants.' State AGs from 23 states maintained pressure across multiple fronts. Trump attacked Goldman Sachs for economic predictions. Intel stake deal revealed as state capitalism."
+    },
+    {
+      "weekOf": "2025-09-01",
+      "weekLabel": "Weeks 33-36 — Sep 2025",
+      "actions": [
+        { "id": "action-008", "title": "H-1B Visa Fee ($100K) Proclamation", "type": "proclamation", "category": "immigration", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-039", "title": "Guatemalan Children — Emergency Block", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-003" },
+        { "id": "pushback-045", "title": "Fifth Circuit Rules AEA Improper", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-003" },
+        { "id": "pushback-043", "title": "Trump v. NYT — Complaint Struck", "type": "judicial-ruling", "caseStatus": "dismissed", "relatedActionId": "action-048" }
+      ],
+      "summary": "Emergency deportation of Guatemalan children blocked at 4 AM after lawsuit filed at 1 AM. Fifth Circuit ruled 2-1 that the Alien Enemies Act was improperly invoked. H-1B visa fee of $100,000 imposed, splitting MAGA allies. Trump sued NYT for $15 billion — complaint struck as 'decidedly improper.' Multiple prosecutors forced out or fired for refusing to bring baseless charges."
+    },
+    {
+      "weekOf": "2025-10-06",
+      "weekLabel": "Weeks 37-40 — Oct 2025",
+      "actions": [],
+      "pushback": [
+        { "id": "pushback-010", "title": "U.S. Chamber v. Trump — H-1B Fee Challenge", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-008" },
+        { "id": "pushback-001", "title": "Birthright — Supreme Court Accepts Merits", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-002" }
+      ],
+      "summary": "U.S. Chamber of Commerce filed its first challenge to the Trump administration over H-1B fees. Supreme Court accepted the birthright citizenship case on the merits. Administration facing 400+ active court cases. D.C. Circuit allowed Boasberg's contempt proceedings to continue. Multiple DOJ prosecutors resigned or fired over politically motivated prosecutions."
+    },
+    {
+      "weekOf": "2025-10-27",
+      "weekLabel": "Weeks 41-43 — Late Oct-Mid Nov 2025",
+      "actions": [
+        { "id": "action-033", "title": "SNAP Benefits Funding Suspension", "type": "policy-directive", "category": "economic-policy", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-020", "title": "22 States v. USDA — SNAP Payment Ordered", "type": "state-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-033" },
+        { "id": "pushback-044", "title": "Trump v. CNN — Dismissed on Appeal", "type": "judicial-ruling", "caseStatus": "dismissed", "relatedActionId": "action-048" },
+        { "id": "pushback-003", "title": "Full D.C. Circuit (8-3) — Contempt May Continue", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-003" }
+      ],
+      "summary": "USDA suspended SNAP benefits for 42 million Americans. Courts ordered full payment, finding 'unjustifiable partisanship.' CBS News spiked 60 Minutes CECOT story under pressure. Trump v. CNN defamation suit dismissed. Full D.C. Circuit (8-3) allowed Boasberg's contempt proceedings to continue. Alien Enemies Act contempt hearings resumed with Reuveni testimony requested."
+    },
+    {
+      "weekOf": "2025-11-17",
+      "weekLabel": "Weeks 44-46 — Late Nov-Early Dec 2025",
+      "actions": [],
+      "pushback": [
+        { "id": "pushback-006", "title": "A.A.R.P. — Fifth Circuit En Banc Hearing", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-003" }
+      ],
+      "summary": "Fifth Circuit heard en banc arguments on the Alien Enemies Act. Government's position that courts must defer to presidential invasion claims was challenged with the absurd 'Beatles British Invasion' hypothetical. Contempt proceedings continued over March deportation flights. Legal challenges exceeded 550 active cases."
+    },
+    {
+      "weekOf": "2025-12-08",
+      "weekLabel": "Weeks 47-50 — Dec 2025",
+      "actions": [
+        { "id": "action-032", "title": "Defense Contractors EO", "type": "executive-order", "category": "economic-policy", "status": "under-review" }
+      ],
+      "pushback": [
+        { "id": "pushback-004", "title": "Abrego Garcia — Habeas Granted, Released", "type": "federal-lawsuit", "caseStatus": "ruling-against", "relatedActionId": "action-003" }
+      ],
+      "summary": "Abrego Garcia granted habeas corpus and released from ICE custody. Judge cancelled his smuggling trial pending investigation into DOJ vindictiveness. Defense contractors EO imposed new restrictions on buybacks and executive pay. Fentanyl designated as WMD. Over 605,000 deported under Trump 2.0, 1.9 million left voluntarily. Visa suspension for 75 countries announced."
+    },
+    {
+      "weekOf": "2026-01-05",
+      "weekLabel": "Weeks 51-52 — Jan 2026",
+      "actions": [],
+      "pushback": [
+        { "id": "pushback-003", "title": "Boasberg Contempt — Misconduct Complaint Dismissed", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-003" }
+      ],
+      "summary": "DOJ misconduct complaint against Judge Boasberg dismissed — no evidence of bias found. Trump sued JPMorgan Chase for $5 billion over debanking. As of January 15, 2026, Just Security tracks 582 active cases: 200 plaintiff wins, 110 government wins, 230 awaiting ruling. Over 100,000 visas revoked under Trump 2.0."
     }
   ]
 }
