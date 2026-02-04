@@ -25,10 +25,19 @@ const legendItems = [
 
 export default function CategoryBarChart({ data }: CategoryBarChartProps) {
   const [mounted, setMounted] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
   }, []);
+
+  const tickColor = isDark ? '#F8F6F1' : '#0E2344';
+  const gridColor = isDark ? '#475F87' : '#D1D7E1';
 
   const chartData = data
     .map((item) => ({
@@ -65,28 +74,28 @@ export default function CategoryBarChart({ data }: CategoryBarChartProps) {
               layout="vertical"
               margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
             >
-              <CartesianGrid strokeDasharray="3 3" stroke="#D1D7E1" horizontal={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke={gridColor} horizontal={false} />
               <XAxis
                 type="number"
-                tick={{ fontSize: 12, fill: '#0E2344' }}
+                tick={{ fontSize: 12, fill: tickColor }}
                 allowDecimals={false}
               />
               <YAxis
                 type="category"
                 dataKey="name"
-                tick={{ fontSize: 11, fill: '#0E2344' }}
+                tick={{ fontSize: 11, fill: tickColor }}
                 width={160}
                 tickLine={false}
                 axisLine={false}
               />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: '#FFFFFF',
-                  border: '1px solid #D1D7E1',
+                  backgroundColor: isDark ? '#0B1C36' : '#FFFFFF',
+                  border: `1px solid ${gridColor}`,
                   borderRadius: '8px',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.12)',
                 }}
-                labelStyle={{ fontWeight: 'bold', color: '#0E2344' }}
+                labelStyle={{ fontWeight: 'bold', color: tickColor }}
                 cursor={{ fill: 'rgba(189, 170, 119, 0.1)' }}
               />
               <Bar dataKey="Implemented" stackId="a" fill="#22c55e" radius={[0, 0, 0, 0]} />
