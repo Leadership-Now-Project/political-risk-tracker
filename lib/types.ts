@@ -201,3 +201,92 @@ export interface EconomicIndicatorsData {
   indicators: EconomicIndicator[];
   categoryDescriptions: Record<string, string>;
 }
+
+// Actions & Pushback types
+
+export type ActionType = 'executive-order' | 'presidential-memo' | 'agency-rule' | 'policy-directive' | 'proclamation' | 'signing-statement';
+
+export type ActionStatus = 'implemented' | 'partially-implemented' | 'blocked' | 'reversed' | 'pending-litigation' | 'under-review';
+
+export type CaseStatus = 'filed' | 'preliminary-injunction' | 'injunction-granted' | 'injunction-denied' | 'ruling-against' | 'ruling-for' | 'appealed' | 'settled' | 'dismissed';
+
+export type PushbackType = 'federal-lawsuit' | 'state-lawsuit' | 'congressional-action' | 'state-legislation' | 'agency-resistance' | 'judicial-ruling' | 'public-protest';
+
+export type ActionCategory = 'immigration' | 'environment' | 'civil-rights' | 'government-reform' | 'economic-policy' | 'judiciary' | 'healthcare' | 'education' | 'foreign-policy' | 'media-press';
+
+export interface Action {
+  id: string;
+  title: string;
+  type: ActionType;
+  category: ActionCategory;
+  status: ActionStatus;
+  description: string;
+  dateIssued: string;
+  agencies: string[];
+  pushbackIds: string[];
+  relatedRiskCategories: string[];
+  sources: string[];
+}
+
+export interface Pushback {
+  id: string;
+  title: string;
+  type: PushbackType;
+  caseStatus: CaseStatus;
+  description: string;
+  dateFiled: string;
+  court?: string;
+  plaintiffs: string[];
+  actionIds: string[];
+  outcome?: string;
+  sources: string[];
+}
+
+export interface ActionCategorySummary {
+  category: ActionCategory;
+  totalActions: number;
+  blocked: number;
+  implemented: number;
+  pendingLitigation: number;
+  legalChallenges: number;
+}
+
+export interface ActionsPushbackSummary {
+  totalActions: number;
+  totalLegalChallenges: number;
+  blockedOrReversed: number;
+  implementationRate: number;
+  categorySummaries: ActionCategorySummary[];
+}
+
+export interface ActionsPushbackData {
+  lastUpdated: string;
+  summary: ActionsPushbackSummary;
+  actions: Action[];
+  pushback: Pushback[];
+}
+
+export interface WeekTimelineEntry {
+  weekOf: string;
+  weekLabel: string;
+  actions: {
+    id: string;
+    title: string;
+    type: ActionType;
+    category: ActionCategory;
+    status: ActionStatus;
+  }[];
+  pushback: {
+    id: string;
+    title: string;
+    type: PushbackType;
+    caseStatus: CaseStatus;
+    relatedActionId: string;
+  }[];
+  summary: string;
+}
+
+export interface ActionsTimelineData {
+  lastUpdated: string;
+  weeks: WeekTimelineEntry[];
+}

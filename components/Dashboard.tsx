@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { CategoriesData, CurrentAssessment, StatesData, DomainId } from '@/lib/types';
+import Link from 'next/link';
+import { CategoriesData, CurrentAssessment, StatesData, DomainId, ActionsPushbackData } from '@/lib/types';
 import OverallScore from '@/components/OverallScore';
 import RiskViewToggle from '@/components/RiskViewToggle';
 import MekkoChart from '@/components/MekkoChart';
@@ -13,9 +14,10 @@ interface DashboardProps {
   categoriesData: CategoriesData;
   currentData: CurrentAssessment;
   statesData: StatesData;
+  actionsPushbackData?: ActionsPushbackData;
 }
 
-export default function Dashboard({ categoriesData, currentData, statesData }: DashboardProps) {
+export default function Dashboard({ categoriesData, currentData, statesData, actionsPushbackData }: DashboardProps) {
   const [view, setView] = useState<'national' | 'state'>('national');
 
   const { categories } = categoriesData;
@@ -97,6 +99,45 @@ export default function Dashboard({ categoriesData, currentData, statesData }: D
           /* State View */
           <div id="visualization" className="scroll-mt-20">
             <USHeatmap states={statesData.states} />
+          </div>
+        )}
+
+        {/* Actions & Pushback Summary */}
+        {actionsPushbackData && (
+          <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-gold/30 p-6 scroll-mt-20 bg-gradient-to-r from-gold/5 to-transparent">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex-1">
+                <h2 className="text-lg font-semibold text-navy dark:text-cream mb-2">
+                  Actions &amp; Pushback Tracker
+                </h2>
+                <p className="text-sm text-navy/70 dark:text-cream/70 mb-3">
+                  Track executive actions and legal/institutional responses in real time.
+                </p>
+                <div className="flex flex-wrap gap-4 text-sm">
+                  <div>
+                    <span className="font-bold text-navy dark:text-cream">{actionsPushbackData.summary.totalActions}</span>
+                    <span className="text-navy/60 dark:text-cream/60 ml-1">actions tracked</span>
+                  </div>
+                  <div>
+                    <span className="font-bold text-red-600 dark:text-red-400">{actionsPushbackData.summary.blockedOrReversed}</span>
+                    <span className="text-navy/60 dark:text-cream/60 ml-1">blocked or reversed</span>
+                  </div>
+                  <div>
+                    <span className="font-bold text-green-600 dark:text-green-400">{Math.round(actionsPushbackData.summary.implementationRate * 100)}%</span>
+                    <span className="text-navy/60 dark:text-cream/60 ml-1">implementation rate</span>
+                  </div>
+                </div>
+              </div>
+              <Link
+                href="/actions-pushback"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gold text-navy font-medium hover:bg-gold-dark transition-colors"
+              >
+                View Tracker
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         )}
 

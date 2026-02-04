@@ -1,0 +1,471 @@
+{
+  "lastUpdated": "2026-01-20",
+  "weeks": [
+    {
+      "weekOf": "2025-01-20",
+      "weekLabel": "Week of Jan 20, 2025",
+      "actions": [
+        {
+          "id": "action-001",
+          "title": "Executive Order on Securing the Southern Border",
+          "type": "executive-order",
+          "category": "immigration",
+          "status": "partially-implemented"
+        },
+        {
+          "id": "action-002",
+          "title": "Proclamation Declaring a National Emergency at the Southern Border",
+          "type": "proclamation",
+          "category": "immigration",
+          "status": "pending-litigation"
+        },
+        {
+          "id": "action-003",
+          "title": "Executive Order on Restoring Federal Death Penalty Enforcement",
+          "type": "executive-order",
+          "category": "judiciary",
+          "status": "implemented"
+        },
+        {
+          "id": "action-004",
+          "title": "Executive Order on Ending Birthright Citizenship for Children of Undocumented Immigrants",
+          "type": "executive-order",
+          "category": "immigration",
+          "status": "blocked"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-001",
+          "title": "ACLU v. Trump - Challenge to Birthright Citizenship Order",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-004"
+        }
+      ],
+      "summary": "President Trump signed a flurry of executive orders on his first day in office, focusing heavily on immigration enforcement and border security. The birthright citizenship order drew an immediate legal challenge from the ACLU."
+    },
+    {
+      "weekOf": "2025-01-27",
+      "weekLabel": "Week of Jan 27, 2025",
+      "actions": [
+        {
+          "id": "action-005",
+          "title": "Executive Order on Withdrawing from the Paris Climate Agreement",
+          "type": "executive-order",
+          "category": "environment",
+          "status": "implemented"
+        },
+        {
+          "id": "action-006",
+          "title": "Presidential Memorandum on Federal Hiring Freeze",
+          "type": "presidential-memo",
+          "category": "government-reform",
+          "status": "implemented"
+        },
+        {
+          "id": "action-007",
+          "title": "Executive Order on Dismantling Federal DEI Programs",
+          "type": "executive-order",
+          "category": "civil-rights",
+          "status": "partially-implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-002",
+          "title": "State of Washington v. Trump - Challenge to Border Emergency Declaration",
+          "type": "state-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-002"
+        },
+        {
+          "id": "pushback-003",
+          "title": "Judge Alsup Issues TRO on Birthright Citizenship Order",
+          "type": "judicial-ruling",
+          "caseStatus": "preliminary-injunction",
+          "relatedActionId": "action-004"
+        }
+      ],
+      "summary": "The administration continued its rapid-fire executive action pace, targeting climate policy and federal workforce diversity. A federal judge in Seattle issued a temporary restraining order blocking the birthright citizenship executive order."
+    },
+    {
+      "weekOf": "2025-02-03",
+      "weekLabel": "Week of Feb 3, 2025",
+      "actions": [
+        {
+          "id": "action-008",
+          "title": "Agency Rule Suspending Refugee Admissions for 120 Days",
+          "type": "agency-rule",
+          "category": "immigration",
+          "status": "pending-litigation"
+        },
+        {
+          "id": "action-009",
+          "title": "Executive Order on Expanding Energy Production on Federal Lands",
+          "type": "executive-order",
+          "category": "environment",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-004",
+          "title": "National Immigration Law Center v. DHS - Refugee Admissions Suspension Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-008"
+        },
+        {
+          "id": "pushback-005",
+          "title": "Coalition of 18 State Attorneys General Challenge to DEI Dismantling Order",
+          "type": "state-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-007"
+        },
+        {
+          "id": "pushback-006",
+          "title": "Nationwide Protests Against Immigration Executive Orders",
+          "type": "public-protest",
+          "caseStatus": "filed",
+          "relatedActionId": "action-001"
+        }
+      ],
+      "summary": "The administration expanded its immigration restrictions with a refugee admissions pause while opening federal lands for energy development. Legal challenges mounted as state attorneys general organized a coalition response to the DEI order."
+    },
+    {
+      "weekOf": "2025-02-10",
+      "weekLabel": "Week of Feb 10, 2025",
+      "actions": [
+        {
+          "id": "action-010",
+          "title": "Policy Directive on Restructuring the Department of Education",
+          "type": "policy-directive",
+          "category": "education",
+          "status": "under-review"
+        },
+        {
+          "id": "action-011",
+          "title": "Executive Order on Imposing Tariffs on Chinese Imports",
+          "type": "executive-order",
+          "category": "economic-policy",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-007",
+          "title": "Federal District Court Injunction on Refugee Admissions Pause",
+          "type": "judicial-ruling",
+          "caseStatus": "injunction-granted",
+          "relatedActionId": "action-008"
+        },
+        {
+          "id": "pushback-008",
+          "title": "Senate Democrats Introduce Resolution to Overturn Border Emergency",
+          "type": "congressional-action",
+          "caseStatus": "filed",
+          "relatedActionId": "action-002"
+        }
+      ],
+      "summary": "The administration signaled plans to restructure the Department of Education and imposed new tariffs on Chinese goods. Courts continued pushing back, with a federal judge granting an injunction against the refugee admissions suspension."
+    },
+    {
+      "weekOf": "2025-02-17",
+      "weekLabel": "Week of Feb 17, 2025",
+      "actions": [
+        {
+          "id": "action-012",
+          "title": "Presidential Memorandum on Reducing Federal Workforce by Attrition",
+          "type": "presidential-memo",
+          "category": "government-reform",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-009",
+          "title": "AFGE Union Challenge to Federal Hiring Freeze",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-006"
+        },
+        {
+          "id": "pushback-010",
+          "title": "California Legislature Passes State-Level Climate Protection Act",
+          "type": "state-legislation",
+          "caseStatus": "filed",
+          "relatedActionId": "action-005"
+        }
+      ],
+      "summary": "The administration focused on government restructuring with a workforce reduction memo. Federal employee unions filed suit against the hiring freeze while California moved to enact state-level climate protections in response to the Paris Agreement withdrawal."
+    },
+    {
+      "weekOf": "2025-02-24",
+      "weekLabel": "Week of Feb 24, 2025",
+      "actions": [
+        {
+          "id": "action-013",
+          "title": "Executive Order on Restricting Transgender Military Service",
+          "type": "executive-order",
+          "category": "civil-rights",
+          "status": "pending-litigation"
+        },
+        {
+          "id": "action-014",
+          "title": "Agency Rule Revising EPA Emissions Standards",
+          "type": "agency-rule",
+          "category": "environment",
+          "status": "under-review"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-011",
+          "title": "Lambda Legal v. Department of Defense - Transgender Service Ban Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-013"
+        },
+        {
+          "id": "pushback-012",
+          "title": "Fourth Circuit Upholds Injunction on Birthright Citizenship Order",
+          "type": "judicial-ruling",
+          "caseStatus": "injunction-granted",
+          "relatedActionId": "action-004"
+        }
+      ],
+      "summary": "The administration extended its social policy agenda with a transgender military service restriction and rolled back EPA emissions standards. The Fourth Circuit upheld the injunction against the birthright citizenship order, dealing a significant legal blow."
+    },
+    {
+      "weekOf": "2025-03-03",
+      "weekLabel": "Week of Mar 3, 2025",
+      "actions": [
+        {
+          "id": "action-015",
+          "title": "Signing Statement on Appropriations Bill Limiting DOGE Authority",
+          "type": "signing-statement",
+          "category": "government-reform",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-013",
+          "title": "House Bipartisan Resolution Opposing Tariff Authority Expansion",
+          "type": "congressional-action",
+          "caseStatus": "filed",
+          "relatedActionId": "action-011"
+        },
+        {
+          "id": "pushback-014",
+          "title": "National Education Association v. Department of Education - Restructuring Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-010"
+        },
+        {
+          "id": "pushback-015",
+          "title": "Nine States File Amicus Brief Supporting Border Emergency Challenge",
+          "type": "state-lawsuit",
+          "caseStatus": "preliminary-injunction",
+          "relatedActionId": "action-002"
+        }
+      ],
+      "summary": "New executive actions slowed as the administration issued a signing statement asserting broad authority over the government efficiency initiative. Congressional pushback intensified with a bipartisan resolution challenging expanded tariff authority."
+    },
+    {
+      "weekOf": "2025-03-10",
+      "weekLabel": "Week of Mar 10, 2025",
+      "actions": [
+        {
+          "id": "action-016",
+          "title": "Executive Order on Reclassifying Federal Employees Under Schedule F",
+          "type": "executive-order",
+          "category": "government-reform",
+          "status": "pending-litigation"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-016",
+          "title": "AFGE v. OPM - Schedule F Reclassification Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-016"
+        },
+        {
+          "id": "pushback-017",
+          "title": "Federal Judge Blocks Enforcement of Transgender Military Service Restriction",
+          "type": "judicial-ruling",
+          "caseStatus": "injunction-granted",
+          "relatedActionId": "action-013"
+        },
+        {
+          "id": "pushback-018",
+          "title": "EPA Career Staff Resistance to Emissions Standards Rollback",
+          "type": "agency-resistance",
+          "caseStatus": "filed",
+          "relatedActionId": "action-014"
+        }
+      ],
+      "summary": "The Schedule F executive order to reclassify federal workers as at-will employees drew immediate union lawsuits. Courts blocked the transgender military service ban while reports emerged of internal EPA resistance to emissions rollbacks."
+    },
+    {
+      "weekOf": "2025-03-17",
+      "weekLabel": "Week of Mar 17, 2025",
+      "actions": [
+        {
+          "id": "action-017",
+          "title": "Presidential Memorandum on Restricting Press Access to White House Briefings",
+          "type": "presidential-memo",
+          "category": "media-press",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-019",
+          "title": "White House Correspondents' Association v. Executive Office - Press Access Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-017"
+        },
+        {
+          "id": "pushback-020",
+          "title": "District Court Denies Government Motion to Dismiss Refugee Admissions Case",
+          "type": "judicial-ruling",
+          "caseStatus": "injunction-denied",
+          "relatedActionId": "action-008"
+        }
+      ],
+      "summary": "The administration moved to restrict press briefing access, prompting a First Amendment lawsuit from the White House Correspondents' Association. Courts continued to sustain challenges against the refugee admissions freeze."
+    },
+    {
+      "weekOf": "2025-03-24",
+      "weekLabel": "Week of Mar 24, 2025",
+      "actions": [
+        {
+          "id": "action-018",
+          "title": "Policy Directive on Withdrawing from World Health Organization",
+          "type": "policy-directive",
+          "category": "foreign-policy",
+          "status": "implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-021",
+          "title": "Senate Foreign Relations Committee Holds Hearing on WHO Withdrawal",
+          "type": "congressional-action",
+          "caseStatus": "filed",
+          "relatedActionId": "action-018"
+        },
+        {
+          "id": "pushback-022",
+          "title": "DOJ Appeals Refugee Admissions Injunction to Ninth Circuit",
+          "type": "federal-lawsuit",
+          "caseStatus": "appealed",
+          "relatedActionId": "action-008"
+        },
+        {
+          "id": "pushback-023",
+          "title": "New York and Massachusetts Pass State-Level DEI Protection Laws",
+          "type": "state-legislation",
+          "caseStatus": "filed",
+          "relatedActionId": "action-007"
+        }
+      ],
+      "summary": "The WHO withdrawal directive drew bipartisan Senate scrutiny. States increasingly moved to counter federal policy at the state level, with New York and Massachusetts enacting DEI protections in direct response to the federal rollback."
+    },
+    {
+      "weekOf": "2025-03-31",
+      "weekLabel": "Week of Mar 31, 2025",
+      "actions": [
+        {
+          "id": "action-019",
+          "title": "Executive Order on Expanding Work Requirements for Federal Assistance Programs",
+          "type": "executive-order",
+          "category": "healthcare",
+          "status": "under-review"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-024",
+          "title": "National Health Law Program v. HHS - Medicaid Work Requirements Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-019"
+        },
+        {
+          "id": "pushback-025",
+          "title": "Ninth Circuit Hears Oral Arguments on Schedule F Injunction",
+          "type": "judicial-ruling",
+          "caseStatus": "appealed",
+          "relatedActionId": "action-016"
+        },
+        {
+          "id": "pushback-026",
+          "title": "Bipartisan Senate Bill to Codify Birthright Citizenship Introduced",
+          "type": "congressional-action",
+          "caseStatus": "filed",
+          "relatedActionId": "action-004"
+        }
+      ],
+      "summary": "The administration pushed expanded work requirements for Medicaid and other federal assistance. Congressional pushback grew with a bipartisan Senate effort to codify birthright citizenship while appeals courts considered multiple administration policies."
+    },
+    {
+      "weekOf": "2025-04-07",
+      "weekLabel": "Week of Apr 7, 2025",
+      "actions": [
+        {
+          "id": "action-020",
+          "title": "Agency Rule Implementing New Immigration Detention Standards",
+          "type": "agency-rule",
+          "category": "immigration",
+          "status": "partially-implemented"
+        }
+      ],
+      "pushback": [
+        {
+          "id": "pushback-027",
+          "title": "SPLC v. ICE - Immigration Detention Standards Challenge",
+          "type": "federal-lawsuit",
+          "caseStatus": "filed",
+          "relatedActionId": "action-020"
+        },
+        {
+          "id": "pushback-028",
+          "title": "Federal Court Rules Schedule F Order Exceeds Executive Authority",
+          "type": "judicial-ruling",
+          "caseStatus": "ruling-against",
+          "relatedActionId": "action-016"
+        }
+      ],
+      "summary": "New immigration detention standards faced legal challenge from civil rights organizations. A federal court ruled the Schedule F reclassification exceeded executive authority, marking a major setback for the government reform agenda."
+    },
+    {
+      "weekOf": "2025-04-14",
+      "weekLabel": "Week of Apr 14, 2025",
+      "actions": [],
+      "pushback": [
+        {
+          "id": "pushback-029",
+          "title": "Supreme Court Declines Emergency Stay on Birthright Citizenship Injunction",
+          "type": "judicial-ruling",
+          "caseStatus": "injunction-granted",
+          "relatedActionId": "action-004"
+        },
+        {
+          "id": "pushback-030",
+          "title": "DOJ Appeals Schedule F Ruling to D.C. Circuit",
+          "type": "federal-lawsuit",
+          "caseStatus": "appealed",
+          "relatedActionId": "action-016"
+        }
+      ],
+      "summary": "No new executive actions were issued as the administration focused on defending existing orders in court. The Supreme Court declined to intervene on the birthright citizenship injunction, leaving the lower court block in place for the foreseeable future."
+    }
+  ]
+}

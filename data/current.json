@@ -1,6 +1,6 @@
 {
-  "assessmentDate": "2026-01-20",
-  "assessmentPeriod": "2025-01-20 to 2026-01-20",
+  "assessmentDate": "2026-01-21",
+  "assessmentPeriod": "2025-01-21 to 2026-01-21",
   "scores": {
     "elections": {
       "score": 8,
@@ -19,7 +19,7 @@
         "https://www.aclu.org/news/voting-rights/2025-elections-voters-came-out-in-record-numbers",
         "https://civilrights.org/blog/project-2025-poses-a-serious-threat-to-our-democracy/"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "rule-of-law": {
       "score": 8,
@@ -38,7 +38,7 @@
         "https://www.judges.org/news-and-info/judicial-independence-is-threatened-according-to-90-of-judges/",
         "https://www.fedbar.org/government-relations/fba-statements-letters-and-testimony/statement-on-the-rule-of-law-and-an-independent-judiciary/"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "national-security": {
       "score": 8,
@@ -56,7 +56,7 @@
         "https://www.americanprogress.org/article/project-2025-will-undermine-americas-national-security/",
         "https://www.dni.gov/index.php/newsroom/press-releases/press-releases-2025/4063-pr-05-25"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "regulatory-stability": {
       "score": 6,
@@ -75,7 +75,7 @@
         "https://kpmg.com/us/en/media/news/2025-mid-year-regulatory-report.html",
         "https://www.wolterskluwer.com/en/expert-insights/us-financial-regulatory-enforcement-plummets-under-trump-report-finds"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "trade-policy": {
       "score": 7,
@@ -94,7 +94,7 @@
         "https://www.richmondfed.org/publications/research/economic_brief/2025/eb_25-12",
         "https://www.dallasfed.org/research/economics/2025/0513"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "government-contracts": {
       "score": 6,
@@ -113,7 +113,7 @@
         "https://www.americanbar.org/groups/criminal_justice/resources/magazine/2025-spring/antitrust-enforcement-government-procurement/",
         "https://www.whitehouse.gov/presidential-actions/2025/04/restoring-common-sense-to-federal-procurement/"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "fiscal-policy": {
       "score": 7,
@@ -132,7 +132,7 @@
         "https://www.americanactionforum.org/insight/examining-the-consequences-of-a-high-and-rising-national-debt/",
         "https://www.deloitte.com/us/en/insights/topics/economy/spotlight/us-national-debt-fiscal-effects.html"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "media-freedom": {
       "score": 7,
@@ -152,7 +152,7 @@
         "https://www.rcfp.org/2025-year-in-review/",
         "https://www.cjr.org/the_media_today/press-freedom-attacks-2025-arrests-detention-journalists-trump-ice-assault.php"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "civil-discourse": {
       "score": 7,
@@ -172,7 +172,7 @@
         "https://www.brookings.edu/articles/political-violence-in-the-us/",
         "https://www.fcnl.org/updates/2025-09/political-violence-grave-threat-us-all-we-must-change-course"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     },
     "institutional-integrity": {
       "score": 9,
@@ -192,7 +192,7 @@
         "https://www.nycbar.org/press-releases/firings-of-inspectors-general-are-illegal-and-invalid/",
         "https://inspectorsgeneral.org/"
       ],
-      "lastUpdated": "2026-01-20"
+      "lastUpdated": "2026-01-21"
     }
   },
   "domainScores": {
