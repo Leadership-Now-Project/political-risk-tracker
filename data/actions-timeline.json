@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01",
+  "lastUpdated": "2026-02-23",
   "weeks": [
     {
       "weekOf": "2025-01-20",
@@ -264,6 +264,86 @@
         { "id": "pushback-003", "title": "Boasberg Contempt — Misconduct Complaint Dismissed", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-003" }
       ],
       "summary": "DOJ misconduct complaint against Judge Boasberg dismissed — no evidence of bias found. Trump sued JPMorgan Chase for $5 billion over debanking. As of January 15, 2026, Just Security tracks 582 active cases: 200 plaintiff wins, 110 government wins, 230 awaiting ruling. Over 100,000 visas revoked under Trump 2.0."
+    },
+    {
+      "weekOf": "2026-01-05",
+      "weekLabel": "Week 53 — Early Jan 2026",
+      "actions": [
+        { "id": "action-051", "title": "Corporation for Public Broadcasting Dissolution", "type": "policy-directive", "category": "media-press", "status": "implemented" },
+        { "id": "action-052", "title": "Operation Metro Surge — Minneapolis", "type": "policy-directive", "category": "immigration", "status": "implemented" },
+        { "id": "action-053", "title": "Withdrawal from 66 International Organizations", "type": "memorandum", "category": "foreign-policy", "status": "implemented" }
+      ],
+      "pushback": [
+        { "id": "pushback-065", "title": "CPB Dissolution After Defunding", "type": "agency-challenge", "caseStatus": "dismissed", "relatedActionId": "action-050" },
+        { "id": "pushback-058", "title": "New York v. ACF — Child Care Funding Freeze", "type": "state-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-034" },
+        { "id": "pushback-064", "title": "New York v. McMahon — Education Dept Amended Complaint", "type": "state-lawsuit", "caseStatus": "filed", "relatedActionId": "action-026" }
+      ],
+      "summary": "CPB board voted unanimously to dissolve after 58 years of federal public broadcasting. Operation Metro Surge deployed 2,000 ICE agents to Minneapolis; Renee Good, a U.S. citizen, was shot and killed by ICE officer Jonathan Ross on January 7. Trump withdrew from 66 international organizations. Child care funding freeze blocked by courts."
+    },
+    {
+      "weekOf": "2026-01-13",
+      "weekLabel": "Weeks 54-55 — Mid-Late Jan 2026",
+      "actions": [
+        { "id": "action-054", "title": "DOJ Criminal Investigation of Fed Chair Powell", "type": "policy-directive", "category": "economic-policy", "status": "implemented" },
+        { "id": "action-055", "title": "Section 232 Critical Minerals Action", "type": "proclamation", "category": "economic-policy", "status": "under-review" },
+        { "id": "action-056", "title": "FBI Raid on Washington Post Reporter's Home", "type": "policy-directive", "category": "media-press", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-047", "title": "Minnesota v. Noem — Operation Metro Surge", "type": "state-lawsuit", "caseStatus": "filed", "relatedActionId": "action-052" },
+        { "id": "pushback-059", "title": "Rhode Island v. HHS — Transgender Funding Conditions", "type": "state-lawsuit", "caseStatus": "filed", "relatedActionId": "action-039" },
+        { "id": "pushback-060", "title": "LULAC v. Executive Office — Election EO Struck Down", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-043" },
+        { "id": "pushback-054", "title": "NTEU v. Vought — CFPB En Banc", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-025" }
+      ],
+      "summary": "DOJ opened first-ever criminal investigation of a sitting Fed Chair (Powell), widely seen as retaliation for refusing rate cuts. FBI raided Washington Post reporter Hannah Natanson's home; judge rebuked DOJ for Privacy Protection Act violation. Election EO permanently struck down. CFPB en banc granted, reinstating injunction. Second U.S. citizen (Alex Pretti) killed by CBP in Minneapolis on Jan 24."
+    },
+    {
+      "weekOf": "2026-01-27",
+      "weekLabel": "Weeks 56-57 — Late Jan-Early Feb 2026",
+      "actions": [
+        { "id": "action-057", "title": "Cuba Oil Supplier Tariffs (IEEPA)", "type": "executive-order", "category": "economic-policy", "status": "reversed" },
+        { "id": "action-058", "title": "Federal Charges Against Don Lemon", "type": "policy-directive", "category": "media-press", "status": "pending-litigation" },
+        { "id": "action-059", "title": "Schedule F Final Rule Published", "type": "agency-rule", "category": "government-reform", "status": "pending-litigation" }
+      ],
+      "pushback": [
+        { "id": "pushback-052", "title": "In re Natanson — WaPo Reporter Raid", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-056" },
+        { "id": "pushback-053", "title": "US v. Lemon — Church Protest Charges", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-058" },
+        { "id": "pushback-062", "title": "USAID Employees v. Musk — Deposition Ordered", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-023" },
+        { "id": "pushback-055", "title": "AFGE v. OPM — Shutdown RIF Blocked", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-028" }
+      ],
+      "summary": "Don Lemon arrested on federal charges for covering protest at church — career prosecutors reportedly refused to participate. Schedule F final rule published (effective March 8), reclassifying 50,000 employees as at-will. Judge ordered Elon Musk deposed under oath. Cuba IEEPA tariffs imposed. Multiple new lawsuits filed."
+    },
+    {
+      "weekOf": "2026-02-10",
+      "weekLabel": "Weeks 58-59 — Mid Feb 2026",
+      "actions": [
+        { "id": "action-060", "title": "EPA Endangerment Finding Revocation", "type": "agency-rule", "category": "environment", "status": "pending-litigation" },
+        { "id": "action-061", "title": "Pentagon Purge of Senior Military Leaders (Expanded)", "type": "policy-directive", "category": "government-reform", "status": "implemented" }
+      ],
+      "pushback": [
+        { "id": "pushback-049", "title": "Boasberg Return Order — Venezuelan Deportees", "type": "judicial-ruling", "caseStatus": "injunction-granted", "relatedActionId": "action-003" },
+        { "id": "pushback-050", "title": "US v. Comey & James — Fourth Circuit Appeal", "type": "federal-lawsuit", "caseStatus": "appealed", "relatedActionId": "action-038" },
+        { "id": "pushback-051", "title": "Grand Jury Refuses to Indict Democratic Lawmakers", "type": "judicial-ruling", "caseStatus": "dismissed", "relatedActionId": "action-038" },
+        { "id": "pushback-063", "title": "23 State AGs v. OMB — Funding Freeze", "type": "state-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-034" },
+        { "id": "pushback-061", "title": "Church Raids Injunction — 100-ft Buffer Zone", "type": "federal-lawsuit", "caseStatus": "injunction-granted", "relatedActionId": "action-052" },
+        { "id": "pushback-057", "title": "Earthjustice v. EPA — Endangerment Finding", "type": "federal-lawsuit", "caseStatus": "filed", "relatedActionId": "action-060" }
+      ],
+      "summary": "EPA revoked the 2009 Greenhouse Gas Endangerment Finding, gutting the legal foundation for all federal climate regulation. Pentagon purge expanded. Boasberg ordered return of 137 Venezuelan CECOT deportees. Grand jury unanimously refused to indict 6 Democratic lawmakers for seditious conspiracy. 23 state AGs obtained injunction blocking federal funding rescissions. Churches obtained 100-foot buffer zone from ICE."
+    },
+    {
+      "weekOf": "2026-02-17",
+      "weekLabel": "Weeks 60-61 — Late Feb 2026",
+      "actions": [
+        { "id": "action-062", "title": "Section 122 Global Tariff (15%)", "type": "proclamation", "category": "economic-policy", "status": "implemented" },
+        { "id": "action-063", "title": "CIA Retracts 19 Intelligence Reports", "type": "policy-directive", "category": "government-reform", "status": "implemented" },
+        { "id": "action-064", "title": "SCOTUS Allows Third-Country Deportations (6-3)", "type": "proclamation", "category": "immigration", "status": "implemented" },
+        { "id": "action-065", "title": "SCOTUS Strikes Down IEEPA Tariffs (6-3)", "type": "proclamation", "category": "economic-policy", "status": "implemented" }
+      ],
+      "pushback": [
+        { "id": "pushback-046", "title": "Learning Resources v. Trump — IEEPA Tariffs Struck Down", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-030" },
+        { "id": "pushback-048", "title": "Provinzino Contempt — ICE Court Order Violations", "type": "judicial-ruling", "caseStatus": "ruling-against", "relatedActionId": "action-052" },
+        { "id": "pushback-056", "title": "AFGE/AFSCME v. OPM — Schedule F Challenge", "type": "federal-lawsuit", "caseStatus": "preliminary-injunction", "relatedActionId": "action-059" }
+      ],
+      "summary": "SCOTUS struck down IEEPA tariffs 6-3 — Trump imposed replacement Section 122 tariffs within hours (15% global). SCOTUS also allowed third-country deportations 6-3. CIA retracted 19 intelligence reports at political direction. DOJ attorney held in civil contempt after ICE violated 96 court orders in Minnesota. Cuba tariffs effectively reversed by IEEPA ruling. Operation Metro Surge ended Feb 12 after 5 weeks."
     }
   ]
 }
