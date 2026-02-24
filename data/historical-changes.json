@@ -121,21 +121,23 @@
     {
       "period": "February 2026",
       "date": "2026-02-20",
-      "overallScore": 8.0,
-      "overallChange": 0.7,
-      "summary": "Minnesota crisis, Supreme Court injunction ruling, and government shutdown drive largest monthly increase",
+      "overallScore": 8.5,
+      "overallChange": 1.2,
+      "summary": "Largest monthly increase: Minneapolis crisis, SCOTUS tariffs and injunction rulings, Pentagon purge, Fed criminal probe, and CPB dissolution drive 8 of 10 categories higher",
       "keyDevelopments": [
-        "Two U.S. citizens fatally shot by ICE/CBP agents in Minneapolis; nationwide protests and Minnesota general strike followed",
-        "Supreme Court 6-3 ruling eliminated nationwide injunctions, gutting primary judicial check on executive overreach",
-        "Four-day partial government shutdown (Jan 30–Feb 3); DHS funded only through Feb 13 amid ICE enforcement dispute"
+        "Two U.S. citizens killed by ICE/CBP in Minneapolis; nationwide general strike and protests in 300+ cities; DHS admitted agents lied under oath",
+        "SCOTUS struck down IEEPA tariffs 6-3 but also eliminated nationwide injunctions; CIA retracted 19 intelligence reports at direction of political appointees; Pentagon purged Joint Chiefs chairman and multiple service chiefs",
+        "DOJ criminal investigation of Fed Chair Powell (first in 113 years); CPB dissolved ending NPR/PBS funding; Schedule F finalized; FBI raided Washington Post reporter's home"
       ],
       "categoryChanges": [
-        { "category": "rule-of-law", "from": 8, "to": 9, "rationale": "SCOTUS eliminated nationwide injunctions 6-3; court granted 66 emergency stays for administration; Congress moved to impeach judges; ICE violated 96+ court orders in Minnesota" },
-        { "category": "regulatory-stability", "from": 6, "to": 7, "rationale": "SCOTUS injunction ruling dramatically reduces ability to challenge regulatory overreach in court; 235 EOs now signed; Schedule F final rule imminent" },
-        { "category": "fiscal-policy", "from": 7, "to": 8, "rationale": "Four-day government shutdown; DHS funded only 2 weeks; DOGE claimed $215B in savings but independent analyses estimate net cost of $21.7B–$135B; 300K+ federal workers departed" },
-        { "category": "media-freedom", "from": 7, "to": 8, "rationale": "FCC opened NPR/PBS inquiry linked to defunding effort; US dropped to 55th in press freedom (lowest ever); journalists arrested at Minnesota protests" },
-        { "category": "civil-discourse", "from": 7, "to": 9, "rationale": "Two U.S. citizens killed by federal immigration agents; Minnesota general strike Jan 23; nationwide 'no work, no school' protests Jan 30; DOJ investigating governor while arresting church protesters" },
-        { "category": "institutional-integrity", "from": 9, "to": 10, "rationale": "300K+ federal employees departed (212K+ forced out); replacement IGs are former Trump officials; CIGIE defunded; SCOTUS gutted nationwide injunctions; IG offices lost 20-30% staff" }
+        { "category": "rule-of-law", "from": 8, "to": 9, "rationale": "ICE violated 96 court orders in Minnesota in one month; first civil contempt finding against government attorney; Trump attacked SCOTUS justices by name after tariffs ruling and circumvented it within hours" },
+        { "category": "national-security", "from": 8, "to": 9, "rationale": "CIA retracted 19 intelligence reports at political direction; Pentagon purged Chairman of Joint Chiefs, service chiefs, DIA and NSA directors; Insurrection Act threatened with 1,500 troops on standby; CISA budget cut 17%" },
+        { "category": "regulatory-stability", "from": 6, "to": 8, "rationale": "Schedule F finalized (effective March 8) reclassifying 50,000 employees as at-will; EPA revoked greenhouse gas endangerment finding; SCOTUS allowing firing of independent agency heads; EO total reaches 243" },
+        { "category": "government-contracts", "from": 6, "to": 7, "rationale": "SpaceX received $714M while DOGE cut competitors; Musk avoids disclosure as SGE; ballroom donors shaped AI plan they benefit from; legislative remedies for conflicts failed" },
+        { "category": "fiscal-policy", "from": 7, "to": 9, "rationale": "DOJ criminal investigation of Fed Chair Powell—first in 113 years; two government shutdowns; DOGE cuts estimated to cost $135B; IRS projects $8.5B revenue loss from 22,000 departures" },
+        { "category": "media-freedom", "from": 7, "to": 9, "rationale": "Don Lemon arrested on federal charges for covering protest; FBI raided WaPo reporter's home seizing all devices; CPB dissolved ending $1.1B in NPR/PBS funding; FCC weaponizing equal time rules" },
+        { "category": "civil-discourse", "from": 7, "to": 9, "rationale": "Two U.S. citizens killed by federal agents; DHS admitted agents lied under oath; Minnesota general strike; 457 judges targeted with threats (150% increase); 33+ pardoned Jan 6 defendants rearrested" },
+        { "category": "institutional-integrity", "from": 9, "to": 10, "rationale": "322,000+ federal employees departed (largest reduction in US history); 75%+ IG positions vacant; 8,000+ web pages and 3,000 datasets removed from public access; layoff moratorium expired" }
       ]
     }
   ]
