@@ -3,94 +3,103 @@
     {
       "period": "July 2025",
       "date": "2025-07-20",
-      "overallScore": 5.8,
+      "overallScore": 5.2,
       "overallChange": null,
       "summary": "Baseline assessment following inauguration period",
       "keyDevelopments": [
-        "New administration's first six months established policy direction",
-        "Initial executive orders on immigration, trade, and regulatory reform",
-        "DOJ leadership transition completed with new priorities announced"
+        "New administration's first six months established policy direction across all domains",
+        "Initial executive orders on immigration, trade, and regulatory reform set the tone",
+        "DOJ leadership transition completed with new priorities announced; 17 inspectors general fired in January"
       ],
       "categoryChanges": []
     },
     {
       "period": "August 2025",
       "date": "2025-08-20",
-      "overallScore": 6.0,
-      "overallChange": 0.2,
+      "overallScore": 5.5,
+      "overallChange": 0.3,
       "summary": "Escalation of executive actions and early institutional friction",
       "keyDevelopments": [
-        "First wave of inspector general dismissals announced",
-        "Trade tariff increases on China and European goods",
-        "Congressional oversight requests increasingly ignored"
+        "Courts ruled mass IG firings unlawful but declined reinstatement, establishing pattern of unenforceable rulings",
+        "Liberation Day tariffs imposed 10% baseline on all imports with higher rates for China; trade war escalation began",
+        "CIA offered buyouts to entire workforce; intelligence community independence concerns emerged"
       ],
       "categoryChanges": [
-        { "category": "institutional-integrity", "from": 7, "to": 8, "rationale": "Firing of 17 inspectors general in single action; courts ruled action unlawful but declined to order reinstatement" },
-        { "category": "trade-policy", "from": 5, "to": 6, "rationale": "Liberation Day tariffs announced; 10% baseline on all imports with higher rates for China" }
+        { "category": "national-security", "from": 5, "to": 6, "rationale": "CIA workforce buyout offer and early signs of intelligence politicization; DNI began reassigning analysts producing inconvenient assessments" },
+        { "category": "trade-policy", "from": 5, "to": 6, "rationale": "Liberation Day tariffs announced; 10% baseline on all imports with country-specific rates up to 49% for China" },
+        { "category": "institutional-integrity", "from": 7, "to": 8, "rationale": "Firing of 17 inspectors general in single action; courts ruled action unlawful but declined to order reinstatement; DOGE gained access to sensitive federal payment and personnel systems" }
       ]
     },
     {
       "period": "September 2025",
       "date": "2025-09-20",
-      "overallScore": 6.3,
+      "overallScore": 5.8,
       "overallChange": 0.3,
       "summary": "Intelligence community concerns emerge; regulatory shifts accelerate",
       "keyDevelopments": [
-        "Sen. Warner's floor speech warning of intelligence politicization",
-        "CIA workforce buyout offer to entire agency",
-        "Schedule F executive order reinstated, reclassifying career positions"
+        "Sen. Warner's floor speech warning of systematic undermining of intelligence community independence",
+        "Schedule F executive order reinstated, reclassifying career civil service positions as at-will",
+        "Voting restrictions advanced in multiple states ahead of 2026 midterms"
       ],
       "categoryChanges": [
-        { "category": "national-security", "from": 6, "to": 7, "rationale": "DNI began reassigning analysts who produced assessments contradicting administration narratives; security clearance revocations increased" },
-        { "category": "regulatory-stability", "from": 5, "to": 6, "rationale": "Pace of executive orders accelerated to 20+ per month; contradictory guidance created compliance uncertainty" }
+        { "category": "elections", "from": 5, "to": 6, "rationale": "Multiple states advanced proof-of-citizenship requirements; DOJ began requesting voter registration files from states" },
+        { "category": "rule-of-law", "from": 5, "to": 6, "rationale": "DOJ restructuring under AG Bondi accelerated; career ethics officials purged; politically-motivated case decisions increased" },
+        { "category": "civil-discourse", "from": 5, "to": 6, "rationale": "January 6 pardons for ~1,500 defendants including seditious conspiracy convictions generated significant public division" }
       ]
     },
     {
       "period": "October 2025",
       "date": "2025-10-20",
-      "overallScore": 6.6,
-      "overallChange": 0.3,
-      "summary": "Election administration concerns intensify ahead of midterms",
+      "overallScore": 6.2,
+      "overallChange": 0.4,
+      "summary": "Election administration concerns intensify; broad-based risk escalation",
       "keyDevelopments": [
-        "16 states enacted 29 new restrictive voting laws",
-        "DOJ requested voter registration files from most states",
-        "University funding threats escalated with Harvard grant termination"
+        "16 states enacted 29 new restrictive voting laws, with 28 taking effect before 2026 midterms",
+        "University funding threats escalated with Harvard grant terminations totaling $2.2B",
+        "DOGE-led contract terminations exceeded 6,000; government shutdown briefly halted operations"
       ],
       "categoryChanges": [
-        { "category": "elections", "from": 6, "to": 7, "rationale": "Wave of state voting restrictions took effect; proof-of-citizenship requirements advanced in multiple states" },
-        { "category": "media-freedom", "from": 6, "to": 7, "rationale": "FCC opened investigations into major networks; university compact demands issued with funding consequences" }
+        { "category": "elections", "from": 6, "to": 7, "rationale": "Wave of state voting restrictions took effect; seven states passed stricter voter ID laws requiring birth certificates or passports" },
+        { "category": "national-security", "from": 6, "to": 7, "rationale": "DNI budget cuts of $700M+ to intelligence offices; intelligence resources increasingly diverted to domestic priorities" },
+        { "category": "fiscal-policy", "from": 5, "to": 6, "rationale": "Government operating under continuing resolutions; DOGE workforce reductions beginning to impact agency capacity" },
+        { "category": "media-freedom", "from": 5, "to": 6, "rationale": "FCC opened investigations into ABC, NBC, CBS over election coverage; Paramount settled with Trump under merger pressure" }
       ]
     },
     {
       "period": "November 2025",
       "date": "2025-11-20",
-      "overallScore": 6.9,
-      "overallChange": 0.3,
-      "summary": "Judicial conflicts escalate; DOJ independence concerns mount",
+      "overallScore": 6.8,
+      "overallChange": 0.6,
+      "summary": "Judicial conflicts escalate across multiple fronts; broadest monthly increase",
       "keyDevelopments": [
-        "Deputy AG declared administration 'at war' with federal judiciary",
-        "100+ DOJ prosecutors resigned citing political interference",
-        "Threats against federal judges tripled from prior decade"
+        "Deputy AG declared administration 'at war' with federal judiciary at Federalist Society conference",
+        "100+ DOJ prosecutors resigned citing political interference; threats against judges tripled",
+        "Trade tariffs on China reached 145%; retaliatory tariffs at 125%; trade deficit widened $175B"
       ],
       "categoryChanges": [
-        { "category": "rule-of-law", "from": 7, "to": 8, "rationale": "NYC Bar Association condemned DOJ 'war on judiciary' remarks; mass prosecutor resignations over politically-motivated case decisions" },
-        { "category": "civil-discourse", "from": 6, "to": 7, "rationale": "January 6 pardons issued for ~1,500 defendants including seditious conspiracy convictions; historians warned of political violence normalization" }
+        { "category": "rule-of-law", "from": 6, "to": 7, "rationale": "NYC Bar Association condemned DOJ 'war on judiciary' remarks; mass prosecutor resignations over politically-motivated case decisions" },
+        { "category": "trade-policy", "from": 6, "to": 7, "rationale": "US-China retaliatory spiral reached 145%/125% tariff levels; Court of International Trade ruled tariffs exceeded presidential authority" },
+        { "category": "civil-discourse", "from": 6, "to": 7, "rationale": "Threats against federal judges tripled; pardoned January 6 defendants called for retribution against prosecutors and police" },
+        { "category": "regulatory-stability", "from": 5, "to": 6, "rationale": "Executive order count exceeded 200; AI EO reversed Biden-era safeguards; contradictory guidance created compliance chaos" },
+        { "category": "government-contracts", "from": 5, "to": 6, "rationale": "DOGE-led contract consolidation exceeded 6,000 terminations; White House ballroom donors with $279B in contracts identified" },
+        { "category": "media-freedom", "from": 6, "to": 7, "rationale": "Seven universities rejected 'Compact for Academic Excellence'; Cornell and Northwestern face $1B+ funding pauses" }
       ]
     },
     {
       "period": "December 2025",
       "date": "2025-12-20",
       "overallScore": 7.1,
-      "overallChange": 0.2,
+      "overallChange": 0.3,
       "summary": "Federal Reserve independence threatened; year-end institutional strain",
       "keyDevelopments": [
-        "Attempt to fire Fed Governor Lisa Cook",
-        "DOJ probe of Federal Reserve announced",
-        "Intelligence Authorization Act included politicization safeguards"
+        "Unprecedented attempt to fire Fed Governor Lisa Cook; DOJ probe of Federal Reserve announced",
+        "Intelligence Authorization Act included politicization safeguards, reflecting bipartisan concern",
+        "Administration appointed Stephen Miran to Fed board while retaining admin position; sole dissent on rates"
       ],
       "categoryChanges": [
-        { "category": "fiscal-policy", "from": 6, "to": 7, "rationale": "Unprecedented attempt to remove Fed governor; DOJ investigation of Fed signaled executive branch interference with monetary policy" },
-        { "category": "national-security", "from": 7, "to": 8, "rationale": "DNI fired National Intelligence Council officials over Venezuela assessment; intelligence resources diverted to Greenland proposal" }
+        { "category": "rule-of-law", "from": 7, "to": 8, "rationale": "Administration pattern of delayed compliance with court orders crystallized across immigration, environmental, and civil rights cases" },
+        { "category": "national-security", "from": 7, "to": 8, "rationale": "DNI fired National Intelligence Council officials over Venezuela assessment; intelligence resources diverted to Greenland proposal" },
+        { "category": "fiscal-policy", "from": 6, "to": 7, "rationale": "Unprecedented attempt to remove Fed governor; DOJ investigation of Fed signaled direct executive branch interference with monetary policy" }
       ]
     },
     {
@@ -102,11 +111,31 @@
       "keyDevelopments": [
         "Overall risk elevated to High (7.3) from Elevated baseline",
         "All 10 categories show 'increasing' trend direction",
-        "Rule of Law domain highest at 8.0 average"
+        "Rule of Law domain highest at 8.0 average; 235 executive orders signed in first year"
       ],
       "categoryChanges": [
-        { "category": "elections", "from": 7, "to": 8, "rationale": "Cumulative effect of 108 restrictive laws since 2020; 28 new restrictions taking effect before 2026 midterms" },
-        { "category": "institutional-integrity", "from": 8, "to": 9, "rationale": "Schedule F implementation affecting 50,000 federal employees; systematic replacement of career staff with political appointees" }
+        { "category": "elections", "from": 7, "to": 8, "rationale": "Cumulative effect of 108 restrictive laws since 2020; 28 new restrictions taking effect before 2026 midterms; Trump called for 'nationalizing' voting" },
+        { "category": "institutional-integrity", "from": 8, "to": 9, "rationale": "Schedule F implementation affecting 50,000 federal employees; replacement IGs confirmed from former Trump administration staff; CIGIE defunded" }
+      ]
+    },
+    {
+      "period": "February 2026",
+      "date": "2026-02-20",
+      "overallScore": 8.0,
+      "overallChange": 0.7,
+      "summary": "Minnesota crisis, Supreme Court injunction ruling, and government shutdown drive largest monthly increase",
+      "keyDevelopments": [
+        "Two U.S. citizens fatally shot by ICE/CBP agents in Minneapolis; nationwide protests and Minnesota general strike followed",
+        "Supreme Court 6-3 ruling eliminated nationwide injunctions, gutting primary judicial check on executive overreach",
+        "Four-day partial government shutdown (Jan 30–Feb 3); DHS funded only through Feb 13 amid ICE enforcement dispute"
+      ],
+      "categoryChanges": [
+        { "category": "rule-of-law", "from": 8, "to": 9, "rationale": "SCOTUS eliminated nationwide injunctions 6-3; court granted 66 emergency stays for administration; Congress moved to impeach judges; ICE violated 96+ court orders in Minnesota" },
+        { "category": "regulatory-stability", "from": 6, "to": 7, "rationale": "SCOTUS injunction ruling dramatically reduces ability to challenge regulatory overreach in court; 235 EOs now signed; Schedule F final rule imminent" },
+        { "category": "fiscal-policy", "from": 7, "to": 8, "rationale": "Four-day government shutdown; DHS funded only 2 weeks; DOGE claimed $215B in savings but independent analyses estimate net cost of $21.7B–$135B; 300K+ federal workers departed" },
+        { "category": "media-freedom", "from": 7, "to": 8, "rationale": "FCC opened NPR/PBS inquiry linked to defunding effort; US dropped to 55th in press freedom (lowest ever); journalists arrested at Minnesota protests" },
+        { "category": "civil-discourse", "from": 7, "to": 9, "rationale": "Two U.S. citizens killed by federal immigration agents; Minnesota general strike Jan 23; nationwide 'no work, no school' protests Jan 30; DOJ investigating governor while arresting church protesters" },
+        { "category": "institutional-integrity", "from": 9, "to": 10, "rationale": "300K+ federal employees departed (212K+ forced out); replacement IGs are former Trump officials; CIGIE defunded; SCOTUS gutted nationwide injunctions; IG offices lost 20-30% staff" }
       ]
     }
   ]

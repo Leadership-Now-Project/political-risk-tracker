@@ -22,7 +22,7 @@
       "lastUpdated": "2026-01-21"
     },
     "rule-of-law": {
-      "score": 8,
+      "score": 9,
       "trend": "increasing",
       "keyFindings": [
         "Deputy AG Todd Blanche declared administration at 'war' with federal judiciary at Federalist Society conference (Nov 2025); NYC Bar Association condemned remarks as assault on judicial independence",
@@ -59,7 +59,7 @@
       "lastUpdated": "2026-01-21"
     },
     "regulatory-stability": {
-      "score": 6,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "President signed 229 executive orders, 57 memoranda, and 118 proclamations in first year—dramatically increasing tempo and detail of directives compared to prior administrations (Ballotpedia)",
@@ -116,7 +116,7 @@
       "lastUpdated": "2026-01-21"
     },
     "fiscal-policy": {
-      "score": 7,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
         "Trump attempted to fire Fed Governor Lisa Cook over unproven fraud claims—unprecedented action testing presidential power over central bank; case likely heading to Supreme Court (NBC News)",
@@ -135,7 +135,7 @@
       "lastUpdated": "2026-01-21"
     },
     "media-freedom": {
-      "score": 7,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
         "Committee to Protect Journalists reports press freedom 'no longer a given in the United States'; FCC Chair opened investigations into ABC, NBC, CBS, and local outlets (CPJ/ACLU)",
@@ -154,7 +154,7 @@
       "lastUpdated": "2026-01-21"
     },
     "civil-discourse": {
-      "score": 7,
+      "score": 9,
       "trend": "increasing",
       "keyFindings": [
         "Threats against federal judges more than tripled over past decade; 2025 on pace to surpass previous highs according to U.S. Marshals Service data (NYC Bar Association)",
@@ -173,7 +173,7 @@
       "lastUpdated": "2026-01-21"
     },
     "institutional-integrity": {
-      "score": 9,
+      "score": 10,
       "trend": "increasing",
       "keyFindings": [
         "17 inspectors general fired via email on January 24, 2025 citing 'changing priorities'; federal judge ruled firings unlawful but declined reinstatement; Council of IGs stated action not 'legally sufficient' (Lawfare)",
@@ -193,10 +193,10 @@
     }
   },
   "domainScores": {
-    "rule-of-law": 8.0,
-    "operating-economic": 6.5,
-    "societal-institutional": 7.67
+    "rule-of-law": 8.33,
+    "operating-economic": 7.0,
+    "societal-institutional": 9.0
   },
-  "overallScore": 7.3,
+  "overallScore": 8.0,
   "riskLevel": "High"
 }

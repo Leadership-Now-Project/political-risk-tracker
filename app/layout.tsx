@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
+import DraftWatermark from '@/components/DraftWatermark';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -48,6 +49,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <DraftWatermark />
       </body>
     </html>
   );

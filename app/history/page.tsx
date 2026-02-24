@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import Link from 'next/link';
 import {
   CategoriesData,
@@ -10,6 +10,7 @@ import {
   DomainId,
   HistoricalChangesData,
 } from '@/lib/types';
+import { useFilterParam } from '@/hooks/useFilterParams';
 import { getRiskLevel, getRiskLevelColor, getScoreColor } from '@/lib/risk-levels';
 import { getDomainInfo } from '@/lib/scoring';
 import TrendChart from '@/components/TrendChart';
@@ -25,6 +26,7 @@ import history202510 from '@/data/history/2025-10-20.json';
 import history202511 from '@/data/history/2025-11-20.json';
 import history202512 from '@/data/history/2025-12-20.json';
 import history202601 from '@/data/history/2026-01-20.json';
+import history202602 from '@/data/history/2026-02-20.json';
 
 const PAGE_SECTIONS = [
   { id: 'overall-trend', label: 'Overall Trend' },
@@ -60,11 +62,19 @@ const categoryNames: Record<string, string> = {
 };
 
 export default function HistoryPage() {
+  return (
+    <Suspense fallback={<div className="animate-pulse p-8 text-navy/50 dark:text-cream/50">Loading...</div>}>
+      <HistoryPageContent />
+    </Suspense>
+  );
+}
+
+function HistoryPageContent() {
   const { categories } = categoriesData as CategoriesData;
   const current = currentData as CurrentAssessment;
   const historicalChanges = historicalChangesData as HistoricalChangesData;
-  const [selectedDomain, setSelectedDomain] = useState<DomainId | 'all'>('all');
-  const [expandedPeriod, setExpandedPeriod] = useState<string | null>('January 2026');
+  const [selectedDomain, setSelectedDomain] = useFilterParam('domain', 'all');
+  const [expandedPeriod, setExpandedPeriod] = useState<string | null>('February 2026');
 
   const historicalSnapshots: HistoricalSnapshot[] = [
     history202507 as HistoricalSnapshot,
@@ -74,6 +84,7 @@ export default function HistoryPage() {
     history202511 as HistoricalSnapshot,
     history202512 as HistoricalSnapshot,
     history202601 as HistoricalSnapshot,
+    history202602 as HistoricalSnapshot,
   ];
 
   // Build chart data for all categories
@@ -100,7 +111,7 @@ export default function HistoryPage() {
   const filteredCategories =
     selectedDomain === 'all'
       ? categories
-      : categories.filter((c) => c.domain === selectedDomain);
+      : categories.filter((c) => c.domain === (selectedDomain as DomainId));
 
   const chartCategories = filteredCategories.map((cat) => ({
     id: cat.id,
@@ -114,6 +125,10 @@ export default function HistoryPage() {
     { id: 'operating-economic', name: 'Operating & Economic Environment' },
     { id: 'societal-institutional', name: 'Societal & Institutional Integrity' },
   ];
+
+  // Dynamic comparison header from earliest snapshot
+  const earliestDate = historicalSnapshots[0]?.date || '';
+  const earliestLabel = new Date(earliestDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 
   // Build comparison table data
   const tableData = filteredCategories.map((cat) => {
@@ -328,7 +343,7 @@ export default function HistoryPage() {
         <h2 className="text-lg font-semibold text-navy dark:text-cream mb-4">
           {selectedDomain === 'all'
             ? 'All Categories Trend'
-            : `${getDomainInfo(selectedDomain).name} Trend`}
+            : `${getDomainInfo(selectedDomain as DomainId).name} Trend`}
         </h2>
         <TrendChart data={allChartData} categories={chartCategories} height={400} />
       </div>
@@ -337,7 +352,7 @@ export default function HistoryPage() {
       <div id="comparison" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light overflow-hidden border border-navy/10 scroll-mt-20">
         <div className="p-6 border-b border-navy/10">
           <h2 className="text-lg font-semibold text-navy dark:text-cream">
-            Score Comparison (July 2025 vs Current)
+            Score Comparison ({earliestLabel} vs Current)
           </h2>
         </div>
         <div className="overflow-x-auto">
@@ -348,7 +363,7 @@ export default function HistoryPage() {
                   Category
                 </th>
                 <th className="px-6 py-3 text-center text-xs font-medium text-navy/60 dark:text-cream/60 uppercase tracking-wider">
-                  Jul 2025
+                  {earliestLabel}
                 </th>
                 <th className="px-6 py-3 text-center text-xs font-medium text-navy/60 dark:text-cream/60 uppercase tracking-wider">
                   Current

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-20",
+  "scores": {
+    "elections": 8,
+    "rule-of-law": 9,
+    "national-security": 8,
+    "regulatory-stability": 7,
+    "trade-policy": 7,
+    "government-contracts": 6,
+    "fiscal-policy": 8,
+    "media-freedom": 8,
+    "civil-discourse": 9,
+    "institutional-integrity": 10
+  },
+  "domainScores": {
+    "rule-of-law": 8.33,
+    "operating-economic": 7.0,
+    "societal-institutional": 9.0
+  },
+  "overallScore": 8.0,
+  "riskLevel": "High"
+}
