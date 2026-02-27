@@ -1,18 +1,18 @@
 'use client';
 
-import { ActionCategory } from '@/lib/types';
 import { getCategoryLabel } from '@/lib/actions-utils';
+import { ActionCategory } from '@/lib/types';
 
 interface CategoryFilterProps {
   categories: ActionCategory[];
-  selected: ActionCategory[];
-  onChange: (selected: ActionCategory[]) => void;
+  selected: string[];
+  onChange: (selected: string[]) => void;
 }
 
 export default function CategoryFilter({ categories, selected, onChange }: CategoryFilterProps) {
   const isAllSelected = selected.length === 0;
 
-  const toggleCategory = (category: ActionCategory) => {
+  const toggleCategory = (category: string) => {
     if (selected.includes(category)) {
       onChange(selected.filter((c) => c !== category));
     } else {
@@ -44,7 +44,7 @@ export default function CategoryFilter({ categories, selected, onChange }: Categ
                 : 'bg-cream dark:bg-navy-700 text-navy/60 dark:text-cream/60 hover:text-navy dark:hover:text-cream'
             }`}
           >
-            {getCategoryLabel(category)}
+            {getCategoryLabel(category as ActionCategory)}
           </button>
         );
       })}

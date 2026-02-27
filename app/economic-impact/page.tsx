@@ -286,52 +286,66 @@ export default function EconomicImpactPage() {
                 isSelected ? getColorBorder(impact.color) : 'border-transparent'
               }`}
             >
-              <div className="flex items-start justify-between mb-3">
+              {/* Header - compact on mobile, spacious on desktop */}
+              <div className="flex items-start justify-between mb-0 md:mb-3">
                 <div>
                   <h3 className="font-semibold text-navy dark:text-cream">{indicator.name}</h3>
                   <span className="text-xs text-navy/50 dark:text-cream/50 uppercase">
                     {indicator.category} indicator
                   </span>
                 </div>
-                <div className="text-right">
+                <div className="text-right flex items-center gap-2 md:block">
                   <span
-                    className="text-2xl font-bold"
+                    className="text-xl md:text-2xl font-bold"
                     style={{ color: getScoreColor(impact.score) }}
                   >
                     {impact.score.toFixed(1)}
                   </span>
-                  <div className="text-xs text-navy/50 dark:text-cream/50">impact score</div>
+                  <span className={`md:hidden inline-block px-2 py-0.5 rounded text-xs font-medium ${getColorClass(impact.color)}`}>
+                    {impact.level}
+                  </span>
+                  <div className="hidden md:block text-xs text-navy/50 dark:text-cream/50">impact score</div>
                 </div>
               </div>
 
-              {/* Current Value */}
-              <div className="bg-cream/50 dark:bg-navy-700/50 rounded-lg p-3 mb-3">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-2xl font-bold text-navy dark:text-cream">
-                      {formatValue(indicator.currentData.value, indicator.unit)}
+              {/* Detailed content - hidden on mobile unless selected */}
+              <div className={`${isSelected ? 'block' : 'hidden'} md:block mt-3`}>
+                {/* Current Value */}
+                <div className="bg-cream/50 dark:bg-navy-700/50 rounded-lg p-3 mb-3">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-2xl font-bold text-navy dark:text-cream">
+                        {formatValue(indicator.currentData.value, indicator.unit)}
+                      </div>
+                      <div className="text-xs text-navy/50 dark:text-cream/50">
+                        as of {indicator.currentData.asOf} · {indicator.currentData.source}
+                      </div>
                     </div>
-                    <div className="text-xs text-navy/50 dark:text-cream/50">
-                      as of {indicator.currentData.asOf} · {indicator.currentData.source}
+                    <div className="text-right">
+                      <div className={`text-lg font-semibold ${
+                        yoyChange > 0 ? 'text-red-600' : yoyChange < 0 ? 'text-green-600' : 'text-navy/50'
+                      }`}>
+                        {yoyChange > 0 ? '+' : ''}{yoyChange.toFixed(1)}%
+                      </div>
+                      <div className="text-xs text-navy/50 dark:text-cream/50">YoY</div>
                     </div>
                   </div>
-                  <div className="text-right">
-                    <div className={`text-lg font-semibold ${
-                      yoyChange > 0 ? 'text-red-600' : yoyChange < 0 ? 'text-green-600' : 'text-navy/50'
-                    }`}>
-                      {yoyChange > 0 ? '+' : ''}{yoyChange.toFixed(1)}%
-                    </div>
-                    <div className="text-xs text-navy/50 dark:text-cream/50">YoY</div>
-                  </div>
+                  <p className="text-xs text-navy/60 dark:text-cream/60 mt-2">
+                    {indicator.currentData.context}
+                  </p>
                 </div>
-                <p className="text-xs text-navy/60 dark:text-cream/60 mt-2">
-                  {indicator.currentData.context}
-                </p>
+
+                <div className={`hidden md:inline-block px-2 py-1 rounded text-xs font-medium ${getColorClass(impact.color)}`}>
+                  {impact.level}
+                </div>
               </div>
 
-              <div className={`inline-block px-2 py-1 rounded text-xs font-medium ${getColorClass(impact.color)}`}>
-                {impact.level}
-              </div>
+              {/* Mobile tap hint */}
+              {!isSelected && (
+                <div className="md:hidden text-xs text-center text-navy/40 dark:text-cream/40 mt-2">
+                  Tap for details
+                </div>
+              )}
             </button>
           );
         })}
@@ -468,72 +482,128 @@ export default function EconomicImpactPage() {
       )}
 
       {/* Sensitivity Matrix */}
-      <div id="sensitivity" className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden scroll-mt-20">
-        <div className="p-6 border-b border-navy/10">
-          <h2 className="text-lg font-semibold text-navy dark:text-cream">Sensitivity Matrix</h2>
-          <p className="text-sm text-navy/60 dark:text-cream/60 mt-1">
-            How strongly each risk category affects each indicator (darker = stronger relationship)
-          </p>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs">
-            <thead className="bg-cream dark:bg-navy-700">
-              <tr>
-                <th className="px-3 py-2 text-left font-medium text-navy/60 dark:text-cream/60 sticky left-0 bg-cream dark:bg-navy-700">
-                  Indicator
-                </th>
-                {CATEGORIES.map((catId) => (
-                  <th key={catId} className="px-2 py-2 text-center font-medium text-navy/60 dark:text-cream/60 whitespace-nowrap">
-                    <span className="writing-mode-vertical" style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}>
-                      {categoryNames[catId]}
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-navy/10 dark:divide-cream/10">
-              {economic.indicators.map((indicator) => (
-                <tr key={indicator.id} className="hover:bg-cream/50 dark:hover:bg-navy-700/50">
-                  <td className="px-3 py-2 font-medium text-navy dark:text-cream sticky left-0 bg-white dark:bg-navy-600 whitespace-nowrap">
-                    {indicator.name}
-                  </td>
-                  {CATEGORIES.map((catId) => {
-                    const sensitivity = indicator.sensitivity[catId];
-                    const weight = sensitivity ? Math.abs(sensitivity.weight) : 0;
-                    const opacity = weight;
-                    const isPositive = sensitivity && sensitivity.weight > 0;
-
-                    return (
-                      <td key={catId} className="px-2 py-2 text-center">
-                        {weight > 0 && (
-                          <div
-                            className="w-8 h-8 mx-auto rounded flex items-center justify-center text-white font-medium"
-                            style={{
-                              backgroundColor: isPositive
-                                ? `rgba(239, 68, 68, ${opacity})`
-                                : `rgba(59, 130, 246, ${opacity})`,
-                            }}
-                            title={sensitivity?.description}
-                          >
-                            {weight.toFixed(1)}
-                          </div>
-                        )}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="p-4 border-t border-navy/10 flex items-center justify-center gap-6 text-xs">
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded bg-blue-500" />
-            <span className="text-navy/60 dark:text-cream/60">Negative correlation (risk ↑ = indicator ↓)</span>
+      <div id="sensitivity" className="scroll-mt-20">
+        {/* Desktop: full table */}
+        <div className="hidden md:block bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
+          <div className="p-6 border-b border-navy/10">
+            <h2 className="text-lg font-semibold text-navy dark:text-cream">Sensitivity Matrix</h2>
+            <p className="text-sm text-navy/60 dark:text-cream/60 mt-1">
+              How strongly each risk category affects each indicator (darker = stronger relationship)
+            </p>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded bg-red-500" />
-            <span className="text-navy/60 dark:text-cream/60">Positive correlation (risk ↑ = indicator ↑)</span>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead className="bg-cream dark:bg-navy-700">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-navy/60 dark:text-cream/60 sticky left-0 bg-cream dark:bg-navy-700">
+                    Indicator
+                  </th>
+                  {CATEGORIES.map((catId) => (
+                    <th key={catId} className="px-2 py-2 text-center font-medium text-navy/60 dark:text-cream/60 whitespace-nowrap">
+                      <span className="writing-mode-vertical" style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}>
+                        {categoryNames[catId]}
+                      </span>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-navy/10 dark:divide-cream/10">
+                {economic.indicators.map((indicator) => (
+                  <tr key={indicator.id} className="hover:bg-cream/50 dark:hover:bg-navy-700/50">
+                    <td className="px-3 py-2 font-medium text-navy dark:text-cream sticky left-0 bg-white dark:bg-navy-600 whitespace-nowrap">
+                      {indicator.name}
+                    </td>
+                    {CATEGORIES.map((catId) => {
+                      const sensitivity = indicator.sensitivity[catId];
+                      const weight = sensitivity ? Math.abs(sensitivity.weight) : 0;
+                      const opacity = weight;
+                      const isPositive = sensitivity && sensitivity.weight > 0;
+
+                      return (
+                        <td key={catId} className="px-2 py-2 text-center">
+                          {weight > 0 && (
+                            <div
+                              className="w-8 h-8 mx-auto rounded flex items-center justify-center text-white font-medium"
+                              style={{
+                                backgroundColor: isPositive
+                                  ? `rgba(239, 68, 68, ${opacity})`
+                                  : `rgba(59, 130, 246, ${opacity})`,
+                              }}
+                              title={sensitivity?.description}
+                            >
+                              {weight.toFixed(1)}
+                            </div>
+                          )}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="p-4 border-t border-navy/10 flex items-center justify-center gap-6 text-xs">
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded bg-blue-500" />
+              <span className="text-navy/60 dark:text-cream/60">Negative correlation (risk ↑ = indicator ↓)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded bg-red-500" />
+              <span className="text-navy/60 dark:text-cream/60">Positive correlation (risk ↑ = indicator ↑)</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile: card-based sensitivity view */}
+        <div className="md:hidden bg-white dark:bg-navy-600 rounded-lg shadow-ln-light border border-navy/10 overflow-hidden">
+          <div className="p-4 border-b border-navy/10">
+            <h2 className="text-lg font-semibold text-navy dark:text-cream">Sensitivity Matrix</h2>
+            <p className="text-sm text-navy/60 dark:text-cream/60 mt-1">
+              How risk categories affect each indicator
+            </p>
+          </div>
+          <div className="p-4 space-y-4">
+            {economic.indicators.map((indicator) => {
+              const sensitiveCats = CATEGORIES
+                .filter(catId => indicator.sensitivity[catId])
+                .sort((a, b) => Math.abs(indicator.sensitivity[b]?.weight || 0) - Math.abs(indicator.sensitivity[a]?.weight || 0));
+
+              return (
+                <div key={indicator.id} className="border border-navy/10 rounded-lg p-3">
+                  <h3 className="font-medium text-navy dark:text-cream text-sm mb-2">{indicator.name}</h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {sensitiveCats.map(catId => {
+                      const s = indicator.sensitivity[catId];
+                      const weight = Math.abs(s.weight);
+                      const isPositive = s.weight > 0;
+                      return (
+                        <span
+                          key={catId}
+                          className={`text-xs px-2 py-1 rounded font-medium ${
+                            isPositive
+                              ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
+                              : 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
+                          }`}
+                          style={{ opacity: 0.4 + weight * 0.6 }}
+                        >
+                          {categoryNames[catId]}: {weight.toFixed(1)}
+                        </span>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="p-4 border-t border-navy/10 flex flex-col gap-2 text-xs">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded bg-blue-500" />
+              <span className="text-navy/60 dark:text-cream/60">Negative (risk ↑ = indicator ↓)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded bg-red-500" />
+              <span className="text-navy/60 dark:text-cream/60">Positive (risk ↑ = indicator ↑)</span>
+            </div>
           </div>
         </div>
       </div>

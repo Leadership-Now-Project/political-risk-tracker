@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { ActionsPushbackData, ActionCategory } from '@/lib/types';
 import { searchActionsAndPushback, filterByCategory, sortActions, sortPushback } from '@/lib/actions-utils';
+import { useFilterParam, useFilterParamArray } from '@/hooks/useFilterParams';
 import PageNav from '@/components/PageNav';
 import SearchBar from './SearchBar';
 import CategoryFilter from './CategoryFilter';
@@ -25,19 +26,19 @@ const allCategories: ActionCategory[] = [
 ];
 
 export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashboardProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategories, setSelectedCategories] = useState<ActionCategory[]>([]);
-  const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
-  const [actionSortBy, setActionSortBy] = useState<'date' | 'status' | 'category' | 'type'>('date');
-  const [pushbackSortBy, setPushbackSortBy] = useState<'date' | 'status' | 'type'>('date');
+  const [searchQuery, setSearchQuery] = useFilterParam('q', '');
+  const [selectedCategories, setSelectedCategories] = useFilterParamArray('category');
+  const [viewMode, setViewMode] = useFilterParam('view', 'cards');
+  const [actionSortBy, setActionSortBy] = useFilterParam('sort', 'date');
+  const [pushbackSortBy, setPushbackSortBy] = useFilterParam('psort', 'date');
 
   const filtered = useMemo(() => {
     let result = { actions: data.actions, pushback: data.pushback };
-    result = filterByCategory(result.actions, result.pushback, selectedCategories);
+    result = filterByCategory(result.actions, result.pushback, selectedCategories as ActionCategory[]);
     result = searchActionsAndPushback(result.actions, result.pushback, searchQuery);
     return {
-      actions: sortActions(result.actions, actionSortBy),
-      pushback: sortPushback(result.pushback, pushbackSortBy),
+      actions: sortActions(result.actions, actionSortBy as 'date' | 'status' | 'category' | 'type'),
+      pushback: sortPushback(result.pushback, pushbackSortBy as 'date' | 'status' | 'type'),
     };
   }, [data, searchQuery, selectedCategories, actionSortBy, pushbackSortBy]);
 
@@ -137,7 +138,7 @@ export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashbo
             <h2 className="text-lg font-semibold text-navy dark:text-cream mb-4">
               Actions by Category
             </h2>
-            <CategoryBarChart data={summary.categorySummaries} />
+            <CategoryBarChart data={summary.categorySummaries} actions={data.actions} />
           </div>
         </div>
 
@@ -147,6 +148,20 @@ export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashbo
             <h2 className="text-lg font-semibold text-navy dark:text-cream">
               Executive Actions ({filtered.actions.length})
             </h2>
+            <div className="flex items-center gap-2">
+              <label htmlFor="action-sort" className="text-sm text-navy/60 dark:text-cream/60">Sort by</label>
+              <select
+                id="action-sort"
+                value={actionSortBy}
+                onChange={(e) => setActionSortBy(e.target.value as typeof actionSortBy)}
+                className="text-sm rounded-lg border border-navy/10 bg-white dark:bg-navy-700 text-navy dark:text-cream px-2 py-1"
+              >
+                <option value="date">Date</option>
+                <option value="status">Status</option>
+                <option value="category">Category</option>
+                <option value="type">Type</option>
+              </select>
+            </div>
           </div>
           {viewMode === 'cards' ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -157,7 +172,7 @@ export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashbo
           ) : (
             <ActionsTable
               actions={filtered.actions}
-              sortBy={actionSortBy}
+              sortBy={actionSortBy as 'date' | 'status' | 'category' | 'type'}
               onSortChange={setActionSortBy}
             />
           )}
@@ -184,7 +199,7 @@ export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashbo
           ) : (
             <PushbackTable
               pushback={filtered.pushback}
-              sortBy={pushbackSortBy}
+              sortBy={pushbackSortBy as 'date' | 'status' | 'type'}
               onSortChange={setPushbackSortBy}
             />
           )}

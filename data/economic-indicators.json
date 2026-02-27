@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-20",
+  "lastUpdated": "2026-02-04",
   "scoreDefinitions": {
     "marketImpactScore": {
       "name": "Market Impact Score",
@@ -20,13 +20,13 @@
       "unit": "index",
       "description": "Broad US equity market performance",
       "currentData": {
-        "value": 5827.04,
-        "asOf": "2026-01-17",
+        "value": 6919,
+        "asOf": "2026-02-03",
         "source": "Yahoo Finance",
-        "context": "Down 4.2% YTD; trading below 200-day moving average since tariff announcements",
+        "context": "Near all-time highs; briefly exceeded 7,000 for first time on Jan 28; AI sector rotation driving short-term volatility with Nvidia -2.8%, PayPal -20.3% on earnings",
         "priorYearValue": 6118.71,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": -4.8
+        "yearOverYearChange": 13.1
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Electoral uncertainty reduces investor confidence" },
@@ -54,13 +54,13 @@
       "unit": "percent",
       "description": "Benchmark government borrowing rate",
       "currentData": {
-        "value": 4.61,
-        "asOf": "2026-01-17",
+        "value": 4.28,
+        "asOf": "2026-02-03",
         "source": "U.S. Treasury",
-        "context": "Up 58 bps YTD; reflects inflation concerns from tariffs and Fed independence threats",
+        "context": "Rose above 4.25% on Kevin Warsh Fed Chair nomination; ISM manufacturing surprise (52.6 vs 48.4 expected) pushed 30-year yield to 4.91%; markets pricing two rate cuts in 2026",
         "priorYearValue": 4.03,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 14.4
+        "yearOverYearChange": 6.2
       },
       "sensitivity": {
         "elections": { "weight": 0.3, "description": "Electoral uncertainty can drive flight to safety (lower yields) or inflation fears (higher)" },
@@ -88,13 +88,13 @@
       "unit": "index",
       "description": "Dollar strength vs major currencies",
       "currentData": {
-        "value": 108.54,
-        "asOf": "2026-01-17",
+        "value": 97.4,
+        "asOf": "2026-02-04",
         "source": "ICE",
-        "context": "Near 2-year highs but showing weakness on Fed independence concerns; safe haven flows offsetting institutional worries",
+        "context": "Down ~10% from early-2025 highs near 110; briefly broke below 95.5 in January (4-year low); weakened on Fed independence concerns, institutional erosion, and US-India trade deal",
         "priorYearValue": 103.42,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 4.9
+        "yearOverYearChange": -5.8
       },
       "sensitivity": {
         "elections": { "weight": -0.4, "description": "Political uncertainty typically weakens currency" },
@@ -122,13 +122,13 @@
       "unit": "percent",
       "description": "Real economic output growth",
       "currentData": {
-        "value": 1.8,
-        "asOf": "2025-Q4",
-        "source": "BEA (Advance Estimate)",
-        "context": "Below 2.5% trend; tariff uncertainty weighing on business investment; Atlanta Fed GDPNow tracking 1.4% for Q1 2026",
-        "priorYearValue": 2.8,
-        "priorYearDate": "2024-Q4",
-        "yearOverYearChange": -35.7
+        "value": 4.4,
+        "asOf": "2025-Q3",
+        "source": "BEA (Updated Estimate)",
+        "context": "Strongest quarter in two years; Q4 advance estimate delayed to Feb 20 by government shutdown; GDPNow tracking 4.2% for Q4; Q1 2025 contracted -0.3% on tariff front-loading before strong rebound",
+        "priorYearValue": 3.1,
+        "priorYearDate": "2024-Q3",
+        "yearOverYearChange": 41.9
       },
       "sensitivity": {
         "elections": { "weight": -0.4, "description": "Electoral uncertainty delays business investment" },
@@ -156,13 +156,13 @@
       "unit": "percent",
       "description": "5-Year breakeven inflation rate",
       "currentData": {
-        "value": 2.58,
-        "asOf": "2026-01-17",
+        "value": 2.52,
+        "asOf": "2026-02-02",
         "source": "FRED (T5YIE)",
-        "context": "Above Fed 2% target; tariff passthrough adding estimated 0.5-0.8% to inflation expectations per Peterson Institute analysis",
+        "context": "Slightly below prior reading but still above Fed 2% target; tariff passthrough concerns offset by dollar weakness; markets watching Warsh confirmation for Fed credibility signal",
         "priorYearValue": 2.31,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 11.7
+        "yearOverYearChange": 9.1
       },
       "sensitivity": {
         "elections": { "weight": 0.3, "description": "Political uncertainty can affect inflation expectations" },
@@ -190,13 +190,13 @@
       "unit": "index",
       "description": "Conference Board Consumer Confidence Index",
       "currentData": {
-        "value": 98.4,
-        "asOf": "2025-12",
+        "value": 84.5,
+        "asOf": "2026-01",
         "source": "Conference Board",
-        "context": "Below 100 threshold indicating pessimism; expectations component at 78.3, well below 80 recession signal",
-        "priorYearValue": 114.8,
-        "priorYearDate": "2024-12",
-        "yearOverYearChange": -14.3
+        "context": "Plunged 9.7 points to lowest since May 2014; expectations component at 65.1, well below 80 recession signal threshold; broad-based decline across all demographics and income groups; tariff and inflation concerns dominate write-ins",
+        "priorYearValue": 104.1,
+        "priorYearDate": "2025-01",
+        "yearOverYearChange": -18.8
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Political uncertainty directly affects consumer sentiment" },
@@ -224,13 +224,13 @@
       "unit": "percent change",
       "description": "Private nonresidential fixed investment (QoQ annualized)",
       "currentData": {
-        "value": -0.8,
-        "asOf": "2025-Q4",
+        "value": 3.2,
+        "asOf": "2025-Q3",
         "source": "BEA",
-        "context": "First negative quarter since 2020; CEO confidence surveys at 2-year lows citing regulatory and trade uncertainty",
+        "context": "Equipment investment up 5.2% driven by AI/tech spending; IP products up 5.6% on generative AI capital deepening; structures contracted 5.0% for seventh consecutive quarter; GDPNow tracking Q4 equipment at 3.6%",
         "priorYearValue": 3.2,
         "priorYearDate": "2024-Q4",
-        "yearOverYearChange": -125.0
+        "yearOverYearChange": 0.0
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Political uncertainty delays capex decisions" },
@@ -258,13 +258,13 @@
       "unit": "USD billions",
       "description": "Net FDI inflows (quarterly)",
       "currentData": {
-        "value": 42.3,
+        "value": 35.2,
         "asOf": "2025-Q3",
-        "source": "BEA",
-        "context": "Down 38% from 2024 average; European investors citing rule of law concerns; greenfield announcements at 5-year low",
+        "source": "BEA / Camoin Associates",
+        "context": "FDI project announcements down 26% YoY (546 projects Jun-Sep 2025); capital investment down 18% YoY; Q1 2025 was second-weakest quarter since 2022 at $52.8B; European and Asian investors citing institutional concerns",
         "priorYearValue": 68.1,
         "priorYearDate": "2024-Q3",
-        "yearOverYearChange": -37.9
+        "yearOverYearChange": -48.3
       },
       "sensitivity": {
         "elections": { "weight": -0.5, "description": "Political uncertainty deters foreign investors" },
@@ -292,13 +292,13 @@
       "unit": "basis points",
       "description": "ICE BofA US High Yield Index OAS",
       "currentData": {
-        "value": 372,
-        "asOf": "2026-01-17",
+        "value": 277,
+        "asOf": "2026-01",
         "source": "ICE/FRED",
-        "context": "Above 350 bps stress threshold; widened 85 bps since Fed independence concerns emerged in December",
+        "context": "Historically tight at 277 bps despite elevated political risk; strong investor risk appetite and anticipated Fed rate cuts compressing spreads; below 300 bps threshold",
         "priorYearValue": 287,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 29.6
+        "yearOverYearChange": -3.5
       },
       "sensitivity": {
         "elections": { "weight": 0.4, "description": "Political uncertainty widens spreads" },
@@ -326,13 +326,13 @@
       "unit": "index",
       "description": "CBOE Volatility Index - market fear gauge",
       "currentData": {
-        "value": 24.8,
-        "asOf": "2026-01-17",
+        "value": 15.06,
+        "asOf": "2026-02-03",
         "source": "CBOE",
-        "context": "Elevated above 20 'fear threshold' for 47 consecutive days; tariff and Fed headlines driving spikes above 30",
+        "context": "Below 20 'fear threshold' and near long-term average; AI-driven market rally and easing trade tensions have compressed implied volatility; well below late-2025 highs",
         "priorYearValue": 16.2,
         "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 53.1
+        "yearOverYearChange": -7.0
       },
       "sensitivity": {
         "elections": { "weight": 0.7, "description": "Political uncertainty spikes volatility" },

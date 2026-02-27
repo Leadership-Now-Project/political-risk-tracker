@@ -76,6 +76,23 @@ export function getRubricTier(score: number): '1-2' | '3-4' | '5-6' | '7-8' | '9
   return '9-10';
 }
 
+// Map risk category IDs to ActionCategory slugs for cross-linking
+export function riskCategoryToActionCategories(riskCategoryId: string): string[] {
+  const mapping: Record<string, string[]> = {
+    'elections': ['government-reform'],
+    'rule-of-law': ['judiciary'],
+    'national-security': ['foreign-policy'],
+    'regulatory-stability': ['government-reform', 'economic-policy'],
+    'trade-policy': ['economic-policy'],
+    'government-contracts': ['government-reform'],
+    'fiscal-policy': ['economic-policy'],
+    'media-freedom': ['media-press', 'education'],
+    'civil-discourse': ['civil-rights', 'immigration'],
+    'institutional-integrity': ['government-reform'],
+  };
+  return mapping[riskCategoryId] ?? [];
+}
+
 // Calculate score change between two assessments
 export function calculateScoreChange(
   currentScore: number,

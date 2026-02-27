@@ -1,22 +1,22 @@
 {
   "date": "2025-09-20",
   "scores": {
-    "elections": 5,
-    "rule-of-law": 4,
-    "national-security": 4,
-    "regulatory-stability": 4,
-    "trade-policy": 4,
-    "government-contracts": 3,
-    "fiscal-policy": 4,
-    "media-freedom": 4,
-    "civil-discourse": 5,
-    "institutional-integrity": 4
+    "elections": 6,
+    "rule-of-law": 6,
+    "national-security": 6,
+    "regulatory-stability": 5,
+    "trade-policy": 6,
+    "government-contracts": 5,
+    "fiscal-policy": 5,
+    "media-freedom": 5,
+    "civil-discourse": 6,
+    "institutional-integrity": 8
   },
   "domainScores": {
-    "rule-of-law": 4.33,
-    "operating-economic": 3.75,
-    "societal-institutional": 4.33
+    "rule-of-law": 6.0,
+    "operating-economic": 5.25,
+    "societal-institutional": 6.33
   },
-  "overallScore": 4.1,
-  "riskLevel": "Moderate"
+  "overallScore": 5.8,
+  "riskLevel": "Elevated"
 }

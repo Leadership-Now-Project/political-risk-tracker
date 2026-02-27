@@ -2,22 +2,25 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { CategoriesData, CurrentAssessment, StatesData, DomainId, ActionsPushbackData } from '@/lib/types';
+import { CategoriesData, CurrentAssessment, StatesData, DomainId, ActionsPushbackData, HistoricalSnapshot, HistoricalChangesData } from '@/lib/types';
 import OverallScore from '@/components/OverallScore';
 import RiskViewToggle from '@/components/RiskViewToggle';
 import MekkoChart from '@/components/MekkoChart';
 import USHeatmap from '@/components/USHeatmap';
 import DomainSection from '@/components/DomainSection';
 import PageNav from '@/components/PageNav';
+import KeyTakeaways from '@/components/KeyTakeaways';
 
 interface DashboardProps {
   categoriesData: CategoriesData;
   currentData: CurrentAssessment;
   statesData: StatesData;
   actionsPushbackData?: ActionsPushbackData;
+  previousSnapshot: HistoricalSnapshot;
+  historicalChanges: HistoricalChangesData;
 }
 
-export default function Dashboard({ categoriesData, currentData, statesData, actionsPushbackData }: DashboardProps) {
+export default function Dashboard({ categoriesData, currentData, statesData, actionsPushbackData, previousSnapshot, historicalChanges }: DashboardProps) {
   const [view, setView] = useState<'national' | 'state'>('national');
 
   const { categories } = categoriesData;
@@ -26,6 +29,7 @@ export default function Dashboard({ categoriesData, currentData, statesData, act
   const pageSections = useMemo(() => {
     const base = [
       { id: 'overall-score', label: 'Overall Score' },
+      { id: 'key-takeaways', label: 'Key Changes' },
       { id: 'visualization', label: view === 'national' ? 'Risk Chart' : 'State Map' },
     ];
     if (view === 'national') {
@@ -61,6 +65,15 @@ export default function Dashboard({ categoriesData, currentData, statesData, act
             riskLevel={currentData.riskLevel}
             assessmentDate={currentData.assessmentDate}
             assessmentPeriod={currentData.assessmentPeriod}
+          />
+        </div>
+
+        {/* Key Takeaways */}
+        <div id="key-takeaways" className="scroll-mt-20">
+          <KeyTakeaways
+            current={currentData}
+            previousSnapshot={previousSnapshot}
+            historicalChanges={historicalChanges}
           />
         </div>
 

@@ -1,13 +1,17 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { CategoriesData, CurrentAssessment, HistoricalSnapshot, ChartDataPoint } from '@/lib/types';
+import { CategoriesData, CurrentAssessment, HistoricalSnapshot, ChartDataPoint, ScenariosData, EconomicIndicatorsData, ActionsPushbackData } from '@/lib/types';
 import { getRiskLevel, getRiskLevelColor, getTrendIcon, getTrendColor } from '@/lib/risk-levels';
-import { getRubricTier, getDomainInfo } from '@/lib/scoring';
+import { getRubricTier, getDomainInfo, riskCategoryToActionCategories } from '@/lib/scoring';
 import RiskGauge from '@/components/RiskGauge';
 import RiskLevelBadge from '@/components/RiskLevelBadge';
 import TrendChart from '@/components/TrendChart';
+import RelatedContext from '@/components/RelatedContext';
 import categoriesData from '@/data/categories.json';
 import currentData from '@/data/current.json';
+import scenariosData from '@/data/scenarios.json';
+import economicData from '@/data/economic-indicators.json';
+import actionsPushbackData from '@/data/actions-pushback.json';
 import history202507 from '@/data/history/2025-07-20.json';
 import history202508 from '@/data/history/2025-08-20.json';
 import history202509 from '@/data/history/2025-09-20.json';
@@ -61,6 +65,24 @@ export default async function CategoryPage({ params }: PageProps) {
       [slug]: score.score,
     },
   ];
+
+  // Cross-link counts
+  const scenarios = scenariosData as ScenariosData;
+  const scenarioCount = scenarios.events.filter(
+    e => e.category === slug || e.impacts.some(i => i.category === slug)
+  ).length;
+
+  const economic = economicData as EconomicIndicatorsData;
+  const indicatorCount = economic.indicators.filter(
+    i => i.sensitivity[slug] !== undefined
+  ).length;
+
+  const actionCategories = riskCategoryToActionCategories(slug);
+  const actionsData = actionsPushbackData as ActionsPushbackData;
+  const actionCount = actionCategories.length > 0
+    ? actionsData.actions.filter(a => actionCategories.includes(a.category)).length
+    : 0;
+  const actionCategoryParams = actionCategories.map(c => `category=${c}`).join('&');
 
   return (
     <div className="space-y-8">
@@ -196,6 +218,15 @@ export default async function CategoryPage({ params }: PageProps) {
           </div>
         </div>
       </div>
+
+      {/* Related Analysis Cross-links */}
+      <RelatedContext
+        categorySlug={slug}
+        scenarioCount={scenarioCount}
+        indicatorCount={indicatorCount}
+        actionCount={actionCount}
+        actionCategoryParams={actionCategoryParams}
+      />
 
       {/* Back to Dashboard */}
       <div className="pt-4">

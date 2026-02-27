@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   LineChart,
   Line,
@@ -38,6 +39,19 @@ export default function TrendChart({
   showSingleCategory,
   height = 300,
 }: TrendChartProps) {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  const tickColor = isDark ? '#F8F6F1' : '#0E2344';
+  const gridColor = isDark ? '#475F87' : '#D1D7E1';
+
   // If showing a single category, just use that one
   const categoriesToShow = showSingleCategory
     ? [{ id: showSingleCategory, name: showSingleCategory, color: '#BDAA77' }]
@@ -47,24 +61,24 @@ export default function TrendChart({
     <div className="w-full bg-white dark:bg-navy-600 rounded-lg p-4">
       <ResponsiveContainer width="100%" height={height}>
         <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#D1D7E1" />
+          <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
           <XAxis
             dataKey="date"
-            tick={{ fontSize: 12, fill: '#0E2344' }}
+            tick={{ fontSize: 12, fill: tickColor }}
           />
           <YAxis
             domain={[0, 10]}
             ticks={[0, 2, 4, 6, 8, 10]}
-            tick={{ fontSize: 12, fill: '#0E2344' }}
+            tick={{ fontSize: 12, fill: tickColor }}
           />
           <Tooltip
             contentStyle={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #D1D7E1',
+              backgroundColor: isDark ? '#0B1C36' : '#FFFFFF',
+              border: `1px solid ${gridColor}`,
               borderRadius: '8px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.12)',
             }}
-            labelStyle={{ fontWeight: 'bold', color: '#0E2344' }}
+            labelStyle={{ fontWeight: 'bold', color: tickColor }}
           />
           <Legend />
           {categoriesToShow?.map((cat, index) => (
