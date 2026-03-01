@@ -32,7 +32,7 @@ This is the single source of truth for maintaining the US Political Risk Tracker
 | `history/YYYY-MM-DD.json` | Point-in-time score snapshots (numbers only) | Monthly |
 | `categories.json` | Static category definitions and rubrics | Rarely |
 | `states.json` | State-level risk data | As needed |
-| `scenarios.json` | Predefined scenario events with impact deltas | As needed |
+| `scenarios.json` | Forward-looking scenario events with impact deltas | Weekly |
 | `economic-indicators.json` | Market/economic indicators with sensitivity weights | As needed |
 | `actions-pushback.json` | Executive actions and legal challenges tracker | Weekly/biweekly |
 | `actions-timeline.json` | Week-by-week chronological view | Weekly/biweekly |
@@ -530,7 +530,47 @@ else: "Severe"
 }
 ```
 
-### Step 5: Validate
+### Step 5: Review and update `data/scenarios.json`
+
+After updating scores and findings, review the scenario file for currency. Scenarios are forward-looking "what if" events shown on category detail pages and the scenarios page.
+
+**Check each existing scenario:**
+- **Has it already occurred?** → Remove it. If the event happened, its effects are already captured in the current scores.
+- **Has its likelihood changed?** → Update `likelihood` to reflect current trajectory (`low`, `moderate`, `high`).
+- **Are impact deltas still accurate?** → Adjust if the baseline has shifted (e.g., a category already at 10 can't go +1).
+
+**Add new scenarios when:**
+- Research reveals a concrete, specific near-term risk or opportunity not already captured
+- A pending court case, legislation, or policy action could materially move scores
+- A new geopolitical or economic development creates forward-looking risk
+
+**Scenario format:**
+```json
+{
+  "id": "kebab-case-id",
+  "label": "Specific, concrete description of the event",
+  "category": "primary-category-id",
+  "domain": "rule-of-law|operating-economic|societal-institutional",
+  "likelihood": "low|moderate|high",
+  "impacts": [
+    { "category": "affected-category-id", "delta": <-2 to +2>, "reason": "Why this event moves this score" }
+  ]
+}
+```
+
+**Rules:**
+- Each scenario should be a single, discrete event — not a vague trend
+- Include both upside (risk-reducing) and downside (risk-increasing) scenarios for balance
+- `delta` values: ±1 for moderate impact, ±2 for transformative impact
+- Keep total scenarios between 25–40, balanced across the 3 domains
+- `likelihood` should reflect a 3–6 month forward window
+
+**Validate:**
+```bash
+node -e "const d = require('./data/scenarios.json'); console.log('Total:', d.events.length); const h={}; d.events.forEach(e=>{h[e.likelihood]=(h[e.likelihood]||0)+1}); console.log('Likelihood:', JSON.stringify(h)); const dom={}; d.events.forEach(e=>{dom[e.domain]=(dom[e.domain]||0)+1}); console.log('Domains:', JSON.stringify(dom));"
+```
+
+### Step 6: Validate
 
 ```bash
 # Verify JSON is valid
@@ -785,6 +825,30 @@ git push
   };
   overallScore: number;
   riskLevel: string;
+}
+```
+
+### `scenarios.json` — Scenario Schema
+
+```typescript
+{
+  events: {
+    id: string;                       // Unique kebab-case identifier
+    label: string;                    // Concrete event description
+    category: string;                 // Primary risk category ID
+    domain: DomainId;                 // "rule-of-law" | "operating-economic" | "societal-institutional"
+    likelihood: "low" | "moderate" | "high";
+    impacts: {
+      category: string;              // Affected category ID
+      delta: number;                 // Score change (-2 to +2)
+      reason: string;                // Why this event moves this score
+    }[];
+  }[];
+  likelihoodDescriptions: {
+    low: string;
+    moderate: string;
+    high: string;
+  };
 }
 ```
 
