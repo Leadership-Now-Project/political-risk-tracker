@@ -1,14 +1,36 @@
 {
   "events": [
     {
-      "id": "scotus-fed-firing",
-      "label": "Supreme Court rules president can fire Federal Reserve chair",
+      "id": "scotus-blocks-fed-firing",
+      "label": "Supreme Court rules president cannot fire Federal Reserve governors (Trump v. Cook)",
+      "category": "fiscal-policy",
+      "domain": "operating-economic",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "fiscal-policy", "delta": -1, "reason": "Preserves central bank independence from political removal" },
+        { "category": "institutional-integrity", "delta": -1, "reason": "Reinforces protections for independent agency heads across government" }
+      ]
+    },
+    {
+      "id": "warsh-fed-clash",
+      "label": "Warsh confirmed as Fed Chair but clashes with White House over rate cuts",
       "category": "fiscal-policy",
       "domain": "operating-economic",
       "likelihood": "moderate",
       "impacts": [
-        { "category": "fiscal-policy", "delta": 2, "reason": "Eliminates central bank independence protection" },
-        { "category": "institutional-integrity", "delta": 1, "reason": "Sets precedent for removing independent agency heads" }
+        { "category": "fiscal-policy", "delta": 1, "reason": "Warsh's hawkish 'sound money' orientation conflicts with Trump's demand for rate cuts, recreating Fed-White House tension" },
+        { "category": "regulatory-stability", "delta": 1, "reason": "Markets whipsaw on conflicting signals about monetary policy direction" }
+      ]
+    },
+    {
+      "id": "fed-chair-vacancy",
+      "label": "Warsh confirmation delayed past May, leaving Fed without confirmed chair",
+      "category": "fiscal-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "fiscal-policy", "delta": 2, "reason": "Leadership vacuum at the Federal Reserve during period of economic stress" },
+        { "category": "institutional-integrity", "delta": 1, "reason": "Unprecedented gap in central bank leadership undermines institutional credibility" }
       ]
     },
     {
@@ -23,14 +45,92 @@
       ]
     },
     {
-      "id": "national-voter-id",
-      "label": "Congress passes national proof-of-citizenship voting requirement",
+      "id": "section-122-struck-down",
+      "label": "Courts strike down Section 122 tariffs as lacking legal basis",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "trade-policy", "delta": -1, "reason": "Removes tariffs and further constrains unilateral presidential trade authority" },
+        { "category": "rule-of-law", "delta": -1, "reason": "Courts continue enforcing statutory limits on executive action" }
+      ]
+    },
+    {
+      "id": "july-tariff-cliff",
+      "label": "Section 122 tariffs expire July 24 with no congressional replacement",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "trade-policy", "delta": -1, "reason": "Tariffs drop to zero, easing trade friction but creating policy whiplash" },
+        { "category": "regulatory-stability", "delta": 1, "reason": "Binary outcome creates massive uncertainty for businesses planning around tariff levels" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Loss of tariff revenue blows hole in federal budget projections" }
+      ]
+    },
+    {
+      "id": "tariff-authority-legislation",
+      "label": "Congress grants new standalone tariff authority to the president",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "low",
+      "impacts": [
+        { "category": "trade-policy", "delta": 1, "reason": "Codifies broad tariff power that courts have been constraining" },
+        { "category": "regulatory-stability", "delta": 1, "reason": "Legitimizes unpredictable unilateral trade policy" }
+      ]
+    },
+    {
+      "id": "tariff-exemptions",
+      "label": "Major tariff exemptions granted to allied nations under Section 122",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "trade-policy", "delta": -1, "reason": "Reduces trade tensions with allies" },
+        { "category": "regulatory-stability", "delta": -1, "reason": "Signals more predictable trade policy direction" }
+      ]
+    },
+    {
+      "id": "tariff-refund-crisis",
+      "label": "Courts order $200B+ in IEEPA tariff refunds, creating fiscal crisis",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "fiscal-policy", "delta": 2, "reason": "Massive unplanned refund obligation strains federal budget" },
+        { "category": "trade-policy", "delta": -1, "reason": "Deters future unilateral tariff actions" }
+      ]
+    },
+    {
+      "id": "election-emergency-eo",
+      "label": "Executive order declares national emergency over election integrity, mandating hand-counting and re-registration",
       "category": "elections",
       "domain": "rule-of-law",
       "likelihood": "moderate",
       "impacts": [
-        { "category": "elections", "delta": 1, "reason": "Creates additional barrier to voter registration" },
-        { "category": "civil-discourse", "delta": 1, "reason": "Deepens partisan divide over election integrity" }
+        { "category": "elections", "delta": 2, "reason": "Creates chaos in election administration months before midterms" },
+        { "category": "rule-of-law", "delta": 1, "reason": "Bypasses congressional authority over election law" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Triggers nationwide protests and deepens partisan divide" }
+      ]
+    },
+    {
+      "id": "save-act-filibustered",
+      "label": "SAVE Act proof-of-citizenship requirement filibustered in Senate",
+      "category": "elections",
+      "domain": "rule-of-law",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "elections", "delta": 0, "reason": "Status quo preserved but becomes campaign wedge for election-fraud narrative" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Fuels claims that elections are 'insecure,' laying groundwork for post-election challenges" }
+      ]
+    },
+    {
+      "id": "state-voting-restrictions",
+      "label": "Multiple states enact new mail-voting and early-voting restrictions before November",
+      "category": "elections",
+      "domain": "rule-of-law",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "elections", "delta": 1, "reason": "Patchwork of new rules creates voter confusion and suppresses turnout" }
       ]
     },
     {
@@ -45,25 +145,26 @@
       ]
     },
     {
-      "id": "tariff-exemptions",
-      "label": "Major tariff exemptions granted to allied nations",
-      "category": "trade-policy",
-      "domain": "operating-economic",
+      "id": "schedule-f-injunction",
+      "label": "Federal court issues injunction blocking Schedule F mass firings",
+      "category": "institutional-integrity",
+      "domain": "societal-institutional",
       "likelihood": "moderate",
       "impacts": [
-        { "category": "trade-policy", "delta": -1, "reason": "Reduces trade tensions with allies" },
-        { "category": "regulatory-stability", "delta": -1, "reason": "Signals more predictable trade policy" }
+        { "category": "institutional-integrity", "delta": -1, "reason": "Temporarily halts reclassification of career civil servants" },
+        { "category": "rule-of-law", "delta": -1, "reason": "Courts assert limits on executive authority over civil service" }
       ]
     },
     {
-      "id": "tariff-escalation",
-      "label": "Tariffs expanded to additional countries and product categories",
-      "category": "trade-policy",
-      "domain": "operating-economic",
+      "id": "schedule-f-mass-firings",
+      "label": "First wave of Schedule F firings targets 10,000+ policy-adjacent career staff",
+      "category": "institutional-integrity",
+      "domain": "societal-institutional",
       "likelihood": "high",
       "impacts": [
-        { "category": "trade-policy", "delta": 1, "reason": "Expands trade conflict scope" },
-        { "category": "regulatory-stability", "delta": 1, "reason": "Increases business uncertainty" }
+        { "category": "institutional-integrity", "delta": 1, "reason": "Accelerates loss of institutional knowledge and independent expertise" },
+        { "category": "regulatory-stability", "delta": 1, "reason": "Agencies lose capacity to implement or enforce regulations consistently" },
+        { "category": "national-security", "delta": 1, "reason": "Intelligence and defense agencies lose experienced personnel" }
       ]
     },
     {
@@ -71,42 +172,44 @@
       "label": "Court orders reinstatement of fired inspectors general",
       "category": "institutional-integrity",
       "domain": "societal-institutional",
-      "likelihood": "moderate",
+      "likelihood": "low",
       "impacts": [
         { "category": "institutional-integrity", "delta": -2, "reason": "Restores independent oversight capacity" },
         { "category": "rule-of-law", "delta": -1, "reason": "Affirms limits on executive power" }
       ]
     },
     {
-      "id": "schedule-f-implemented",
-      "label": "Schedule F fully implemented, 50,000 civil servants reclassified",
-      "category": "institutional-integrity",
-      "domain": "societal-institutional",
+      "id": "contempt-pardon-cycle",
+      "label": "Officials held in contempt of court receive presidential pardons, neutralizing judicial enforcement",
+      "category": "rule-of-law",
+      "domain": "rule-of-law",
       "likelihood": "high",
       "impacts": [
-        { "category": "institutional-integrity", "delta": 1, "reason": "Removes civil service protections at scale" },
-        { "category": "regulatory-stability", "delta": 1, "reason": "Enables rapid policy shifts via personnel changes" }
+        { "category": "rule-of-law", "delta": 2, "reason": "Effectively eliminates the judiciary's ability to enforce orders against the executive" },
+        { "category": "institutional-integrity", "delta": 1, "reason": "Destroys the constitutional check of judicial review" }
       ]
     },
     {
-      "id": "journalist-prosecution",
-      "label": "DOJ prosecutes journalists under Espionage Act for publishing leaks",
-      "category": "media-freedom",
-      "domain": "societal-institutional",
+      "id": "court-stripping-legislation",
+      "label": "Congress passes legislation limiting federal court jurisdiction over executive actions",
+      "category": "rule-of-law",
+      "domain": "rule-of-law",
       "likelihood": "moderate",
       "impacts": [
-        { "category": "media-freedom", "delta": 2, "reason": "Criminalizes core journalistic activity" },
-        { "category": "civil-discourse", "delta": 1, "reason": "Chills public discourse and whistleblowing" }
+        { "category": "rule-of-law", "delta": 2, "reason": "Removes judicial oversight of executive branch actions" },
+        { "category": "institutional-integrity", "delta": 1, "reason": "Fundamentally alters separation of powers" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Eliminates primary legal avenue for challenging government overreach" }
       ]
     },
     {
-      "id": "press-shield-law",
-      "label": "Federal press shield law enacted protecting journalist sources",
-      "category": "media-freedom",
-      "domain": "societal-institutional",
-      "likelihood": "low",
+      "id": "judicial-impeachment",
+      "label": "House moves to impeach federal judges who ruled against administration",
+      "category": "rule-of-law",
+      "domain": "rule-of-law",
+      "likelihood": "moderate",
       "impacts": [
-        { "category": "media-freedom", "delta": -2, "reason": "Provides legal protection for investigative journalism" }
+        { "category": "rule-of-law", "delta": 1, "reason": "Creates chilling effect on judicial independence" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Further politicizes the judiciary" }
       ]
     },
     {
@@ -121,25 +224,37 @@
       ]
     },
     {
-      "id": "political-prosecution",
-      "label": "DOJ opens investigation into prominent opposition figure",
-      "category": "rule-of-law",
+      "id": "insurrection-act",
+      "label": "Insurrection Act invoked to deploy military against domestic protests",
+      "category": "national-security",
       "domain": "rule-of-law",
-      "likelihood": "high",
+      "likelihood": "moderate",
       "impacts": [
-        { "category": "rule-of-law", "delta": 1, "reason": "Raises concerns about weaponized prosecution" },
-        { "category": "civil-discourse", "delta": 1, "reason": "Deepens perception of two-tiered justice" }
+        { "category": "national-security", "delta": 2, "reason": "Military deployed for domestic political purposes" },
+        { "category": "civil-discourse", "delta": 2, "reason": "Military force used against civilian protesters" },
+        { "category": "rule-of-law", "delta": 1, "reason": "Bypasses Posse Comitatus limits on domestic military use" }
       ]
     },
     {
-      "id": "intel-politicization",
-      "label": "Intelligence assessment altered to support administration policy position",
+      "id": "cisa-election-vulnerability",
+      "label": "Foreign interference in 2026 midterms succeeds due to degraded CISA defenses",
       "category": "national-security",
       "domain": "rule-of-law",
-      "likelihood": "high",
+      "likelihood": "moderate",
       "impacts": [
-        { "category": "national-security", "delta": 1, "reason": "Compromises intelligence product integrity" },
-        { "category": "institutional-integrity", "delta": 1, "reason": "Demonstrates political pressure on career analysts" }
+        { "category": "national-security", "delta": 1, "reason": "CISA at 38% staffing with election security program eliminated" },
+        { "category": "elections", "delta": 2, "reason": "Foreign actors exploit gap in cyber defenses to interfere with election infrastructure" }
+      ]
+    },
+    {
+      "id": "venezuela-escalation",
+      "label": "Venezuela intervention becomes sustained military commitment requiring additional deployments",
+      "category": "national-security",
+      "domain": "rule-of-law",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "national-security", "delta": 1, "reason": "Military stretched across domestic and foreign commitments without congressional authorization" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Unbudgeted military operations strain federal spending" }
       ]
     },
     {
@@ -147,19 +262,41 @@
       "label": "Intelligence Authorization Act strengthens analyst independence protections",
       "category": "national-security",
       "domain": "rule-of-law",
-      "likelihood": "moderate",
+      "likelihood": "low",
       "impacts": [
         { "category": "national-security", "delta": -1, "reason": "Creates statutory protections for analytic objectivity" }
       ]
     },
     {
-      "id": "contract-favoritism",
-      "label": "Major federal contract awarded to company with close administration ties despite lower scores",
-      "category": "government-contracts",
-      "domain": "operating-economic",
+      "id": "espionage-act-prosecution",
+      "label": "DOJ brings Espionage Act charges against journalist for publishing classified leaks",
+      "category": "media-freedom",
+      "domain": "societal-institutional",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "media-freedom", "delta": 2, "reason": "Criminalizes core investigative journalism using national security statutes" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Chills whistleblowing and public access to government information" }
+      ]
+    },
+    {
+      "id": "ftc-media-coercion",
+      "label": "FTC/DOJ pretextual investigations used to coerce or shut down critical media outlets",
+      "category": "media-freedom",
+      "domain": "societal-institutional",
       "likelihood": "high",
       "impacts": [
-        { "category": "government-contracts", "delta": 1, "reason": "Demonstrates political favoritism in procurement" }
+        { "category": "media-freedom", "delta": 1, "reason": "Regulatory agencies weaponized as tools of press suppression" },
+        { "category": "government-contracts", "delta": 1, "reason": "Demonstrates government willingness to use regulatory power for political retaliation" }
+      ]
+    },
+    {
+      "id": "press-shield-law",
+      "label": "Federal press shield law enacted protecting journalist sources",
+      "category": "media-freedom",
+      "domain": "societal-institutional",
+      "likelihood": "low",
+      "impacts": [
+        { "category": "media-freedom", "delta": -2, "reason": "Provides legal protection for investigative journalism" }
       ]
     },
     {
@@ -174,6 +311,29 @@
       ]
     },
     {
+      "id": "doge-conflict-scandal",
+      "label": "DOGE official's conflicts of interest trigger congressional investigation or criminal referral",
+      "category": "government-contracts",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "government-contracts", "delta": -1, "reason": "Increased scrutiny slows politically-motivated contract decisions" },
+        { "category": "institutional-integrity", "delta": -1, "reason": "Accountability mechanisms activated" }
+      ]
+    },
+    {
+      "id": "federal-state-confrontation",
+      "label": "Direct confrontation between federal agents and state/local law enforcement over immigration enforcement",
+      "category": "civil-discourse",
+      "domain": "societal-institutional",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "civil-discourse", "delta": 2, "reason": "Federal-state enforcement conflict risks violence and constitutional crisis" },
+        { "category": "rule-of-law", "delta": 1, "reason": "Federalism breakdown as competing enforcement authorities clash" },
+        { "category": "national-security", "delta": 1, "reason": "Domestic law enforcement resources diverted to intergovernmental conflict" }
+      ]
+    },
+    {
       "id": "political-violence-incident",
       "label": "Politically motivated attack on government official or facility",
       "category": "civil-discourse",
@@ -181,7 +341,19 @@
       "likelihood": "moderate",
       "impacts": [
         { "category": "civil-discourse", "delta": 2, "reason": "Escalates political violence trajectory" },
-        { "category": "media-freedom", "delta": 1, "reason": "May trigger restrictions on rhetoric/assembly" }
+        { "category": "media-freedom", "delta": 1, "reason": "May trigger restrictions on rhetoric and assembly" }
+      ]
+    },
+    {
+      "id": "midterm-flips-house",
+      "label": "Democrats win House majority in 2026 midterms, establishing congressional check",
+      "category": "institutional-integrity",
+      "domain": "societal-institutional",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "institutional-integrity", "delta": -2, "reason": "Restores congressional oversight, subpoena power, and funding leverage" },
+        { "category": "rule-of-law", "delta": -1, "reason": "Enables legislative checks on executive overreach" },
+        { "category": "regulatory-stability", "delta": -1, "reason": "Divided government historically constrains radical policy shifts" }
       ]
     },
     {
@@ -193,30 +365,6 @@
       "impacts": [
         { "category": "civil-discourse", "delta": -1, "reason": "Models cross-partisan cooperation" },
         { "category": "institutional-integrity", "delta": -1, "reason": "Creates roadmap for institutional reforms" }
-      ]
-    },
-    {
-      "id": "scotus-tariff-ruling",
-      "label": "Supreme Court limits presidential tariff authority under current statutes",
-      "category": "trade-policy",
-      "domain": "operating-economic",
-      "likelihood": "moderate",
-      "impacts": [
-        { "category": "trade-policy", "delta": -1, "reason": "Constrains unilateral trade actions" },
-        { "category": "rule-of-law", "delta": -1, "reason": "Affirms separation of powers on trade" },
-        { "category": "regulatory-stability", "delta": -1, "reason": "Increases policy predictability" }
-      ]
-    },
-    {
-      "id": "emergency-powers-expansion",
-      "label": "National emergency declared to bypass Congressional appropriations",
-      "category": "rule-of-law",
-      "domain": "rule-of-law",
-      "likelihood": "moderate",
-      "impacts": [
-        { "category": "rule-of-law", "delta": 1, "reason": "Circumvents constitutional spending authority" },
-        { "category": "institutional-integrity", "delta": 1, "reason": "Weakens Congressional oversight role" },
-        { "category": "fiscal-policy", "delta": 1, "reason": "Introduces unpredictability in federal spending" }
       ]
     }
   ],
