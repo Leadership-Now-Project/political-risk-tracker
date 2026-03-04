@@ -45,19 +45,19 @@ export function getDomainInfo(domainId: DomainId): { name: string; description: 
       return {
         name: 'Rule of Law & National Security',
         description:
-          'Assesses the integrity of democratic institutions, electoral processes, and security apparatus.',
+          'Assesses election integrity, defiance of court orders, national security, and intimidation or political violence.',
       };
     case 'operating-economic':
       return {
         name: 'Operating & Economic Environment',
         description:
-          'Evaluates the business climate, regulatory stability, and economic policy predictability.',
+          'Evaluates major economic disruptions, cronyism and retaliation, business interference, fiscal policy, and political pressure on companies.',
       };
     case 'societal-institutional':
       return {
         name: 'Societal & Institutional Integrity',
         description:
-          'Measures media freedom, civil discourse quality, and institutional independence.',
+          'Measures suppression of freedom of expression and erosion of institutions and norms.',
       };
   }
 }
@@ -82,12 +82,13 @@ export function riskCategoryToActionCategories(riskCategoryId: string): string[]
     'elections': ['government-reform'],
     'rule-of-law': ['judiciary'],
     'national-security': ['foreign-policy'],
+    'civil-discourse': ['civil-rights', 'immigration', 'judiciary'],
     'regulatory-stability': ['government-reform', 'economic-policy'],
     'trade-policy': ['economic-policy'],
     'government-contracts': ['government-reform'],
     'fiscal-policy': ['economic-policy'],
+    'public-pressure': ['economic-policy', 'media-press'],
     'media-freedom': ['media-press', 'education'],
-    'civil-discourse': ['civil-rights', 'immigration'],
     'institutional-integrity': ['government-reform'],
   };
   return mapping[riskCategoryId] ?? [];

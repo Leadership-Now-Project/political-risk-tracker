@@ -10,6 +10,7 @@ import {
   DomainId,
 } from '@/lib/types';
 import { getRiskLevel, getScoreColor } from '@/lib/risk-levels';
+import { categoryNames, domainNames, DOMAINS, ALL_CATEGORY_IDS } from '@/lib/category-names';
 import RiskLevelBadge from '@/components/RiskLevelBadge';
 import PageNav from '@/components/PageNav';
 import currentData from '@/data/current.json';
@@ -22,32 +23,7 @@ const PAGE_SECTIONS = [
   { id: 'results', label: 'Results' },
 ];
 
-const categoryNames: Record<string, string> = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
-  'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': 'Gov\'t Contracts',
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity',
-};
-
-const domainNames: Record<DomainId, string> = {
-  'rule-of-law': 'Rule of Law & National Security',
-  'operating-economic': 'Operating & Economic',
-  'societal-institutional': 'Societal & Institutional',
-};
-
-const DOMAINS: Record<DomainId, string[]> = {
-  'rule-of-law': ['elections', 'rule-of-law', 'national-security'],
-  'operating-economic': ['regulatory-stability', 'trade-policy', 'government-contracts', 'fiscal-policy'],
-  'societal-institutional': ['media-freedom', 'civil-discourse', 'institutional-integrity'],
-};
-
-const CATEGORIES = Object.keys(categoryNames);
+const CATEGORIES = ALL_CATEGORY_IDS as unknown as string[];
 
 interface CustomImpact extends ScenarioImpact {
   isCustom?: boolean;

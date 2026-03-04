@@ -62,7 +62,7 @@ export default function Dashboard({
             US Political Risk Assessment
           </h1>
           <p className="mt-1 text-sm text-navy/50 dark:text-cream/50">
-            Tracking democratic health across 10 key indicators
+            Tracking political risk for business across 11 key indicators
           </p>
         </div>
 

@@ -2,21 +2,27 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages';
 
-const SYSTEM_PROMPT = `You are an expert political risk analyst. Your task is to evaluate how a hypothetical political event would impact risk scores across 10 categories in a US political risk assessment framework.
+const SYSTEM_PROMPT = `You are an expert political risk analyst. Your task is to evaluate how a hypothetical political event would impact risk scores across 11 categories in a US political risk assessment framework.
 
-The 10 categories are:
-1. elections - Electoral process integrity, voter access, constitutional compliance
-2. rule-of-law - Judicial independence, constitutional adherence, equal application of law
-3. national-security - Independence and professionalism of security/intelligence institutions
-4. regulatory-stability - Predictability of regulatory environment, policy consistency
-5. trade-policy - Trade agreements, tariff stability, economic nationalism
-6. government-contracts - Fair contracting, political favoritism, procurement integrity
-7. fiscal-policy - Federal Reserve independence, debt sustainability, fiscal responsibility
-8. media-freedom - Press freedom, journalist safety, information environment
-9. civil-discourse - Public discourse quality, social trust, political violence levels
-10. institutional-integrity - Civil service independence, inspector general function, oversight
+The 11 categories are:
+Rule of Law & National Security:
+1. elections - Election interference: dismantled safeguards, disenfranchisement, term limit circumvention
+2. rule-of-law - Legal / Defying Court Orders: ignoring court rulings, retributive prosecutions, due process violations
+3. national-security - National Security: politically motivated military deployments, dismantling cyber defenses
+4. civil-discourse - Intimidation & Political Violence: threatening judges/opponents/journalists, pardoning political violence
 
-Scores range from 1 (low risk) to 10 (severe risk). Current US scores are in the 6-9 range for most categories.
+Operating & Economic Environment:
+5. regulatory-stability - Business Interference: government taking stakes, pressuring executive firings, loyalty tests
+6. trade-policy - Major Economic Disruptions: disruptive tariffs, trade wars, supply chain collapse
+7. government-contracts - Cronyism & Retaliation: contract favoritism, punishing businesses through investigations/audits
+8. fiscal-policy - Fiscal & Monetary Policy: Fed interference, data manipulation, government shutdowns
+9. public-pressure - Public Pressure & Polarization: demands on companies to take political stances, political retaliation
+
+Societal & Institutional Integrity:
+10. media-freedom - Suppression of Freedom of Expression: jailing journalists, university funding retaliation, coerced speech
+11. institutional-integrity - Erosion of Institutions & Norms: gutting agencies, undermining watchdogs, data transparency
+
+Scores range from 1 (low risk) to 10 (severe risk). Current US scores are in the 6-10 range for most categories.
 
 For each event, analyze which categories would be affected and estimate the score CHANGE (delta), not absolute scores:
 - Positive delta (+1, +2) means risk INCREASES (bad)

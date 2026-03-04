@@ -325,7 +325,7 @@
       "id": "federal-state-confrontation",
       "label": "Direct confrontation between federal agents and state/local law enforcement over immigration enforcement",
       "category": "civil-discourse",
-      "domain": "societal-institutional",
+      "domain": "rule-of-law",
       "likelihood": "moderate",
       "impacts": [
         { "category": "civil-discourse", "delta": 2, "reason": "Federal-state enforcement conflict risks violence and constitutional crisis" },
@@ -337,7 +337,7 @@
       "id": "political-violence-incident",
       "label": "Politically motivated attack on government official or facility",
       "category": "civil-discourse",
-      "domain": "societal-institutional",
+      "domain": "rule-of-law",
       "likelihood": "moderate",
       "impacts": [
         { "category": "civil-discourse", "delta": 2, "reason": "Escalates political violence trajectory" },
@@ -360,11 +360,33 @@
       "id": "bipartisan-commission",
       "label": "Bipartisan commission on democratic norms issues consensus recommendations",
       "category": "civil-discourse",
-      "domain": "societal-institutional",
+      "domain": "rule-of-law",
       "likelihood": "low",
       "impacts": [
         { "category": "civil-discourse", "delta": -1, "reason": "Models cross-partisan cooperation" },
         { "category": "institutional-integrity", "delta": -1, "reason": "Creates roadmap for institutional reforms" }
+      ]
+    },
+    {
+      "id": "corporate-loyalty-demands",
+      "label": "Administration publicly demands major corporations pledge support for policy agenda as condition for regulatory relief",
+      "category": "public-pressure",
+      "domain": "operating-economic",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "public-pressure", "delta": 2, "reason": "Formalizes political loyalty as a business requirement" },
+        { "category": "government-contracts", "delta": 1, "reason": "Links government business to political alignment" }
+      ]
+    },
+    {
+      "id": "corporate-neutrality-coalition",
+      "label": "Major business coalition publicly commits to political neutrality and resists pressure campaigns",
+      "category": "public-pressure",
+      "domain": "operating-economic",
+      "likelihood": "low",
+      "impacts": [
+        { "category": "public-pressure", "delta": -2, "reason": "Collective action reduces individual company vulnerability to political pressure" },
+        { "category": "regulatory-stability", "delta": -1, "reason": "Signals business community pushback against politicized regulation" }
       ]
     }
   ],

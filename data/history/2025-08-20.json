@@ -10,13 +10,14 @@
     "fiscal-policy": 5,
     "media-freedom": 5,
     "civil-discourse": 5,
-    "institutional-integrity": 8
+    "institutional-integrity": 8,
+    "public-pressure": 3
   },
   "domainScores": {
-    "rule-of-law": 5.33,
-    "operating-economic": 5.25,
-    "societal-institutional": 6.0
+    "rule-of-law": 5.25,
+    "operating-economic": 4.8,
+    "societal-institutional": 6.5
   },
-  "overallScore": 5.5,
+  "overallScore": 5.3,
   "riskLevel": "Elevated"
 }

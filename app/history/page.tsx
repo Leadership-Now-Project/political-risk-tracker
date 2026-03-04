@@ -39,27 +39,17 @@ const categoryColors: Record<string, string> = {
   elections: '#ef4444',
   'rule-of-law': '#f97316',
   'national-security': '#eab308',
+  'civil-discourse': '#8b5cf6',
   'regulatory-stability': '#84cc16',
   'trade-policy': '#22c55e',
   'government-contracts': '#14b8a6',
   'fiscal-policy': '#06b6d4',
+  'public-pressure': '#a855f7',
   'media-freedom': '#3b82f6',
-  'civil-discourse': '#8b5cf6',
   'institutional-integrity': '#ec4899',
 };
 
-const categoryNames: Record<string, string> = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
-  'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': 'Gov\'t Contracts',
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity',
-};
+import { categoryNames } from '@/lib/category-names';
 
 export default function HistoryPage() {
   return (

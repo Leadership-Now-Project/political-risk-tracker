@@ -139,6 +139,19 @@
         { "category": "civil-discourse", "from": 7, "to": 9, "rationale": "Two U.S. citizens killed by federal agents; DHS admitted agents lied under oath; Minnesota general strike; 457 judges targeted with threats (150% increase); 33+ pardoned Jan 6 defendants rearrested" },
         { "category": "institutional-integrity", "from": 9, "to": 10, "rationale": "322,000+ federal employees departed (largest reduction in US history); 75%+ IG positions vacant; 8,000+ web pages and 3,000 datasets removed from public access; layoff moratorium expired" }
       ]
+    },
+    {
+      "period": "March 2026",
+      "date": "2026-03-03",
+      "overallScore": 8.0,
+      "overallChange": -0.5,
+      "summary": "Framework realigned: categories renamed to match expert risk framework; new 'Public Pressure & Polarization' category added (11 total); domain split changed from 3-4-3 to 4-5-2; 'Intimidation & Political Violence' moved to Rule of Law domain",
+      "keyDevelopments": [
+        "Risk framework realigned with expert document 'The Current Risk Environment for Business' (Feb 10, 2026) to standardize category naming, domain groupings, and business-oriented framing",
+        "New category 'Public Pressure & Polarization' added to track demands on companies to take political stances and political retaliation against businesses",
+        "Overall score change reflects addition of new category at score 6, bringing 11-category average to 8.0 (down from 10-category average of 8.2)"
+      ],
+      "categoryChanges": []
     }
   ]
 }

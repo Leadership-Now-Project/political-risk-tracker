@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'US Political Risk Framework | Leadership Now',
-  description: 'Track and assess political risk across 10 key categories in the United States',
+  description: 'Track and assess political risk for business across 11 key categories in the United States',
 };
 
 export default function RootLayout({

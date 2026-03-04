@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { CurrentAssessment, HistoricalSnapshot, HistoricalChangesData } from '@/lib/types';
 import { getScoreColor } from '@/lib/risk-levels';
+import { categoryNames } from '@/lib/category-names';
 
 interface KeyTakeawaysProps {
   current: CurrentAssessment;
@@ -18,19 +19,6 @@ interface TakeawayItem {
   delta: number;
   rationale: string;
 }
-
-const categoryNames: Record<string, string> = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
-  'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': "Gov't Contracts",
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity',
-};
 
 export default function KeyTakeaways({
   current,

@@ -18,20 +18,9 @@ const PAGE_SECTIONS = [
   { id: 'sensitivity', label: 'Sensitivity Matrix' },
 ];
 
-const categoryNames: Record<string, string> = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
-  'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': 'Gov\'t Contracts',
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity',
-};
+import { categoryNames, ALL_CATEGORY_IDS } from '@/lib/category-names';
 
-const CATEGORIES = Object.keys(categoryNames);
+const CATEGORIES = ALL_CATEGORY_IDS as unknown as string[];
 
 function formatValue(value: number, unit: string): string {
   if (unit === 'percent' || unit === 'percent change') {

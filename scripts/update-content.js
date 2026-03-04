@@ -23,28 +23,29 @@ const CURRENT_PATH = path.join(ROOT, 'data/current.json');
 const ECONOMIC_PATH = path.join(ROOT, 'data/economic-indicators.json');
 
 const CATEGORIES = [
-  'elections', 'rule-of-law', 'national-security', 'regulatory-stability',
-  'trade-policy', 'government-contracts', 'fiscal-policy', 'media-freedom',
-  'civil-discourse', 'institutional-integrity'
+  'elections', 'rule-of-law', 'national-security', 'civil-discourse',
+  'regulatory-stability', 'trade-policy', 'government-contracts', 'fiscal-policy', 'public-pressure',
+  'media-freedom', 'institutional-integrity'
 ];
 
 const CATEGORY_NAMES = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
+  'elections': 'Election Interference',
+  'rule-of-law': 'Legal / Defying Court Orders',
   'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': 'Government Contracts',
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity'
+  'civil-discourse': 'Intimidation & Political Violence',
+  'regulatory-stability': 'Business Interference',
+  'trade-policy': 'Major Economic Disruptions',
+  'government-contracts': 'Cronyism & Retaliation',
+  'fiscal-policy': 'Fiscal & Monetary Policy',
+  'public-pressure': 'Public Pressure & Polarization',
+  'media-freedom': 'Suppression of Freedom of Expression',
+  'institutional-integrity': 'Erosion of Institutions & Norms'
 };
 
 const DOMAINS = {
-  'rule-of-law': ['elections', 'rule-of-law', 'national-security'],
-  'operating-economic': ['regulatory-stability', 'trade-policy', 'government-contracts', 'fiscal-policy'],
-  'societal-institutional': ['media-freedom', 'civil-discourse', 'institutional-integrity']
+  'rule-of-law': ['elections', 'rule-of-law', 'national-security', 'civil-discourse'],
+  'operating-economic': ['regulatory-stability', 'trade-policy', 'government-contracts', 'fiscal-policy', 'public-pressure'],
+  'societal-institutional': ['media-freedom', 'institutional-integrity']
 };
 
 const COLORS = {

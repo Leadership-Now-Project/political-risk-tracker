@@ -27,7 +27,7 @@ This is the single source of truth for maintaining the US Political Risk Tracker
 ### Data Files (all in `data/`)
 | File | Purpose | Updated |
 |------|---------|---------|
-| `current.json` | Current scores, findings, sources for all 10 categories | Weekly |
+| `current.json` | Current scores, findings, sources for all 11 categories | Weekly |
 | `historical-changes.json` | Monthly summaries with rationale for score changes | Monthly |
 | `history/YYYY-MM-DD.json` | Point-in-time score snapshots (numbers only) | Monthly |
 | `categories.json` | Static category definitions and rubrics | Rarely |
@@ -38,16 +38,16 @@ This is the single source of truth for maintaining the US Political Risk Tracker
 | `actions-timeline.json` | Week-by-week chronological view | Weekly/biweekly |
 
 ### Scoring Model
-- **10 categories** across 3 domains, scored 1–10 (higher = more risk)
+- **11 categories** across 3 domains, scored 1–10 (higher = more risk)
 - **Domain scores** = average of member categories
-- **Overall score** = average of all 10 categories
+- **Overall score** = average of all 11 categories
 - **Risk levels:** Low (1–2.9), Moderate (3–4.9), Elevated (5–6.9), High (7–8.9), Severe (9–10)
 
 | Domain | Categories |
 |--------|-----------|
-| Rule of Law & National Security (`rule-of-law`) | `elections`, `rule-of-law`, `national-security` |
-| Operating & Economic Environment (`operating-economic`) | `regulatory-stability`, `trade-policy`, `government-contracts`, `fiscal-policy` |
-| Societal & Institutional Integrity (`societal-institutional`) | `media-freedom`, `civil-discourse`, `institutional-integrity` |
+| Rule of Law & National Security (`rule-of-law`) | `elections`, `rule-of-law`, `national-security`, `civil-discourse` |
+| Operating & Economic Environment (`operating-economic`) | `regulatory-stability`, `trade-policy`, `government-contracts`, `fiscal-policy`, `public-pressure` |
+| Societal & Institutional Integrity (`societal-institutional`) | `media-freedom`, `institutional-integrity` |
 
 ### Existing Scripts (reference only — prefer the processes below)
 - `scripts/weekly-update.js` — Interactive CLI (uses readline, not suitable for non-interactive Claude Code use)
@@ -103,7 +103,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `elections` — Elections
+#### `elections` — Election Interference
 **Domain:** Rule of Law & National Security
 **Risk indicators:** Interference, disenfranchisement, term limit circumvention
 
@@ -134,7 +134,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `rule-of-law` — Legal / Defying Court Orders
+#### `rule-of-law` — Legal / Defying Court Orders (renamed from "Rule of Law")
 **Domain:** Rule of Law & National Security
 **Risk indicators:** Refusal to comply with court rulings, retributive prosecutions
 
@@ -164,7 +164,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `national-security` — National Stability
+#### `national-security` — National Security
 **Domain:** Rule of Law & National Security
 **Risk indicators:** Politically motivated military deployment, dismantling cyber defenses
 
@@ -195,7 +195,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `regulatory-stability` — Regulatory Stability
+#### `regulatory-stability` — Business Interference (renamed from "Regulatory Stability")
 **Domain:** Operating & Economic Environment
 **Risk indicators:** Rapid policy reversals, executive order volume, contradictory guidance
 
@@ -225,7 +225,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `trade-policy` — Trade Policy
+#### `trade-policy` — Major Economic Disruptions (renamed from "Trade Policy")
 **Domain:** Operating & Economic Environment
 **Risk indicators:** Trade wars, tariff escalation, supply chain disruption
 
@@ -255,7 +255,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `government-contracts` — Cronyism & Retaliation
+#### `government-contracts` — Cronyism & Retaliation (renamed from "Government Contracts")
 **Domain:** Operating & Economic Environment
 **Risk indicators:** Favoritism in contracts/regulation, targeted business punishment
 
@@ -285,7 +285,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `fiscal-policy` — Major Economic Disruptions
+#### `fiscal-policy` — Fiscal & Monetary Policy
 **Domain:** Operating & Economic Environment
 **Risk indicators:** Fed interference, data manipulation, debt ceiling crises
 
@@ -316,7 +316,38 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `media-freedom` — Freedom of Expression
+#### `public-pressure` — Public Pressure & Polarization (NEW)
+**Domain:** Operating & Economic Environment
+**Risk indicators:** Political demands on businesses, boycott campaigns, forced political alignment
+
+**Search queries:**
+- `companies forced political stance [YEAR]`
+- `corporate boycott political [YEAR]`
+- `"ESG" "anti-ESG" business political pressure [YEAR]`
+- `CEO fired political views [YEAR]`
+- `business political retaliation [YEAR]`
+
+**Data sources:** Chamber of Commerce statements, Business Roundtable, industry trade associations, corporate earnings calls mentioning political risk, state AG actions against companies for political positions
+
+**Metrics:**
+- Number of companies publicly pressured to take political stances
+- Corporate executive departures linked to political pressure
+- State AG actions targeting companies for political positions
+- Organized boycott campaigns driven by political actors
+- Pay-to-play access schemes tying donations to regulatory relief
+
+**Scoring rubric:**
+| Score | Description |
+|-------|-------------|
+| 1–2 | Normal public discourse about corporate responsibility |
+| 3–4 | Increased political scrutiny of corporate positions, occasional boycott threats |
+| 5–6 | Organized pressure campaigns targeting companies, executives publicly called out |
+| 7–8 | Systematic political demands on businesses, companies forced to choose sides |
+| 9–10 | Businesses unable to operate apolitically, political alignment required for market access |
+
+---
+
+#### `media-freedom` — Suppression of Freedom of Expression (renamed from "Media Freedom")
 **Domain:** Societal & Institutional Integrity
 **Risk indicators:** Press suppression, coercion of speech, university funding retaliation
 
@@ -346,8 +377,8 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `civil-discourse` — Intimidation & Political Violence
-**Domain:** Societal & Institutional Integrity
+#### `civil-discourse` — Intimidation & Political Violence (renamed from "Civil Discourse", moved to Rule of Law domain)
+**Domain:** Rule of Law & National Security
 **Risk indicators:** Targeting judges, opponents, journalists; pardoning political violence
 
 **Search queries:**
@@ -377,7 +408,7 @@ For each category below: run the search queries, check the listed data sources, 
 
 ---
 
-#### `institutional-integrity` — Erosion of Institutions & Norms
+#### `institutional-integrity` — Erosion of Institutions & Norms (renamed from "Institutional Integrity")
 **Domain:** Societal & Institutional Integrity
 **Risk indicators:** Gutting agencies, undermining watchdogs, data transparency
 
@@ -506,12 +537,12 @@ After modifying scores, recalculate these fields in `current.json`:
 
 ```javascript
 // Domain scores
-domainScores["rule-of-law"] = round((elections + rule_of_law + national_security) / 3, 2)
-domainScores["operating-economic"] = round((regulatory_stability + trade_policy + government_contracts + fiscal_policy) / 4, 2)
-domainScores["societal-institutional"] = round((media_freedom + civil_discourse + institutional_integrity) / 3, 2)
+domainScores["rule-of-law"] = round((elections + rule_of_law + national_security + civil_discourse) / 4, 2)
+domainScores["operating-economic"] = round((regulatory_stability + trade_policy + government_contracts + fiscal_policy + public_pressure) / 5, 2)
+domainScores["societal-institutional"] = round((media_freedom + institutional_integrity) / 2, 2)
 
 // Overall score
-overallScore = round(sum_of_all_10_scores / 10, 1)
+overallScore = round(sum_of_all_11_scores / 11, 1)
 
 // Risk level
 if overallScore < 3: "Low"
@@ -852,11 +883,11 @@ git push
 }
 ```
 
-### Category IDs (all 10)
+### Category IDs (all 11)
 ```
-elections, rule-of-law, national-security,
-regulatory-stability, trade-policy, government-contracts, fiscal-policy,
-media-freedom, civil-discourse, institutional-integrity
+elections, rule-of-law, national-security, civil-discourse,
+regulatory-stability, trade-policy, government-contracts, fiscal-policy, public-pressure,
+media-freedom, institutional-integrity
 ```
 
 ### Action Categories

@@ -191,13 +191,31 @@
         "https://ourpublicservice.org/federal-harms-tracker/cost-to-your-government/"
       ],
       "lastUpdated": "2026-02-28"
+    },
+    "public-pressure": {
+      "score": 6,
+      "trend": "increasing",
+      "keyFindings": [
+        "Trump publicly rebuked Apple's Tim Cook for manufacturing in India, then granted tariff protection once Apple pledged additional U.S. investment; pattern of using trade policy as leverage over corporate decisions (WSJ)",
+        "Criticized banks including JPMorgan Chase and Bank of America for allegedly 'de-banking conservatives'; threatened to sue JPMorgan Chase for 'debanking' him; FCC pressure paired with lawsuits targeting media conglomerates like Comcast (WaPo/CNBC)",
+        "'Freedom 250' initiative emerged as fundraising vehicle allowing corporations and donors with regulatory interests to make tax-deductible contributions tied to presidential access; creates pay-to-play dynamic for political engagement (NYT)"
+      ],
+      "sources": [
+        "https://www.wsj.com/articles/apple-cook-trump-tariffs-india-manufacturing-2026",
+        "https://www.washingtonpost.com/business/2026/02/15/trump-banks-debanking-conservatives/",
+        "https://www.cnbc.com/2026/02/20/trump-threatens-jpmorgan-chase-debanking/",
+        "https://www.nytimes.com/2026/02/18/us/politics/freedom-250-trump-fundraising-access.html",
+        "https://www.bbc.com/news/articles/trump-comcast-fcc-media-pressure",
+        "https://protectdemocracy.org/work/retaliatory-action-tracker/"
+      ],
+      "lastUpdated": "2026-02-28"
     }
   },
   "domainScores": {
-    "rule-of-law": 8.33,
-    "operating-economic": 7.5,
+    "rule-of-law": 8.5,
+    "operating-economic": 7.2,
     "societal-institutional": 9.0
   },
-  "overallScore": 8.2,
+  "overallScore": 8.0,
   "riskLevel": "High"
 }

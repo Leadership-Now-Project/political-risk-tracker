@@ -3,23 +3,11 @@
 import Link from 'next/link';
 import { CurrentAssessment } from '@/lib/types';
 import { getScoreColor, getRiskLevel } from '@/lib/risk-levels';
+import { categoryNames } from '@/lib/category-names';
 
 interface SpotlightProps {
   currentData: CurrentAssessment;
 }
-
-const categoryNames: Record<string, string> = {
-  'elections': 'Elections',
-  'rule-of-law': 'Rule of Law',
-  'national-security': 'National Security',
-  'regulatory-stability': 'Regulatory Stability',
-  'trade-policy': 'Trade Policy',
-  'government-contracts': "Gov't Contracts",
-  'fiscal-policy': 'Fiscal Policy',
-  'media-freedom': 'Media Freedom',
-  'civil-discourse': 'Civil Discourse',
-  'institutional-integrity': 'Institutional Integrity',
-};
 
 export default function Spotlight({ currentData }: SpotlightProps) {
   // Get top 3 categories by score
