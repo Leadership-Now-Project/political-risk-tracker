@@ -152,7 +152,7 @@ export default function Dashboard({
                   Actions & Pushback
                 </span>
                 <span className="text-navy/50 dark:text-cream/50">
-                  <span className="font-bold text-navy dark:text-cream">{actionsPushbackData.summary.totalActions}</span> actions
+                  <span className="font-bold text-navy dark:text-cream">{actionsPushbackData.summary.totalActions}</span> actions tracked
                 </span>
                 <span className="text-navy/50 dark:text-cream/50">
                   <span className="font-bold text-red-600 dark:text-red-400">{actionsPushbackData.summary.blockedOrReversed}</span> blocked

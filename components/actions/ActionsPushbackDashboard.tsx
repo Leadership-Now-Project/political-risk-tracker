@@ -66,18 +66,18 @@ export default function ActionsPushbackDashboard({ data }: ActionsPushbackDashbo
             Actions &amp; Pushback Tracker
           </h1>
           <p className="mt-2 text-navy/70 dark:text-cream/70">
-            Tracking executive actions and legal/institutional responses
+            A curated selection of notable executive actions and legal/institutional responses — not a comprehensive list
           </p>
         </div>
 
         {/* Summary Metric Cards */}
         <div id="summary" className="scroll-mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
-            <p className="text-sm font-medium text-navy/60 dark:text-cream/60">Total Actions</p>
+            <p className="text-sm font-medium text-navy/60 dark:text-cream/60">Notable Actions Tracked</p>
             <p className="text-3xl font-bold text-navy dark:text-cream mt-1">{summary.totalActions}</p>
           </div>
           <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
-            <p className="text-sm font-medium text-navy/60 dark:text-cream/60">Legal Challenges</p>
+            <p className="text-sm font-medium text-navy/60 dark:text-cream/60">Legal Challenges Tracked</p>
             <p className="text-3xl font-bold text-navy dark:text-cream mt-1">{summary.totalLegalChallenges}</p>
           </div>
           <div className="bg-white dark:bg-navy-600 rounded-lg shadow-ln-light p-6 border border-navy/10">
