@@ -91,30 +91,44 @@ export default function Dashboard({
             const color = getScoreColor(domainScore);
             const level = getRiskLevel(domainScore);
             const info = getDomainInfo(domainId);
+            const categoryCount = categories.filter(c => c.domain === domainId).length;
 
             return (
               <div
                 key={domainId}
-                className="bg-white dark:bg-navy-600 rounded-lg border border-navy/10 dark:border-cream/10 px-4 py-3 flex items-center justify-between"
+                className="bg-white dark:bg-navy-600 rounded-lg border border-navy/10 dark:border-cream/10 px-4 py-3"
               >
-                <div className="flex items-center gap-2.5">
-                  <div
-                    className="w-1 h-8 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: color }}
-                  />
-                  <div>
-                    <span className="text-xs font-semibold text-navy/60 dark:text-cream/60 uppercase tracking-wider block">
-                      {info.name}
-                    </span>
-                    <span className="text-[10px] text-navy/30 dark:text-cream/30">{level}</span>
+                <div className="flex items-center justify-between mb-2.5">
+                  <div className="flex items-center gap-2.5">
+                    <div
+                      className="w-1 h-8 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: color }}
+                    />
+                    <div>
+                      <span className="text-xs font-semibold text-navy/60 dark:text-cream/60 uppercase tracking-wider block">
+                        {info.name}
+                      </span>
+                      <span className="text-[10px] text-navy/30 dark:text-cream/30">
+                        {level} · {categoryCount} categories
+                      </span>
+                    </div>
                   </div>
+                  <span
+                    className="text-xl font-black tabular-nums"
+                    style={{ color }}
+                  >
+                    {domainScore.toFixed(1)}
+                  </span>
                 </div>
-                <span
-                  className="text-xl font-black tabular-nums"
-                  style={{ color }}
-                >
-                  {domainScore.toFixed(1)}
-                </span>
+                <div className="w-full h-1.5 rounded-full bg-navy/5 dark:bg-cream/5">
+                  <div
+                    className="h-full rounded-full transition-all duration-700"
+                    style={{
+                      width: `${(domainScore / 10) * 100}%`,
+                      backgroundColor: color,
+                    }}
+                  />
+                </div>
               </div>
             );
           })}
