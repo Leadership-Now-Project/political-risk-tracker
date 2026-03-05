@@ -75,7 +75,7 @@ export interface HistoricalSnapshot {
 
 // Chart data point for Recharts
 export interface ChartDataPoint {
-  date: string;
+  date: number;
   [key: string]: string | number;
 }
 

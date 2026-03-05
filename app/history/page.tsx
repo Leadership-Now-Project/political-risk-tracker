@@ -78,9 +78,13 @@ function HistoryPageContent() {
   ];
 
   // Build chart data for all categories
+  function toTimestamp(dateStr: string): number {
+    return new Date(dateStr + 'T12:00:00').getTime();
+  }
+
   const allChartData: ChartDataPoint[] = [
     ...historicalSnapshots.map((h) => {
-      const point: ChartDataPoint = { date: h.date.slice(5) };
+      const point: ChartDataPoint = { date: toTimestamp(h.date) };
       categories.forEach((cat) => {
         point[cat.id] = h.scores[cat.id] || 0;
       });
@@ -88,7 +92,7 @@ function HistoryPageContent() {
       return point;
     }),
     (() => {
-      const point: ChartDataPoint = { date: current.assessmentDate.slice(5) };
+      const point: ChartDataPoint = { date: toTimestamp(current.assessmentDate) };
       categories.forEach((cat) => {
         point[cat.id] = current.scores[cat.id]?.score || 0;
       });
