@@ -32,6 +32,27 @@ export default function Dashboard({
   historicalSnapshots,
 }: DashboardProps) {
   const [view, setView] = useState<'national' | 'state'>('national');
+  const [frameworkOpen, setFrameworkOpen] = useState(true);
+  const domainConfig = [
+    {
+      id: 'rule-of-law' as DomainId,
+      accentColor: '#4a4a4a',
+      description: 'Erodes the rule-based environment companies rely on for contracts, dispute resolution, and security of operations.',
+      categories: ['Election Interference', 'Legal / Defying Court Orders', 'National Security', 'Intimidation & Political Violence'],
+    },
+    {
+      id: 'operating-economic' as DomainId,
+      accentColor: '#F5A623',
+      description: 'Generates unpredictable operating conditions, deters investment, and distorts competition.',
+      categories: ['Business Interference', 'Major Economic Disruptions', 'Cronyism & Retaliation', 'Fiscal & Monetary Policy', 'Public Pressure & Polarization'],
+    },
+    {
+      id: 'societal-institutional' as DomainId,
+      accentColor: '#1B2A4A',
+      description: 'Exposes companies to reputational risk, workforce pressures, and challenges to innovation and talent pipelines.',
+      categories: ['Suppression of Freedom of Expression', 'Erosion of Institutions & Norms'],
+    },
+  ];
 
   const { categories } = categoriesData;
 
@@ -79,59 +100,73 @@ export default function Dashboard({
           />
         </div>
 
+        {/* About Our Framework */}
+        <div className="bg-white dark:bg-navy-600 rounded-xl border border-navy/10 dark:border-cream/10 overflow-hidden">
+          <button
+            onClick={() => setFrameworkOpen(o => !o)}
+            className="w-full flex items-center justify-between px-6 py-4 hover:bg-cream/30 dark:hover:bg-navy-700/30 transition-colors"
+          >
+            <h2 className="text-sm font-semibold text-navy/50 dark:text-cream/50 uppercase tracking-wider">
+              About Our Framework
+            </h2>
+            <svg
+              className={`w-4 h-4 text-navy/30 dark:text-cream/30 transition-transform ${frameworkOpen ? 'rotate-180' : ''}`}
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div className="px-6 pb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {domainConfig.map((d) => {
+                const domainScore = currentData.domainScores[d.id];
+                const scoreColor = getScoreColor(domainScore);
+                const level = getRiskLevel(domainScore);
+                const info = getDomainInfo(d.id);
+
+                return (
+                  <div key={d.id} className="rounded-lg border border-navy/10 dark:border-cream/10 overflow-hidden">
+                    <div className="h-1.5" style={{ backgroundColor: d.accentColor }} />
+                    <div className="p-4">
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h3 className="text-sm font-bold text-navy dark:text-cream leading-snug">{info.name}</h3>
+                        <span className="text-lg font-black tabular-nums flex-shrink-0" style={{ color: scoreColor }}>
+                          {domainScore.toFixed(1)}
+                        </span>
+                      </div>
+                      <div className="mb-2">
+                        <span className="text-[10px] font-medium" style={{ color: scoreColor }}>{level}</span>
+                      </div>
+                      <div className="w-full h-1.5 rounded-full bg-navy/5 dark:bg-cream/5">
+                        <div
+                          className="h-full rounded-full transition-all duration-700"
+                          style={{ width: `${(domainScore / 10) * 100}%`, backgroundColor: scoreColor }}
+                        />
+                      </div>
+
+                      {frameworkOpen && (
+                        <div className="mt-3 pt-3 border-t border-navy/5 dark:border-cream/5">
+                          <p className="text-xs text-navy/60 dark:text-cream/60 leading-relaxed mb-3">{d.description}</p>
+                          <ul className="space-y-1">
+                            {d.categories.map((cat) => (
+                              <li key={cat} className="flex items-center gap-2 text-xs text-navy/70 dark:text-cream/70">
+                                <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: d.accentColor }} />
+                                {cat}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+
         {/* Spotlight: Top Risk Areas */}
         <div id="spotlight" className="scroll-mt-20">
           <Spotlight currentData={currentData} />
-        </div>
-
-        {/* Domain Score Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          {(['rule-of-law', 'operating-economic', 'societal-institutional'] as DomainId[]).map((domainId) => {
-            const domainScore = currentData.domainScores[domainId];
-            const color = getScoreColor(domainScore);
-            const level = getRiskLevel(domainScore);
-            const info = getDomainInfo(domainId);
-            const categoryCount = categories.filter(c => c.domain === domainId).length;
-
-            return (
-              <div
-                key={domainId}
-                className="bg-white dark:bg-navy-600 rounded-lg border border-navy/10 dark:border-cream/10 px-4 py-3"
-              >
-                <div className="flex items-center justify-between mb-2.5">
-                  <div className="flex items-center gap-2.5">
-                    <div
-                      className="w-1 h-8 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: color }}
-                    />
-                    <div>
-                      <span className="text-xs font-semibold text-navy/60 dark:text-cream/60 uppercase tracking-wider block">
-                        {info.name}
-                      </span>
-                      <span className="text-[10px] text-navy/30 dark:text-cream/30">
-                        {level} · {categoryCount} categories
-                      </span>
-                    </div>
-                  </div>
-                  <span
-                    className="text-xl font-black tabular-nums"
-                    style={{ color }}
-                  >
-                    {domainScore.toFixed(1)}
-                  </span>
-                </div>
-                <div className="w-full h-1.5 rounded-full bg-navy/5 dark:bg-cream/5">
-                  <div
-                    className="h-full rounded-full transition-all duration-700"
-                    style={{
-                      width: `${(domainScore / 10) * 100}%`,
-                      backgroundColor: color,
-                    }}
-                  />
-                </div>
-              </div>
-            );
-          })}
         </div>
 
         {/* View Toggle */}
