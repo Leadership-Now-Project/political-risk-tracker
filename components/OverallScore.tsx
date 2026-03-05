@@ -20,8 +20,8 @@ function TrendSparkline({ data, color }: { data: number[]; color: string }) {
   const min = Math.min(...data) - 1;
   const max = Math.max(...data) + 1;
   const range = max - min || 1;
-  const w = 200;
-  const h = 64;
+  const w = 280;
+  const h = 90;
   const pad = 4;
 
   const points = data.map((val, i) => {
@@ -33,13 +33,17 @@ function TrendSparkline({ data, color }: { data: number[]; color: string }) {
   const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x},${p.y}`).join(' ');
   const areaPath = `${linePath} L${points[points.length - 1].x},${h - pad} L${points[0].x},${h - pad} Z`;
 
-  // Labels for first and last point
   const first = data[0];
   const last = data[data.length - 1];
+  const startPt = points[0];
+  const endPt = points[points.length - 1];
 
   return (
     <div className="relative">
-      <svg width={w} height={h + 20} className="overflow-visible">
+      <p className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 text-right">
+        Trend (12 months)
+      </p>
+      <svg width={w} height={h} className="overflow-visible">
         <defs>
           <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={color} stopOpacity="0.3" />
@@ -49,17 +53,18 @@ function TrendSparkline({ data, color }: { data: number[]; color: string }) {
         {/* Area */}
         <path d={areaPath} fill="url(#sparkGrad)" />
         {/* Line */}
-        <path d={linePath} fill="none" stroke={color} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+        <path d={linePath} fill="none" stroke={color} strokeWidth="3.5" strokeLinejoin="round" strokeLinecap="round" />
         {/* Start dot */}
-        <circle cx={points[0].x} cy={points[0].y} r="3" fill={color} opacity="0.5" />
-        {/* End dot with glow */}
-        <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="6" fill={color} opacity="0.15" />
-        <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="4" fill={color} />
-        {/* Labels */}
-        <text x={points[0].x} y={h + 14} textAnchor="start" fontSize="10" fill="#BDAA77" opacity="0.7">
+        <circle cx={startPt.x} cy={startPt.y} r="3.5" fill="white" opacity="0.85" />
+        {/* Start label */}
+        <text x={startPt.x} y={startPt.y - 8} textAnchor="start" fontSize="10" fontWeight="600" fill="white" opacity="0.75">
           {first.toFixed(1)}
         </text>
-        <text x={points[points.length - 1].x} y={h + 14} textAnchor="end" fontSize="10" fill="#BDAA77" opacity="0.7">
+        {/* End dot with glow */}
+        <circle cx={endPt.x} cy={endPt.y} r="8" fill="white" opacity="0.1" />
+        <circle cx={endPt.x} cy={endPt.y} r="4.5" fill="white" opacity="0.95" />
+        {/* End label */}
+        <text x={endPt.x} y={endPt.y - 10} textAnchor="end" fontSize="10" fontWeight="600" fill="white" opacity="0.9">
           {last.toFixed(1)}
         </text>
       </svg>
