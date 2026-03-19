@@ -11,6 +11,7 @@ interface OverallScoreProps {
   assessmentPeriod: string;
   previousScore?: number;
   summary?: string;
+  keyDevelopments?: string[];
   historicalSnapshots?: HistoricalSnapshot[];
 }
 
@@ -79,6 +80,7 @@ export default function OverallScore({
   assessmentPeriod,
   previousScore,
   summary,
+  keyDevelopments = [],
   historicalSnapshots = [],
 }: OverallScoreProps) {
   const scoreColor = getScoreColor(score);
@@ -96,9 +98,9 @@ export default function OverallScore({
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
           {/* Left: Gauge + Score Info */}
           <div className="flex items-center gap-6">
-            {/* Arc gauge */}
+            {/* Arc gauge (compact) */}
             <div className="relative flex-shrink-0">
-              <svg width="140" height="80" viewBox="0 0 140 80" className="overflow-visible">
+              <svg width="100" height="58" viewBox="0 0 140 80" className="overflow-visible">
                 {/* Background arc */}
                 <path
                   d="M 10 70 A 60 60 0 0 1 130 70"
@@ -118,7 +120,7 @@ export default function OverallScore({
                   style={{ transition: 'stroke-dasharray 0.8s ease-out' }}
                 />
                 {/* Score */}
-                <text x="70" y="62" textAnchor="middle" fontSize="32" fontWeight="bold" fill={scoreColor}>
+                <text x="70" y="64" textAnchor="middle" fontSize="28" fontWeight="bold" fill={scoreColor}>
                   {score.toFixed(1)}
                 </text>
                 <text x="12" y="82" textAnchor="start" fontSize="9" fill="#BDAA77">1</text>
@@ -128,7 +130,7 @@ export default function OverallScore({
 
             {/* Score info */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-white">
+              <h2 className="text-lg md:text-xl font-bold text-white">
                 Overall Risk Score
               </h2>
               <div className="flex items-center gap-3 mt-2">
@@ -167,9 +169,19 @@ export default function OverallScore({
       </div>
 
       {/* Summary bar */}
-      {summary && (
+      {(summary || keyDevelopments.length > 0) && (
         <div className="px-6 md:px-8 py-4 bg-navy-700/50 border-t border-navy-400">
-          <p className="text-sm text-cream/60 leading-relaxed">{summary}</p>
+          {summary && <p className="text-sm text-cream/60 leading-relaxed">{summary}</p>}
+          {keyDevelopments.length > 0 && (
+            <ul className="mt-2 space-y-1.5">
+              {keyDevelopments.map((dev, i) => (
+                <li key={i} className="text-xs text-cream/50 flex items-start gap-2 leading-relaxed">
+                  <span className="text-gold mt-0.5 flex-shrink-0">•</span>
+                  <span>{dev}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       )}
     </div>

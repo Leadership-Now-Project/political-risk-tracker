@@ -152,6 +152,38 @@
         "Overall score change reflects addition of new category at score 6, bringing 11-category average to 8.0 (down from 10-category average of 8.2)"
       ],
       "categoryChanges": []
+    },
+    {
+      "period": "March 2026 (Update)",
+      "date": "2026-03-20",
+      "overallScore": 8.3,
+      "overallChange": 0.3,
+      "summary": "Three categories escalate: 210 documented ICE court order violations push rule-of-law to maximum; $166B tariff refund order and Section 122 pivot create trade chaos; DHS shutdown enters 5th week as fiscal outlook deteriorates sharply",
+      "keyDevelopments": [
+        "Court of International Trade ordered nationwide refund of $166B in IEEPA tariffs; Section 122 replacement tariffs at highest effective rate since 1943; J.P. Morgan puts recession probability at 40-50%",
+        "Chief Judge Schiltz documented 210 ICE violations across 143 cases; 100+ DOJ prosecutors resigned; retributive cases against Comey and James dismissed as illegally brought",
+        "DHS partial shutdown in 5th week affecting 260,000 personnel; deficit hit $1T in first 5 months of FY2026; Fed confirmation process blocked by bipartisan coalition"
+      ],
+      "categoryChanges": [
+        {
+          "category": "rule-of-law",
+          "from": 9,
+          "to": 10,
+          "rationale": "210 documented ICE court order violations in one jurisdiction quantifies systematic defiance; mass DOJ prosecutor exodus; retributive prosecutions dismissed as illegally brought"
+        },
+        {
+          "category": "trade-policy",
+          "from": 8,
+          "to": 9,
+          "rationale": "Constitutional crisis over tariff authority: IEEPA struck down, emergency pivot to untested Section 122, $166B refund order, 24-state lawsuit; 40-50% recession probability"
+        },
+        {
+          "category": "fiscal-policy",
+          "from": 8,
+          "to": 9,
+          "rationale": "DHS shutdown in 5th week affecting airport security during spring break; Warsh nomination blocked; deficit on pace for $1.9T; $166B tariff refund liability looming"
+        }
+      ]
     }
   ]
 }

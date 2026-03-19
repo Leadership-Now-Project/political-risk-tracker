@@ -16,7 +16,7 @@ export default function Spotlight({ currentData }: SpotlightProps) {
       id,
       name: categoryNames[id] || id,
       score: data.score,
-      finding: data.keyFindings[0] || '',
+      findings: data.keyFindings,
     }))
     .sort((a, b) => b.score - a.score)
     .slice(0, 3);
@@ -90,10 +90,15 @@ export default function Spotlight({ currentData }: SpotlightProps) {
                   />
                 </div>
 
-                {/* Finding */}
-                <p className="text-xs text-navy/60 dark:text-cream/60 leading-relaxed line-clamp-3">
-                  {cat.finding.replace(/\s*\([^)]*\)\s*$/, '')}
-                </p>
+                {/* Findings */}
+                <ul className="space-y-1.5">
+                  {cat.findings.map((finding, j) => (
+                    <li key={j} className="text-xs text-navy/60 dark:text-cream/60 leading-relaxed flex items-start gap-2">
+                      <span className="text-navy/30 dark:text-cream/30 font-bold flex-shrink-0">{j + 1}.</span>
+                      <span className="line-clamp-2">{finding.replace(/\s*\([^)]*\)\s*$/, '')}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 {/* Footer arrow */}
                 <div className="flex items-center justify-end mt-3 pt-2 border-t border-navy/5 dark:border-cream/5">

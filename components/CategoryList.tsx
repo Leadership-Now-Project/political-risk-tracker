@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { Category, CategoryScore, DomainId, DomainScores, HistoricalSnapshot } from '@/lib/types';
 import { getScoreColor, getRiskLevel } from '@/lib/risk-levels';
@@ -98,6 +99,7 @@ export default function CategoryList({
   historicalSnapshots,
   previousSnapshot,
 }: CategoryListProps) {
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
   const domains: DomainId[] = ['rule-of-law', 'operating-economic', 'societal-institutional'];
 
   // Build sparkline data: all snapshots + current score for each category
@@ -116,7 +118,7 @@ export default function CategoryList({
         const domainCats = categories.filter(c => c.domain === domainId);
 
         return (
-          <div key={domainId} className="bg-white dark:bg-navy-600 rounded-xl shadow-ln-medium border border-navy/10 dark:border-navy-400 overflow-hidden">
+          <div key={domainId} id={`domain-${domainId}`} className="bg-white dark:bg-navy-600 rounded-xl shadow-ln-medium border border-navy/10 dark:border-navy-400 overflow-hidden scroll-mt-20">
             {/* Domain header */}
             <div className="flex items-center justify-between px-5 py-3.5" style={{ borderBottom: `2px solid ${domainColor}20` }}>
               <div className="flex items-center gap-3">
@@ -147,50 +149,90 @@ export default function CategoryList({
               const prevScore = previousSnapshot.scores[cat.id] ?? catScore.score;
               const delta = catScore.score - prevScore;
               const sparkData = getSparklineData(cat.id);
+              const isExpanded = expandedCategory === cat.id;
 
               return (
-                <Link
-                  key={cat.id}
-                  href={`/category/${cat.id}`}
-                  className="flex items-center gap-3 px-5 py-3.5 border-t border-navy/5 dark:border-cream/5 hover:bg-navy/[0.04] dark:hover:bg-cream/[0.04] transition-colors group relative"
-                >
-                  {/* Colored left accent */}
-                  <div
-                    className="absolute left-0 top-2 bottom-2 w-[3px] rounded-r-full opacity-60 group-hover:opacity-100 transition-opacity"
-                    style={{ backgroundColor: color }}
-                  />
-
-                  {/* Category name */}
-                  <div className="flex-1 min-w-0 pl-1">
-                    <span className="text-sm font-medium text-navy dark:text-cream group-hover:text-gold transition-colors truncate block">
-                      {cat.name}
-                    </span>
-                  </div>
-
-                  {/* Sparkline */}
-                  <div className="hidden sm:block">
-                    <Sparkline data={sparkData} color={color} id={cat.id} />
-                  </div>
-
-                  {/* Score pill */}
-                  <div
-                    className="flex items-center justify-center w-10 h-7 rounded-md text-sm font-bold tabular-nums text-white"
-                    style={{ backgroundColor: color }}
+                <div key={cat.id} className="border-t border-navy/5 dark:border-cream/5">
+                  {/* Clickable row */}
+                  <button
+                    onClick={() => setExpandedCategory(isExpanded ? null : cat.id)}
+                    className="flex items-center gap-3 px-5 py-3.5 w-full text-left hover:bg-navy/[0.04] dark:hover:bg-cream/[0.04] transition-colors group relative"
                   >
-                    {catScore.score}
-                  </div>
+                    {/* Colored left accent */}
+                    <div
+                      className="absolute left-0 top-2 bottom-2 w-[3px] rounded-r-full opacity-60 group-hover:opacity-100 transition-opacity"
+                      style={{ backgroundColor: color }}
+                    />
 
-                  {/* Trend */}
-                  <TrendIndicator trend={catScore.trend} />
+                    {/* Category name + description */}
+                    <div className="flex-1 min-w-0 pl-1">
+                      <span className="text-sm font-medium text-navy dark:text-cream group-hover:text-gold transition-colors truncate block">
+                        {cat.name}
+                      </span>
+                      <span className="text-[11px] text-navy/40 dark:text-cream/40 truncate block leading-tight">
+                        {cat.description}
+                      </span>
+                    </div>
 
-                  {/* Delta */}
-                  <DeltaBadge delta={delta} />
+                    {/* Sparkline */}
+                    <div className="hidden sm:block">
+                      <Sparkline data={sparkData} color={color} id={cat.id} />
+                    </div>
 
-                  {/* Arrow */}
-                  <svg className="w-4 h-4 text-navy/15 dark:text-cream/15 group-hover:text-gold transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                    {/* Score pill */}
+                    <div
+                      className="flex items-center justify-center w-10 h-7 rounded-md text-sm font-bold tabular-nums text-white"
+                      style={{ backgroundColor: color }}
+                    >
+                      {catScore.score}
+                    </div>
+
+                    {/* Trend */}
+                    <TrendIndicator trend={catScore.trend} />
+
+                    {/* Delta */}
+                    <DeltaBadge delta={delta} />
+
+                    {/* Expand/collapse chevron */}
+                    <svg
+                      className={`w-4 h-4 text-navy/15 dark:text-cream/15 group-hover:text-gold transition-all flex-shrink-0 ${isExpanded ? 'rotate-90' : ''}`}
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  {/* Expanded findings panel */}
+                  {isExpanded && (
+                    <div className="px-5 pb-4 pt-1 bg-navy/[0.02] dark:bg-cream/[0.02] border-t border-navy/5 dark:border-cream/5">
+                      <div className="pl-2">
+                        {/* Key Findings */}
+                        <h4 className="text-xs font-semibold text-navy/50 dark:text-cream/50 uppercase tracking-wider mb-2">
+                          Key Findings
+                        </h4>
+                        <ul className="space-y-2 mb-4">
+                          {catScore.keyFindings.map((finding, j) => (
+                            <li key={j} className="text-sm text-navy/70 dark:text-cream/70 flex items-start gap-2 leading-relaxed">
+                              <span className="text-gold font-bold flex-shrink-0">{j + 1}.</span>
+                              <span>{finding}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        {/* View full details link */}
+                        <Link
+                          href={`/category/${cat.id}`}
+                          className="inline-flex items-center gap-1 text-sm text-gold hover:text-gold-dark transition-colors font-medium"
+                        >
+                          View full details
+                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>

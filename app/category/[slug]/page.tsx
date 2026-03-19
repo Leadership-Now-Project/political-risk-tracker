@@ -22,6 +22,7 @@ import history202511 from '@/data/history/2025-11-20.json';
 import history202512 from '@/data/history/2025-12-20.json';
 import history202601 from '@/data/history/2026-01-20.json';
 import history202602 from '@/data/history/2026-02-20.json';
+import history202603 from '@/data/history/2026-03-20.json';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -92,6 +93,7 @@ export default async function CategoryPage({ params }: PageProps) {
     history202512 as HistoricalSnapshot,
     history202601 as HistoricalSnapshot,
     history202602 as HistoricalSnapshot,
+    history202603 as HistoricalSnapshot,
   ];
 
   const sparklineData = [
@@ -274,6 +276,25 @@ export default async function CategoryPage({ params }: PageProps) {
             <span className="text-white font-medium">{score.lastUpdated}</span>
           </div>
         </div>
+      </div>
+
+      {/* Why This Score — plain-language explainer */}
+      <div className="bg-white dark:bg-navy-600 rounded-xl shadow-ln-medium border border-navy/10 dark:border-navy-400 p-5">
+        <h2 className="text-sm font-bold text-navy/50 dark:text-cream/50 uppercase tracking-wider mb-2">
+          Why This Score
+        </h2>
+        <p className="text-sm text-navy/70 dark:text-cream/70 leading-relaxed">
+          This category scores <span className="font-bold" style={{ color: scoreColor }}>{score.score}/10</span>, placing it in the{' '}
+          <span className="font-semibold">{riskLevel}</span> tier ({currentTier}): &ldquo;{category.rubric[currentTier]}&rdquo;
+        </p>
+        <ul className="mt-3 space-y-1.5">
+          {score.keyFindings.slice(0, 3).map((finding, i) => (
+            <li key={i} className="text-sm text-navy/60 dark:text-cream/60 flex items-start gap-2 leading-relaxed">
+              <span className="text-gold font-bold flex-shrink-0">{i + 1}.</span>
+              <span>{finding}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Main Content */}
