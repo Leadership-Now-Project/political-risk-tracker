@@ -1,8 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { CurrentAssessment, HistoricalChangesData, CategoriesData } from '@/lib/types';
-import { getScoreColor } from '@/lib/risk-levels';
+import { getScoreColor, getRiskLevel } from '@/lib/risk-levels';
 import { categoryNames } from '@/lib/category-names';
 
 interface ThreatBriefingProps {
@@ -33,8 +34,14 @@ export default function ThreatBriefing({
       };
     });
 
+  const [trajectoryOpen, setTrajectoryOpen] = useState(false);
   const riskLevel = currentData.riskLevel;
   const overallScore = currentData.overallScore;
+
+  // Build trajectory milestones from historical data
+  const changes = historicalChanges.changes;
+  const baseline = changes[0];
+  const totalRise = baseline ? overallScore - baseline.overallScore : 0;
 
   // Build a plain-language headline
   const headline = overallScore >= 9
@@ -113,6 +120,132 @@ export default function ThreatBriefing({
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* How We Got Here — trajectory from baseline to current */}
+      {baseline && totalRise > 0 && (
+        <div className="border-t border-navy/5 dark:border-cream/5">
+          <button
+            onClick={() => setTrajectoryOpen(o => !o)}
+            className="w-full flex items-center justify-between px-6 py-3 hover:bg-navy/[0.02] dark:hover:bg-cream/[0.02] transition-colors"
+          >
+            <div className="flex items-center gap-2">
+              <h3 className="text-xs font-semibold text-navy/50 dark:text-cream/50 uppercase tracking-wider">
+                How We Got Here
+              </h3>
+              <span className="text-xs text-navy/40 dark:text-cream/40">
+                {baseline.overallScore} → {overallScore} since {baseline.period}
+              </span>
+            </div>
+            <svg
+              className={`w-4 h-4 text-navy/30 dark:text-cream/30 transition-transform ${trajectoryOpen ? 'rotate-180' : ''}`}
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {trajectoryOpen && (
+            <div className="px-6 pb-5">
+              {/* Mini score bar showing trajectory */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex-1 h-2 rounded-full bg-navy/5 dark:bg-cream/5 relative overflow-hidden">
+                  {changes.filter(c => c.overallScore != null).map((c, i) => {
+                    const pos = ((c.overallScore - 1) / 9) * 100;
+                    const color = getScoreColor(c.overallScore);
+                    return (
+                      <div
+                        key={i}
+                        className="absolute top-0 h-full w-1.5 rounded-full"
+                        style={{ left: `${pos}%`, backgroundColor: color, opacity: i === changes.length - 1 ? 1 : 0.4 }}
+                        title={`${c.period}: ${c.overallScore}`}
+                      />
+                    );
+                  })}
+                </div>
+                <span className="text-xs text-navy/40 dark:text-cream/40 flex-shrink-0 tabular-nums">
+                  +{totalRise.toFixed(1)}
+                </span>
+              </div>
+
+              {/* Timeline of key escalation moments */}
+              <div className="space-y-0">
+                {changes.map((change, i) => {
+                  // Skip methodology-only entries with no category changes and negative overall change
+                  const isSubstantive = change.categoryChanges.length > 0 || change.overallChange === null;
+                  if (!isSubstantive) return null;
+
+                  const color = getScoreColor(change.overallScore);
+                  const level = getRiskLevel(change.overallScore);
+                  const isLast = i === changes.length - 1;
+                  const isFirst = i === 0;
+                  const isMajor = (change.overallChange ?? 0) >= 0.5 || isFirst || isLast;
+
+                  return (
+                    <div key={change.date} className="relative pl-7 pb-3 last:pb-0">
+                      {/* Timeline line */}
+                      {!isLast && (
+                        <div className="absolute left-[8px] top-3 bottom-0 w-px bg-navy/10 dark:bg-cream/10" />
+                      )}
+                      {/* Timeline dot */}
+                      <div
+                        className={`absolute left-0 top-1 rounded-full border-2 ${isMajor ? 'w-[17px] h-[17px]' : 'w-[13px] h-[13px] ml-0.5'}`}
+                        style={{ backgroundColor: color, borderColor: color }}
+                      />
+                      {/* Content */}
+                      <div>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className={`font-semibold text-navy dark:text-cream ${isMajor ? 'text-sm' : 'text-xs'}`}>
+                            {change.period}
+                          </span>
+                          <span
+                            className="text-xs font-bold tabular-nums px-1.5 py-0.5 rounded"
+                            style={{ color, backgroundColor: `${color}15` }}
+                          >
+                            {change.overallScore.toFixed(1)}
+                          </span>
+                          <span className="text-[10px] font-medium" style={{ color }}>{level}</span>
+                          {change.overallChange != null && change.overallChange !== 0 && (
+                            <span className={`text-[10px] font-bold ${change.overallChange > 0 ? 'text-red-500' : 'text-green-500'}`}>
+                              {change.overallChange > 0 ? '+' : ''}{change.overallChange.toFixed(1)}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs text-navy/55 dark:text-cream/55 leading-relaxed mt-0.5">
+                          {change.summary}
+                        </p>
+                        {isMajor && change.categoryChanges.length > 0 && (
+                          <div className="mt-1.5 flex flex-wrap gap-1.5">
+                            {change.categoryChanges.slice(0, 4).map(cc => (
+                              <span
+                                key={cc.category}
+                                className="text-[10px] px-1.5 py-0.5 rounded bg-navy/5 dark:bg-cream/5 text-navy/50 dark:text-cream/50"
+                              >
+                                {categoryNames[cc.category] || cc.category} {cc.from}→{cc.to}
+                              </span>
+                            ))}
+                            {change.categoryChanges.length > 4 && (
+                              <span className="text-[10px] text-navy/30 dark:text-cream/30">
+                                +{change.categoryChanges.length - 4} more
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <Link
+                href="/history"
+                className="inline-flex items-center gap-1 mt-3 text-sm text-gold hover:text-gold-dark transition-colors font-medium"
+              >
+                View full historical analysis →
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </div>
