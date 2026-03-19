@@ -44,16 +44,23 @@ export default function SettingsPage() {
       const res = await fetch('/api/admin/site-config', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(config),
       });
-      const data = await res.json();
+      const text = await res.text();
+      if (!res.ok) {
+        setMessage(`Error ${res.status}: ${text.slice(0, 200)}`);
+        setSaving(false);
+        return;
+      }
+      const data = JSON.parse(text);
       if (data.success) {
         setMessage('Saved. Redeploy will apply changes.');
       } else {
         setMessage(`Error: ${data.error}`);
       }
-    } catch {
-      setMessage('Failed to save');
+    } catch (err) {
+      setMessage(`Failed: ${err instanceof Error ? err.message : String(err)}`);
     }
     setSaving(false);
   };
