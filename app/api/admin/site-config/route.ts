@@ -7,8 +7,8 @@ export async function GET() {
   return NextResponse.json(siteConfig);
 }
 
-// PUT: Save updated site config
-export async function PUT(request: Request) {
+// POST: Save updated site config
+export async function POST(request: Request) {
   try {
     const updates = await request.json();
 

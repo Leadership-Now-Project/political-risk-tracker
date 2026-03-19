@@ -42,7 +42,7 @@ export default function SettingsPage() {
     setMessage('');
     try {
       const res = await fetch('/api/admin/site-config', {
-        method: 'PUT',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
         body: JSON.stringify(config),
