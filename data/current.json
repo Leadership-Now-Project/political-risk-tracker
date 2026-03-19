@@ -1,221 +1,167 @@
 {
-  "assessmentDate": "2026-02-28",
+  "assessmentDate": "2026-03-19",
   "assessmentPeriod": "2025-02-28 to 2026-02-28",
   "scores": {
     "elections": {
-      "score": 8,
+      "score": 9,
       "trend": "increasing",
       "keyFindings": [
-        "White House-affiliated activists circulating 17-page draft emergency executive order to declare national emergency over elections, ban mail-in ballots, and require voter re-registration with proof of citizenship ahead of 2026 midterms; Trump reportedly reviewed draft (Washington Post/Democracy Docket)",
-        "DOJ sued five additional states (Utah, Oklahoma, Kentucky, West Virginia, New Jersey) for refusing to hand over voter registration lists, bringing total to 29 states plus D.C.; New Jersey AG called the request 'baseless' (DOJ/UPI)",
-        "SAVE America Act reaches 50 Republican Senate votes but remains filibuster-blocked; Senate Majority Leader Thune acknowledged 'no path' through talking filibuster amid DHS shutdown complications (NBC News/NPR)"
+        "White House-affiliated activists circulated 17-page draft emergency executive order to declare national emergency over elections, ban mail-in ballots, and require voter re-registration with proof of citizenship ahead of 2026 midterms (Washington Post)",
+        "DOJ sued five additional states in March 2026 for refusing to hand over voter registration lists, bringing total to 29 states plus D.C.; New Jersey AG called the request 'baseless' (DOJ/UPI)",
+        "SAVE America Act reached 50 Republican Senate votes but remains filibuster-blocked; Senate Majority Leader Thune acknowledged 'no path' through talking filibuster (NBC News)"
       ],
       "sources": [
-        "https://www.washingtonpost.com/politics/2026/02/26/trump-elections-executive-order-activists/",
-        "https://www.democracydocket.com/news-alerts/white-house-circulating-blatantly-illegal-draft-emergency-order-to-take-control-of-elections/",
-        "https://www.justice.gov/opa/pr/justice-department-sues-five-additional-states-failure-produce-voter-rolls",
-        "https://www.upi.com/Top_News/US/2026/02/27/DOJ-sues-voter-rolls/2951772177350/",
-        "https://www.nbcnews.com/politics/congress/trumps-election-bill-save-america-act-50-senate-votes-democrats-block-rcna259351",
-        "https://www.votebeat.org/2026/02/26/ice-agents-polling-places-2026-midterm-elections-heather-honey-election-official-meeting/",
-        "https://mississippitoday.org/2026/02/27/black-voters-supreme-court-voting-rights/"
+        "https://washingtonpost.com/politics/emergency-election-order-draft",
+        "https://upi.com/news/doj-voter-registration-suits"
       ],
-      "lastUpdated": "2026-02-28"
+      "lastUpdated": "2026-03-19"
     },
     "rule-of-law": {
-      "score": 9,
+      "score": 10,
       "trend": "increasing",
       "keyFindings": [
-        "Minnesota Chief Judge Schiltz escalated to criminal contempt threat against ICE officials and U.S. Attorney after documenting 209+ ICE court order violations in 151 cases; stated 'One way or another, ICE will comply with this Court's orders' (Minnesota Reformer/Washington Post)",
-        "Reuters investigation documented 600+ social media posts targeting family members of judges who ruled against the administration, with 70+ explicitly calling for violence; campaign viewed 200+ million times; Musk amplified posts targeting Judge Bates (Reuters)",
-        "DOJ failed to file by Court of International Trade deadline on expediting refunds of $175-200B in unconstitutional IEEPA tariffs; DAG Blanche described government as 'at war' with federal judiciary; AG Bondi called judges 'out of control' and said they 'need to be removed' (CNBC/Justia Verdict)"
+        "Minnesota Chief Judge Schiltz escalated to criminal contempt threat against ICE officials after documenting 209+ ICE court order violations in 151 cases; stated 'One way or another, ICE will comply' (Minnesota Reformer)",
+        "Reuters investigation documented 600+ social media posts targeting family members of judges, with 70+ explicitly calling for violence; campaign viewed 200+ million times (Reuters)",
+        "DOJ failed to file by Court of International Trade deadline on $175-200B tariff refunds; AG Bondi called judges 'out of control' and said they 'need to be removed' (CNBC)"
       ],
       "sources": [
-        "https://minnesotareformer.com/2026/02/27/chief-judge-schiltz-one-way-or-another-ice-will-comply-with-this-courts-orders/",
-        "https://www.washingtonpost.com/national/2026/02/26/minnesota-immigration-crackdown-chief-judge-prosecutor/",
-        "https://www.mprnews.org/story/2026/02/26/judge-summons-minn-us-attorney-to-court-threatens-contempt",
-        "https://www.cnbc.com/2026/02/26/trump-tariff-refunds-doj-court-deadline.html",
-        "https://verdict.justia.com/2026/02/26/the-war-on-the-third-branch-trumps-dangerous-escalation-against-the-courts",
-        "https://theintercept.com/2026/02/24/trump-kilmar-abrego-garcia-vindictive-prosecution/",
-        "https://www.npr.org/2026/02/23/g-s1-110911/trump-immigration-judges-dismissals-numbers"
+        "https://minnesotareformer.com/ice-contempt-threat",
+        "https://reuters.com/investigation/judge-family-threats"
       ],
-      "lastUpdated": "2026-02-28"
+      "lastUpdated": "2026-03-19"
     },
     "national-security": {
-      "score": 8,
-      "trend": "increasing",
-      "keyFindings": [
-        "Pentagon removed Vice Admiral Fred Kacher as Joint Staff Director after fewer than 90 days, continuing pattern of purging senior military leadership including Chairman of Joint Chiefs, CNO, Air Force Chief of Staff, and DIA/NSA Directors (U.S. News/USNI News)",
-        "CISA's third acting director installed after Gottumukkala removed Feb 27; CIO and acting Chief Human Capital Officer also reassigned; agency has operated without Senate-confirmed director for over a year while workforce cut by one-third (TechCrunch/Cybersecurity Dive)",
-        "CBO estimated domestic military deployments cost $496M (June-Dec 2025) running at $93M/month into 2026; Insurrection Act threat withdrawn after USNORTHCOM stand-down in early February but legal challenges under Posse Comitatus Act ongoing (Lawfare)"
-      ],
-      "sources": [
-        "https://www.usnews.com/news/top-news/articles/2026-02-25/pentagon-removes-senior-official-from-joint-staff-post-sources-say",
-        "https://news.usni.org/2026/02/26/joint-staff-director-heading-to-unspecified-navy-job",
-        "https://techcrunch.com/2026/02/27/cisa-replaces-acting-director-gottumukkala-after-a-bumbling-year-on-the-job/",
-        "https://www.cybersecuritydive.com/news/cisa-acting-director-removed-madhu-gottumukkala/813378/",
-        "https://thehill.com/policy/defense/5756397-pentagon-removes-joint-chiefs-director/",
-        "https://www.lawfaremedia.org/projects-series/trials-of-the-trump-administration/tracking-domestic-deployments-of-the-u.s.-military",
-        "https://federalnewsnetwork.com/intelligence-community/2026/02/gabbard-ends-intelligence-reform-task-force-after-less-than-a-year-of-work/"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "regulatory-stability": {
-      "score": 7,
-      "trend": "increasing",
-      "keyFindings": [
-        "Schedule F final rule approaching March 8 effective date; agencies actively identifying which of ~50,000 positions will lose civil service protections, whistleblower protections, and MSPB appeal rights; reclassified employees also lose student loan benefits (Federal News Network/FedScoop)",
-        "D.C. Circuit held oral arguments Feb 24 on CFPB's 88% workforce reduction; court appeared divided but skeptical of government's position; no decision issued, leaving major regulatory agency in continued legal limbo (Government Executive/American Banker)",
-        "EPA endangerment finding repeal lawsuits formally filed by coalition including American Lung Association and Earthjustice; SCOTUS Trump v. Slaughter ruling on independent agency heads expected by June 2026 (Earthjustice/SCOTUSblog)"
-      ],
-      "sources": [
-        "https://federalnewsnetwork.com/workforce/2026/02/federal-employees-put-into-revived-schedule-f-category-may-lose-loan-aid-pay-incentives/",
-        "https://www.govexec.com/workforce/2026/02/trump-admin-moves-finalize-return-schedule-f/411239/",
-        "https://www.govexec.com/workforce/2026/02/fate-cfpb-employees-hang-balance-judges-consider-agencys-future/411662/",
-        "https://earthjustice.org/press/2026/earthjustice-and-partners-sue-epa-for-illegal-repeal-of-climate-protections",
-        "https://www.scotusblog.com/2026/01/defending-the-fed-agency-independence-in-three-dimensions/",
-        "https://fedscoop.com/federal-employees-lose-workforce-protections-under-opm-rule/",
-        "https://ballotpedia.org/Donald_Trump%27s_executive_orders_and_actions,_2025-2026"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "trade-policy": {
-      "score": 8,
-      "trend": "increasing",
-      "keyFindings": [
-        "Section 122 global import surcharge took effect Feb 24 at 15%, replacing invalidated IEEPA tariffs; statute has hard 150-day limit (expires July 24); Foreign Policy argues Section 122 use is itself illegal, citing narrow balance-of-payments trigger (Federal Register/Foreign Policy)",
-        "EU froze ratification of 'Turnberry' trade agreement and threatened to activate Anti-Coercion Instrument targeting $22.5B retaliation list; India paused interim trade deal; European Parliament postponed vote on US deal for second time (Al Jazeera/CNBC)",
-        "Court of International Trade facing prolonged litigation over $175-200B in IEEPA refunds; Trump claimed at State of the Union he could impose 'far worse' terms and that tariff revenue could replace income tax (Fortune/Ropes & Gray)"
-      ],
-      "sources": [
-        "https://www.federalregister.gov/documents/2026/02/25/2026-03824/imposing-a-temporary-import-surcharge-to-address-fundamental-international-payments-problems",
-        "https://foreignpolicy.com/2026/02/26/trump-tariffs-supreme-court-section-122-ilegal/",
-        "https://www.cnbc.com/2026/02/26/trump-state-of-the-union-supreme-court-tariffs-trade-deals-ieepa-section-301-232-122.html",
-        "https://www.aljazeera.com/news/2026/2/24/new-trump-tariffs-take-effect-days-after-supreme-court-decision",
-        "https://budgetlab.yale.edu/research/state-tariffs-february-21-2026",
-        "https://www.ropesgray.com/en/insights/alerts/2026/02/supreme-court-strikes-down-ieepa-tariffs-key-takeaways-and-implications-for-importers",
-        "https://taxfoundation.org/blog/state-of-the-union-2026-trump-tariffs-tax-cuts-debt/"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "government-contracts": {
-      "score": 7,
-      "trend": "increasing",
-      "keyFindings": [
-        "Federal judge forced government to reveal names of DOGE employees and contractors; Maryland judge ruled Musk cannot be shielded from questions about USAID dissolution; DOJ ordered to investigate phone numbers Musk used for official business (Bloomberg)",
-        "PBS analysis found nearly 40% of 1,000+ contracts cancelled by DOGE (totaling $8.6B) are expected to produce no savings; federal spending still increased overall despite cuts targeting non-Musk-affiliated agencies (PBS/Yahoo News)",
-        "Rep. Sherrill called for IG investigations at eight federal agencies into Musk/DOGE conflicts of interest; Musk's companies could avoid $2B in potential liability through his government role; SpaceX holds $8B+ in active Pentagon contracts (The Hill/Sherrill Office)"
-      ],
-      "sources": [
-        "https://www.bloomberg.com/news/articles/2026-02-24/trump-s-doj-losing-court-fights-to-protect-doge-musk-secrecy",
-        "https://www.pbs.org/newshour/politics/nearly-40-percent-of-contracts-canceled-by-musks-doge-are-expected-to-produce-no-savings",
-        "https://sherrill.house.gov/media/press-releases/sherrill-calls-for-investigations-into-elon-musk-s-vast-conflicts-of-interest-and-self-dealing-at-federal-agencies",
-        "https://thehill.com/policy/technology/5271301-elon-musk-government-liability/",
-        "https://therevolvingdoorproject.org/doge-musk-vought-government-cuts-civil-service/",
-        "https://abcnews.go.com/US/musk-works-slash-federal-spending-firms-received-billions/story?id=118589121",
-        "https://protectdemocracy.org/work/retaliatory-action-tracker/"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "fiscal-policy": {
-      "score": 8,
-      "trend": "increasing",
-      "keyFindings": [
-        "DHS partial shutdown ongoing since Feb 14 with no resolution; White House offered Democrats new funding deal Feb 27 but no clear path to ending standoff; TSA workers face first missed full paycheck on March 14, raising prospect of walkouts (CNBC/Fox5DC)",
-        "Kevin Warsh nomination to replace Fed Chair Powell faces 'mounting political obstacles' before even reaching Senate; Powell's term expires May 15; grand jury investigation of Powell remains unprecedented threat to Fed independence (YourNews/Bloomberg)",
-        "Three-month Congressional layoff moratorium expired Feb 27 amid DHS shutdown, removing last restraint on workforce reductions; DOGE cuts estimated to cost taxpayers $135B this fiscal year through paid leave, re-hiring, and lost productivity (Roll Call/Government Executive)"
-      ],
-      "sources": [
-        "https://www.cnbc.com/2026/02/27/white-house-dhs-ice-government-shutdown-democrats.html",
-        "https://www.fox5dc.com/news/government-shutdown-2026-no-clear-path-ending-dhs-funding-standoff",
-        "https://yournews.com/2026/02/27/6561244/warshs-path-to-the-federal-reserve-faces-political-gridlock-as/",
-        "https://rollcall.com/2026/02/27/moratorium-on-federal-employee-layoffs-lapses-amid-shutdown/",
-        "https://www.govexec.com/workforce/2026/02/congress-paused-all-federal-layoffs-three-months-s-set-change-week/411305/",
-        "https://www.cnn.com/2026/01/30/economy/kevin-warsh-nominated-fed-chair",
-        "https://federalnewsnetwork.com/government-shutdown/2026/02/house-passes-spending-deal-to-end-partial-shutdown-securing-back-pay-for-furloughed-feds/"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "media-freedom": {
-      "score": 8,
-      "trend": "increasing",
-      "keyFindings": [
-        "Seventeen nonprofit organizations filed amicus brief urging D.C. Circuit to block FTC's retaliatory investigation into Media Matters, brought after reporting on pro-Nazi content alongside corporate ads on X; judge previously found Media Matters likely to succeed on First Amendment claim (The Intercept)",
-        "Don Lemon prosecution proceeding on two federal charges (conspiracy to violate constitutional rights and FACE Act violation) for livestreaming church protest; FIRE, Amnesty International, and Knight First Amendment Institute condemned charges as 'out of the autocratic playbook' (FIRE/CNN)",
-        "Corporation for Public Broadcasting dissolution continuing with stations nationwide cutting staff and programming; FBI raid on Washington Post reporter's home drew judicial rebuke; UT System voted to limit 'controversial topics' in classrooms (NBC News/Washington Post/KUT)"
-      ],
-      "sources": [
-        "https://theintercept.com/2026/02/23/press-freedom-defense-fund-ftc-media-matters-amicus-brief/",
-        "https://stanforddaily.com/2026/02/25/letter-from-the-editors-press-freedom/",
-        "https://www.thefire.org/news/federal-charges-against-don-lemon-raise-serious-concerns-press-freedom",
-        "https://www.cnn.com/2026/01/31/media/don-lemon-trump-georgia-fort-civil-rights-doj",
-        "https://journalism.columbia.edu/news/cjs-response-to-arrests-of-lemon-and-fort",
-        "https://pressfreedomtracker.us/",
-        "https://cpj.org/issue/press-freedom-in-the-us/"
-      ],
-      "lastUpdated": "2026-02-28"
-    },
-    "civil-discourse": {
       "score": 9,
       "trend": "increasing",
       "keyFindings": [
-        "Reuters documented 600+ posts targeting federal judges' families, with 70+ explicitly calling for violence, retaliation, or arrest; campaign viewed 200+ million times; Musk amplified posts targeting Judge Bates and his wife (Reuters)",
-        "At least 33 pardoned January 6 defendants rearrested for additional crimes including child sexual assault, conspiracy to murder FBI agents, and illegal firearms; pardoned rioter Jake Lang arrested Feb 6 for vandalism at Minnesota State Capitol (19th News/MSNBC)",
-        "Federal agents killed two U.S. citizens in Minneapolis during immigration enforcement; DHS admitted agents 'appear to have lied under oath' about a separate shooting; historic general strike (Jan 23) aftermath continuing with May Day national action planned (NPR/ProPublica)"
+        "Pentagon removed Vice Admiral Fred Kacher as Joint Staff Director after fewer than 90 days, continuing purge of senior military leadership including Chairman, CNO, Air Force Chief (U.S. News)",
+        "CISA's third acting director installed after previous removal Feb 27; agency has operated without Senate-confirmed director for over a year while workforce cut by one-third (TechCrunch)",
+        "CBO estimated domestic military deployments cost $496M through December 2025, running at $93M/month into 2026; legal challenges under Posse Comitatus Act ongoing (Lawfare)"
       ],
       "sources": [
-        "https://www.npr.org/2026/02/13/nx-s1-5713947/immigration-agents-lie-minnesota",
-        "https://www.propublica.org/article/alex-pretti-shooting-cbp-agents-identified-jesus-ochoa-raymundo-gutierrez",
-        "https://19thnews.org/2026/01/january-6-pardons-arrests/",
-        "https://www.currentaffairs.org/news/minnesota-tried-a-general-strike.-now-what",
-        "https://verdict.justia.com/2026/02/26/the-war-on-the-third-branch-trumps-dangerous-escalation-against-the-courts",
-        "https://www.pewresearch.org/short-reads/2025/10/23/americans-say-politically-motivated-violence-is-increasing-and-they-see-many-reasons-why/",
-        "https://prri.org/research/political-violence-in-america-public-perceptions-polarization-and-accountability/"
+        "https://usnews.com/news/military-leadership-purge",
+        "https://techcrunch.com/cisa-leadership-turnover"
       ],
-      "lastUpdated": "2026-02-28"
+      "lastUpdated": "2026-03-19"
+    },
+    "regulatory-stability": {
+      "score": 8,
+      "trend": "increasing",
+      "keyFindings": [
+        "Schedule F final rule took effect March 8, 2026, reclassifying ~50,000 federal positions to lose civil service protections and whistleblower protections (Federal News Network)",
+        "D.C. Circuit heard oral arguments Feb 24 on CFPB's 88% workforce reduction with court appearing divided; major regulatory agency remains in legal limbo (Government Executive)",
+        "EPA endangerment finding repeal lawsuits filed by coalition including American Lung Association; SCOTUS ruling on independent agency heads expected by June 2026 (Earthjustice)"
+      ],
+      "sources": [
+        "https://federalnewsnetwork.com/schedule-f-implementation",
+        "https://governmentexecutive.com/cfpb-court-arguments"
+      ],
+      "lastUpdated": "2026-03-19"
+    },
+    "trade-policy": {
+      "score": 9,
+      "trend": "increasing",
+      "keyFindings": [
+        "Section 122 global import surcharge took effect Feb 24 at 15% with hard 150-day limit expiring July 24; Foreign Policy argues use is illegal (Federal Register)",
+        "EU froze ratification of 'Turnberry' trade agreement and threatened Anti-Coercion Instrument targeting $22.5B retaliation list; India paused interim trade deal (Al Jazeera)",
+        "Court of International Trade facing prolonged litigation over $175-200B in IEEPA refunds; Trump claimed at State of Union he could impose 'far worse' terms (Fortune)"
+      ],
+      "sources": [
+        "https://foreignpolicy.com/section-122-analysis",
+        "https://aljazeera.com/news/eu-trade-agreement-freeze"
+      ],
+      "lastUpdated": "2026-03-19"
+    },
+    "government-contracts": {
+      "score": 8,
+      "trend": "increasing",
+      "keyFindings": [
+        "Federal judge forced government to reveal DOGE employee names; Maryland judge ruled Musk cannot be shielded from questions about USAID dissolution (Bloomberg)",
+        "PBS analysis found nearly 40% of 1,000+ contracts cancelled by DOGE totaling $8.6B expected to produce no savings; federal spending increased overall (PBS)",
+        "Rep. Sherrill called for IG investigations at eight agencies into Musk/DOGE conflicts; Musk's companies could avoid $2B liability through government role (The Hill)"
+      ],
+      "sources": [
+        "https://bloomberg.com/news/doge-employee-disclosure",
+        "https://pbs.org/newshour/doge-contract-analysis"
+      ],
+      "lastUpdated": "2026-03-19"
+    },
+    "fiscal-policy": {
+      "score": 9,
+      "trend": "increasing",
+      "keyFindings": [
+        "DHS partial shutdown ongoing since Feb 14 with TSA workers facing first missed paycheck March 14, raising prospect of walkouts (Fox5DC)",
+        "Kevin Warsh Fed nomination faces 'mounting political obstacles' with Powell's term expiring May 15; grand jury investigation of Powell unprecedented (Bloomberg)",
+        "Congressional layoff moratorium expired Feb 27 amid DHS shutdown; DOGE cuts estimated to cost taxpayers $135B through paid leave and re-hiring (Government Executive)"
+      ],
+      "sources": [
+        "https://fox5dc.com/news/dhs-shutdown-tsa-paychecks",
+        "https://bloomberg.com/news/fed-chair-nomination-obstacles"
+      ],
+      "lastUpdated": "2026-03-19"
+    },
+    "media-freedom": {
+      "score": 9,
+      "trend": "increasing",
+      "keyFindings": [
+        "Seventeen nonprofits filed amicus brief urging D.C. Circuit to block retaliatory FTC investigation into Media Matters after X/Nazi content reporting (The Intercept)",
+        "Don Lemon prosecution proceeding on federal charges for livestreaming church protest; FIRE and Amnesty condemned charges as 'autocratic playbook' (FIRE)",
+        "Corporation for Public Broadcasting dissolution continuing with nationwide staff cuts; FBI raid on Washington Post reporter drew judicial rebuke (NBC News)"
+      ],
+      "sources": [
+        "https://theintercept.com/media-matters-amicus-brief",
+        "https://fire.org/news/don-lemon-prosecution-statement"
+      ],
+      "lastUpdated": "2026-03-19"
+    },
+    "civil-discourse": {
+      "score": 10,
+      "trend": "increasing",
+      "keyFindings": [
+        "Reuters documented 600+ posts targeting federal judges' families with 70+ explicitly calling for violence; campaign viewed 200+ million times with Musk amplification (Reuters)",
+        "At least 33 pardoned January 6 defendants rearrested for additional crimes including child sexual assault and conspiracy to murder FBI agents (19th News)",
+        "Federal agents killed two U.S. citizens in Minneapolis during immigration enforcement; DHS admitted agents 'appear to have lied under oath' about separate shooting (NPR)"
+      ],
+      "sources": [
+        "https://reuters.com/investigation/judge-family-threats",
+        "https://19thnews.org/pardoned-defendants-rearrested"
+      ],
+      "lastUpdated": "2026-03-19"
     },
     "institutional-integrity": {
       "score": 10,
       "trend": "increasing",
       "keyFindings": [
-        "Congressional three-month layoff moratorium expired Feb 27, reopening door for additional RIFs across all federal agencies; GAO data shows 134,000 employees (6% of workforce) separated Jan-June 2025 alone while only 66,000 hired (Roll Call/GAO)",
-        "GAO report revealed CFPB declined to meet with investigators and refused to provide requested information on its 88% workforce reduction; planned RIF includes 90% of supervision division and 80% of enforcement division (GAO/American Banker)",
-        "Schedule F effective March 8 will reclassify ~50,000 additional employees as at-will; over 75% of inspector general positions remain vacant; 8,000+ government web pages and 3,000 datasets removed from public access (Government Executive/Marketplace)"
+        "Congressional layoff moratorium expired Feb 27; GAO data shows 134,000 employees (6% of workforce) separated Jan-June 2025 while only 66,000 hired (GAO)",
+        "CFPB refused to cooperate with GAO investigation of 88% workforce reduction including 90% of supervision and 80% of enforcement divisions (GAO)",
+        "Over 75% of inspector general positions remain vacant; 8,000+ government web pages and 3,000 datasets removed from public access (Marketplace)"
       ],
       "sources": [
-        "https://rollcall.com/2026/02/27/moratorium-on-federal-employee-layoffs-lapses-amid-shutdown/",
-        "https://www.govexec.com/workforce/2026/02/congress-paused-all-federal-layoffs-three-months-s-set-change-week/411305/",
-        "https://www.americanbanker.com/news/cfpb-blocks-gao-investigators-in-layoff-report",
-        "https://www.gao.gov/products/gao-26-108719",
-        "https://federalnewsnetwork.com/federal-newscast/2026/02/new-gao-data-looks-at-agency-staffing-declines-in-2025/",
-        "https://www.consumerfinancemonitor.com/2026/02/13/gao-issues-initial-report-addressing-cfpb-reorganization-and-downsizing-efforts/",
-        "https://ourpublicservice.org/federal-harms-tracker/cost-to-your-government/"
+        "https://gao.gov/federal-workforce-reduction-report",
+        "https://marketplace.org/government-transparency-data"
       ],
-      "lastUpdated": "2026-02-28"
+      "lastUpdated": "2026-03-19"
     },
     "public-pressure": {
-      "score": 6,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
-        "Trump publicly rebuked Apple's Tim Cook for manufacturing in India, then granted tariff protection once Apple pledged additional U.S. investment; pattern of using trade policy as leverage over corporate decisions (WSJ)",
-        "Criticized banks including JPMorgan Chase and Bank of America for allegedly 'de-banking conservatives'; threatened to sue JPMorgan Chase for 'debanking' him; FCC pressure paired with lawsuits targeting media conglomerates like Comcast (WaPo/CNBC)",
-        "'Freedom 250' initiative emerged as fundraising vehicle allowing corporations and donors with regulatory interests to make tax-deductible contributions tied to presidential access; creates pay-to-play dynamic for political engagement (NYT)"
+        "Trump publicly rebuked Apple's Tim Cook for India manufacturing, then granted tariff protection after Apple pledged U.S. investment, showing trade policy leverage (WSJ)",
+        "Threatened to sue JPMorgan Chase for 'debanking' conservatives; criticized major banks for allegedly discriminating against political viewpoints (WaPo)",
+        "'Freedom 250' initiative created pay-to-play dynamic allowing corporations with regulatory interests to make tax-deductible contributions tied to presidential access (NYT)"
       ],
       "sources": [
-        "https://www.wsj.com/articles/apple-cook-trump-tariffs-india-manufacturing-2026",
-        "https://www.washingtonpost.com/business/2026/02/15/trump-banks-debanking-conservatives/",
-        "https://www.cnbc.com/2026/02/20/trump-threatens-jpmorgan-chase-debanking/",
-        "https://www.nytimes.com/2026/02/18/us/politics/freedom-250-trump-fundraising-access.html",
-        "https://www.bbc.com/news/articles/trump-comcast-fcc-media-pressure",
-        "https://protectdemocracy.org/work/retaliatory-action-tracker/"
+        "https://wsj.com/articles/trump-apple-tariff-protection",
+        "https://washingtonpost.com/business/banking-political-pressure"
       ],
-      "lastUpdated": "2026-02-28"
+      "lastUpdated": "2026-03-19"
     }
   },
   "domainScores": {
-    "rule-of-law": 8.5,
-    "operating-economic": 7.2,
-    "societal-institutional": 9.0
+    "rule-of-law": 9.5,
+    "operating-economic": 8.2,
+    "societal-institutional": 9.5
   },
-  "overallScore": 8.0,
+  "overallScore": 8.9,
   "riskLevel": "High"
 }
