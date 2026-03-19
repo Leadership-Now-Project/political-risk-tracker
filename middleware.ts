@@ -21,8 +21,12 @@ export async function middleware(request: NextRequest) {
   }
 
   const token = request.cookies.get('admin-token')?.value;
+  const isApiRoute = pathname.startsWith('/api/');
 
   if (!token) {
+    if (isApiRoute) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
     return NextResponse.redirect(new URL('/admin/login', request.url));
   }
 
@@ -30,6 +34,9 @@ export async function middleware(request: NextRequest) {
     await jwtVerify(token, getSecretKey());
     return NextResponse.next();
   } catch {
+    if (isApiRoute) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
     const response = NextResponse.redirect(new URL('/admin/login', request.url));
     response.cookies.delete('admin-token');
     return response;
