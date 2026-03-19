@@ -13,6 +13,7 @@ const quickActions = [
   { href: '/admin/actions', label: 'Actions & Pushback', description: 'Track executive actions and legal challenges', color: '#f59e0b' },
   { href: '/admin/snapshot', label: 'Monthly Snapshot', description: 'Create a point-in-time history archive', color: '#10b981' },
   { href: '/admin/weekly-update', label: 'AI Weekly Update', description: 'Run AI-assisted research and scoring', color: '#ec4899' },
+  { href: '/admin/settings', label: 'Site Settings', description: 'Toggle page visibility and site configuration', color: '#6b7280' },
 ];
 
 export default function AdminDashboard() {

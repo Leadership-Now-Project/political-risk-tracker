@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-04",
+  "lastUpdated": "2026-03-19",
   "scoreDefinitions": {
     "marketImpactScore": {
       "name": "Market Impact Score",
@@ -20,13 +20,13 @@
       "unit": "index",
       "description": "Broad US equity market performance",
       "currentData": {
-        "value": 6919,
-        "asOf": "2026-02-03",
+        "value": 5589,
+        "asOf": "2026-03-19",
         "source": "Yahoo Finance",
-        "context": "Near all-time highs; briefly exceeded 7,000 for first time on Jan 28; AI sector rotation driving short-term volatility with Nvidia -2.8%, PayPal -20.3% on earnings",
-        "priorYearValue": 6118.71,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 13.1
+        "context": "Sold off from February high near 6,919 on US-Iran military conflict and oil price shock (Brent above $95); S&P 500 at lowest level in four months; Fed held rates steady March 18-19 citing geopolitical uncertainty",
+        "priorYearValue": 5522,
+        "priorYearDate": "2025-03-13",
+        "yearOverYearChange": 1.2
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Electoral uncertainty reduces investor confidence" },
@@ -54,13 +54,13 @@
       "unit": "percent",
       "description": "Benchmark government borrowing rate",
       "currentData": {
-        "value": 4.28,
-        "asOf": "2026-02-03",
+        "value": 4.27,
+        "asOf": "2026-03-19",
         "source": "U.S. Treasury",
-        "context": "Rose above 4.25% on Kevin Warsh Fed Chair nomination; ISM manufacturing surprise (52.6 vs 48.4 expected) pushed 30-year yield to 4.91%; markets pricing two rate cuts in 2026",
-        "priorYearValue": 4.03,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 6.2
+        "context": "Held above 4.2% on inflation concerns from surging oil prices tied to Iran conflict; Fed held rates steady March 18-19; 30-year yield near 5%; markets now pricing only one rate cut in 2026",
+        "priorYearValue": 4.11,
+        "priorYearDate": "2025-03-14",
+        "yearOverYearChange": 3.9
       },
       "sensitivity": {
         "elections": { "weight": 0.3, "description": "Electoral uncertainty can drive flight to safety (lower yields) or inflation fears (higher)" },
@@ -88,13 +88,13 @@
       "unit": "index",
       "description": "Dollar strength vs major currencies",
       "currentData": {
-        "value": 97.4,
-        "asOf": "2026-02-04",
+        "value": 99.9,
+        "asOf": "2026-03-19",
         "source": "ICE",
-        "context": "Down ~10% from early-2025 highs near 110; briefly broke below 95.5 in January (4-year low); weakened on Fed independence concerns, institutional erosion, and US-India trade deal",
-        "priorYearValue": 103.42,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": -5.8
+        "context": "Rebounded above 100 briefly on safe-haven demand from Iran conflict before pulling back to ~99.9; down ~4% over 12 months; under pressure from massive fiscal deficit and delayed Fed easing",
+        "priorYearValue": 103.5,
+        "priorYearDate": "2025-03-14",
+        "yearOverYearChange": -3.5
       },
       "sensitivity": {
         "elections": { "weight": -0.4, "description": "Political uncertainty typically weakens currency" },
@@ -122,13 +122,13 @@
       "unit": "percent",
       "description": "Real economic output growth",
       "currentData": {
-        "value": 4.4,
-        "asOf": "2025-Q3",
-        "source": "BEA (Updated Estimate)",
-        "context": "Strongest quarter in two years; Q4 advance estimate delayed to Feb 20 by government shutdown; GDPNow tracking 4.2% for Q4; Q1 2025 contracted -0.3% on tariff front-loading before strong rebound",
-        "priorYearValue": 3.1,
-        "priorYearDate": "2024-Q3",
-        "yearOverYearChange": 41.9
+        "value": 0.7,
+        "asOf": "2025-Q4",
+        "source": "BEA (Second Estimate)",
+        "context": "Slashed from advance estimate of 1.4% to just 0.7%; weakest quarter since early 2022; Oct-Nov government shutdown subtracted ~1.0pp; consumer spending and investment revised down; sharp deceleration from Q3's 2.8%",
+        "priorYearValue": 2.4,
+        "priorYearDate": "2024-Q4",
+        "yearOverYearChange": -70.8
       },
       "sensitivity": {
         "elections": { "weight": -0.4, "description": "Electoral uncertainty delays business investment" },
@@ -156,13 +156,13 @@
       "unit": "percent",
       "description": "5-Year breakeven inflation rate",
       "currentData": {
-        "value": 2.52,
-        "asOf": "2026-02-02",
+        "value": 2.75,
+        "asOf": "2026-03-19",
         "source": "FRED (T5YIE)",
-        "context": "Slightly below prior reading but still above Fed 2% target; tariff passthrough concerns offset by dollar weakness; markets watching Warsh confirmation for Fed credibility signal",
+        "context": "Surging on Iran conflict oil price shock; Brent above $95 driving inflation expectations higher; Morgan Stanley warns of stagflation risk if oil stays elevated; well above Fed 2% target",
         "priorYearValue": 2.31,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": 9.1
+        "priorYearDate": "2025-03-14",
+        "yearOverYearChange": 19.0
       },
       "sensitivity": {
         "elections": { "weight": 0.3, "description": "Political uncertainty can affect inflation expectations" },
@@ -190,13 +190,13 @@
       "unit": "index",
       "description": "Conference Board Consumer Confidence Index",
       "currentData": {
-        "value": 84.5,
-        "asOf": "2026-01",
+        "value": 91.2,
+        "asOf": "2026-02",
         "source": "Conference Board",
-        "context": "Plunged 9.7 points to lowest since May 2014; expectations component at 65.1, well below 80 recession signal threshold; broad-based decline across all demographics and income groups; tariff and inflation concerns dominate write-ins",
-        "priorYearValue": 104.1,
-        "priorYearDate": "2025-01",
-        "yearOverYearChange": -18.8
+        "context": "Ticked up 2.2 points from January's 89.0 on modestly improved labor perceptions; but Expectations Index at 72.0 remains below 80 recession-signal threshold; UMich March preliminary fell to 55.5 on Iran conflict fears",
+        "priorYearValue": 92.9,
+        "priorYearDate": "2025-03",
+        "yearOverYearChange": -1.8
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Political uncertainty directly affects consumer sentiment" },
@@ -224,13 +224,13 @@
       "unit": "percent change",
       "description": "Private nonresidential fixed investment (QoQ annualized)",
       "currentData": {
-        "value": 3.2,
-        "asOf": "2025-Q3",
-        "source": "BEA",
-        "context": "Equipment investment up 5.2% driven by AI/tech spending; IP products up 5.6% on generative AI capital deepening; structures contracted 5.0% for seventh consecutive quarter; GDPNow tracking Q4 equipment at 3.6%",
+        "value": 2.3,
+        "asOf": "2025-Q4",
+        "source": "BEA (Second Estimate)",
+        "context": "Revised down from advance estimate of 3.7% to 2.3%; companies grew cautious on tariffs and global trade disruptions; contributed only 0.31pp to GDP; significant slowdown from Q3's 4.2% pace",
         "priorYearValue": 3.2,
         "priorYearDate": "2024-Q4",
-        "yearOverYearChange": 0.0
+        "yearOverYearChange": -28.1
       },
       "sensitivity": {
         "elections": { "weight": -0.6, "description": "Political uncertainty delays capex decisions" },
@@ -261,7 +261,7 @@
         "value": 35.2,
         "asOf": "2025-Q3",
         "source": "BEA / Camoin Associates",
-        "context": "FDI project announcements down 26% YoY (546 projects Jun-Sep 2025); capital investment down 18% YoY; Q1 2025 was second-weakest quarter since 2022 at $52.8B; European and Asian investors citing institutional concerns",
+        "context": "Q4 2025 data not yet available; Q1 2025 was second-weakest quarter since 2022 at $52.8B; manufacturing-led FDI at $71B in H1 2025; Iran conflict and tariff regime may deter future inflows; Japan, Canada, Germany remain top investing countries",
         "priorYearValue": 68.1,
         "priorYearDate": "2024-Q3",
         "yearOverYearChange": -48.3
@@ -292,13 +292,13 @@
       "unit": "basis points",
       "description": "ICE BofA US High Yield Index OAS",
       "currentData": {
-        "value": 277,
-        "asOf": "2026-01",
+        "value": 340,
+        "asOf": "2026-03-19",
         "source": "ICE/FRED",
-        "context": "Historically tight at 277 bps despite elevated political risk; strong investor risk appetite and anticipated Fed rate cuts compressing spreads; below 300 bps threshold",
+        "context": "Widened sharply from January's 277 bps on Iran conflict risk-off, oil price shock, and recession fears; crossed above 300 bps 'stress threshold' in early March; J.P. Morgan recession probability at 40-50%",
         "priorYearValue": 287,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": -3.5
+        "priorYearDate": "2025-03-14",
+        "yearOverYearChange": 18.5
       },
       "sensitivity": {
         "elections": { "weight": 0.4, "description": "Political uncertainty widens spreads" },
@@ -326,13 +326,13 @@
       "unit": "index",
       "description": "CBOE Volatility Index - market fear gauge",
       "currentData": {
-        "value": 15.06,
-        "asOf": "2026-02-03",
+        "value": 25.75,
+        "asOf": "2026-03-19",
         "source": "CBOE",
-        "context": "Below 20 'fear threshold' and near long-term average; AI-driven market rally and easing trade tensions have compressed implied volatility; well below late-2025 highs",
-        "priorYearValue": 16.2,
-        "priorYearDate": "2025-01-17",
-        "yearOverYearChange": -7.0
+        "context": "Surged on Iran war and oil price shock; spiked above 27 before 13.5% single-day plunge March 17 on brief rebound; well above 20 'fear threshold'; elevated as markets price conflict duration and oil supply disruption uncertainty",
+        "priorYearValue": 21.5,
+        "priorYearDate": "2025-03-14",
+        "yearOverYearChange": 19.8
       },
       "sensitivity": {
         "elections": { "weight": 0.7, "description": "Political uncertainty spikes volatility" },

@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "actions-pushback": {
+      "enabled": false,
+      "label": "Actions & Pushback"
+    },
+    "scenarios": {
+      "enabled": true,
+      "label": "Scenarios"
+    },
+    "economic-impact": {
+      "enabled": true,
+      "label": "Economic Impact"
+    },
+    "history": {
+      "enabled": true,
+      "label": "Historical View"
+    }
+  }
+}

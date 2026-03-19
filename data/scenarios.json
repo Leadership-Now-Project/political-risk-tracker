@@ -27,7 +27,7 @@
       "label": "Warsh confirmation delayed past May, leaving Fed without confirmed chair",
       "category": "fiscal-policy",
       "domain": "operating-economic",
-      "likelihood": "moderate",
+      "likelihood": "high",
       "impacts": [
         { "category": "fiscal-policy", "delta": 2, "reason": "Leadership vacuum at the Federal Reserve during period of economic stress" },
         { "category": "institutional-integrity", "delta": 1, "reason": "Unprecedented gap in central bank leadership undermines institutional credibility" }
@@ -87,17 +87,6 @@
       "impacts": [
         { "category": "trade-policy", "delta": -1, "reason": "Reduces trade tensions with allies" },
         { "category": "regulatory-stability", "delta": -1, "reason": "Signals more predictable trade policy direction" }
-      ]
-    },
-    {
-      "id": "tariff-refund-crisis",
-      "label": "Courts order $200B+ in IEEPA tariff refunds, creating fiscal crisis",
-      "category": "trade-policy",
-      "domain": "operating-economic",
-      "likelihood": "moderate",
-      "impacts": [
-        { "category": "fiscal-policy", "delta": 2, "reason": "Massive unplanned refund obligation strains federal budget" },
-        { "category": "trade-policy", "delta": -1, "reason": "Deters future unilateral tariff actions" }
       ]
     },
     {
@@ -357,17 +346,6 @@
       ]
     },
     {
-      "id": "bipartisan-commission",
-      "label": "Bipartisan commission on democratic norms issues consensus recommendations",
-      "category": "civil-discourse",
-      "domain": "rule-of-law",
-      "likelihood": "low",
-      "impacts": [
-        { "category": "civil-discourse", "delta": -1, "reason": "Models cross-partisan cooperation" },
-        { "category": "institutional-integrity", "delta": -1, "reason": "Creates roadmap for institutional reforms" }
-      ]
-    },
-    {
       "id": "corporate-loyalty-demands",
       "label": "Administration publicly demands major corporations pledge support for policy agenda as condition for regulatory relief",
       "category": "public-pressure",
@@ -387,6 +365,120 @@
       "impacts": [
         { "category": "public-pressure", "delta": -2, "reason": "Collective action reduces individual company vulnerability to political pressure" },
         { "category": "regulatory-stability", "delta": -1, "reason": "Signals business community pushback against politicized regulation" }
+      ]
+    },
+    {
+      "id": "humphreys-executor-overturned",
+      "label": "SCOTUS overturns Humphrey's Executor in Trump v. Slaughter, giving president unrestricted power to fire independent agency heads",
+      "category": "institutional-integrity",
+      "domain": "societal-institutional",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "institutional-integrity", "delta": 2, "reason": "President gains power to fire heads of FTC, FCC, NLRB, SEC, CFPB, and other independent agencies" },
+        { "category": "regulatory-stability", "delta": 2, "reason": "Every independent agency subject to political control; regulatory environment becomes entirely presidential-preference driven" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Weakens legal framework protecting Fed independence" }
+      ]
+    },
+    {
+      "id": "dhs-shutdown-prolonged",
+      "label": "DHS partial shutdown extends through Easter recess into May, degrading TSA and Coast Guard operations",
+      "category": "national-security",
+      "domain": "rule-of-law",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "national-security", "delta": 1, "reason": "TSA workforce attrition, Coast Guard operations degraded, port security compromised" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Immigration enforcement standoff between branches deepens partisan divide" }
+      ]
+    },
+    {
+      "id": "turnberry-collapse",
+      "label": "EU formally suspends Turnberry trade agreement and activates retaliatory tariffs on $93B of US goods",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "trade-policy", "delta": 2, "reason": "Full transatlantic trade war; EU retaliatory tariffs hit US agriculture, tech, and services" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "US export sectors face immediate revenue loss; retaliatory tariffs reduce global growth" }
+      ]
+    },
+    {
+      "id": "ieepa-refund-fiscal-shock",
+      "label": "CIT-ordered $166B IEEPA tariff refund process begins, creating immediate fiscal strain and customs system disruption",
+      "category": "fiscal-policy",
+      "domain": "operating-economic",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "fiscal-policy", "delta": 1, "reason": "CBP must process refunds for 330,000 importers across 53M entries; phased rollout starting late April strains Treasury" },
+        { "category": "trade-policy", "delta": -1, "reason": "Refunds partially unwind tariff damage; signals judicial accountability on trade policy" }
+      ]
+    },
+    {
+      "id": "doj-powell-investigation-escalation",
+      "label": "DOJ investigation of Fed Chair Powell expands or results in indictment, creating constitutional crisis over central bank independence",
+      "category": "fiscal-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "fiscal-policy", "delta": 2, "reason": "Markets lose confidence in Fed independence; bond yields spike on political uncertainty" },
+        { "category": "institutional-integrity", "delta": 1, "reason": "Criminal investigation of sitting Fed Chair unprecedented; signals willingness to criminalize institutional independence" },
+        { "category": "rule-of-law", "delta": 1, "reason": "DOJ investigation widely perceived as retaliatory for Powell's refusal to cut rates" }
+      ]
+    },
+    {
+      "id": "scotus-tps-ruling",
+      "label": "SCOTUS rules in favor of administration in TPS cases, enabling mass deportation of TPS holders",
+      "category": "civil-discourse",
+      "domain": "rule-of-law",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "civil-discourse", "delta": 1, "reason": "Hundreds of thousands of long-term US residents face deportation; massive community disruption" },
+        { "category": "national-security", "delta": 1, "reason": "ICE enforcement operations scale up dramatically, further straining federal-state relations" }
+      ]
+    },
+    {
+      "id": "section-122-challenge-injunction",
+      "label": "CIT issues preliminary injunction against Section 122 tariffs in state AG or importer lawsuit",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "trade-policy", "delta": -2, "reason": "All global tariffs suspended pending full litigation; massive relief for importers" },
+        { "category": "regulatory-stability", "delta": -1, "reason": "Judicial check on executive trade authority further constrains policy unpredictability" },
+        { "category": "rule-of-law", "delta": -1, "reason": "Courts continue enforcing statutory limits on presidential trade authority" }
+      ]
+    },
+    {
+      "id": "doge-data-breach-criminal-referral",
+      "label": "SSA Inspector General refers DOGE data exfiltration case to DOJ for criminal investigation",
+      "category": "institutional-integrity",
+      "domain": "societal-institutional",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "institutional-integrity", "delta": -1, "reason": "Accountability mechanism activated; IG investigation demonstrates watchdog independence" },
+        { "category": "government-contracts", "delta": -1, "reason": "Increased scrutiny of DOGE personnel access to government systems slows further data access" }
+      ]
+    },
+    {
+      "id": "gop-primary-loyalty-test",
+      "label": "Trump-backed primary challengers defeat incumbent Republican senators, reinforcing loyalty-based party discipline ahead of midterms",
+      "category": "elections",
+      "domain": "rule-of-law",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "elections", "delta": 1, "reason": "Party primaries become loyalty tests rather than policy debates; narrows range of acceptable dissent" },
+        { "category": "institutional-integrity", "delta": 1, "reason": "Congressional oversight further weakened as elected officials prioritize presidential loyalty" }
+      ]
+    },
+    {
+      "id": "reclaim-trade-powers-act",
+      "label": "Bipartisan coalition passes Reclaim Trade Powers Act repealing Section 122, permanently ending unilateral tariff authority",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "low",
+      "impacts": [
+        { "category": "trade-policy", "delta": -2, "reason": "Eliminates legal basis for current tariffs and prevents future unilateral tariff actions" },
+        { "category": "regulatory-stability", "delta": -2, "reason": "Removes single largest source of business uncertainty; restores congressional primacy over trade" },
+        { "category": "institutional-integrity", "delta": -1, "reason": "Congress reasserts constitutional role over commerce" }
       ]
     }
   ],

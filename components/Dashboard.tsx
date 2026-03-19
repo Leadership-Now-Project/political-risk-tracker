@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { CategoriesData, CurrentAssessment, StatesData, ActionsPushbackData, HistoricalSnapshot, HistoricalChangesData, DomainId } from '@/lib/types';
 import { getScoreColor, getRiskLevel } from '@/lib/risk-levels';
 import { getDomainInfo } from '@/lib/scoring';
+import siteConfig from '@/data/site-config.json';
 import OverallScore from '@/components/OverallScore';
 import RiskViewToggle from '@/components/RiskViewToggle';
 import CategoryList from '@/components/CategoryList';
@@ -76,7 +77,7 @@ export default function Dashboard({
       { id: 'categories', label: view === 'national' ? 'Categories' : 'State Map' },
       { id: 'spotlight', label: 'Top Risk Areas' },
     ];
-    if (actionsPushbackData) {
+    if (actionsPushbackData && siteConfig.pages['actions-pushback'].enabled) {
       base.splice(5, 0, { id: 'actions', label: 'Actions' });
     }
     return base;
@@ -217,7 +218,7 @@ export default function Dashboard({
         </div>
 
         {/* Actions & Pushback — compact bar */}
-        {actionsPushbackData && (
+        {actionsPushbackData && siteConfig.pages['actions-pushback'].enabled && (
           <div id="actions" className="scroll-mt-20">
             <Link
               href="/actions-pushback"
