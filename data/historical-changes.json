@@ -184,6 +184,56 @@
           "rationale": "DHS shutdown in 5th week affecting airport security during spring break; Warsh nomination blocked; deficit on pace for $1.9T; $166B tariff refund liability looming"
         }
       ]
+    },
+    {
+      "period": "April 2026",
+      "date": "2026-04-20",
+      "overallScore": 8.8,
+      "overallChange": 0.5,
+      "summary": "Broadest monthly escalation since February: six categories increase as Trump signs mail-ballot EO, DHS shutdown becomes longest on record, Iran oil shock amplifies recession risk, DOGE contract terminations reach $120B, and university funding freezes accelerate",
+      "keyDevelopments": [
+        "Trump signed EO directing USPS to gatekeep mail-in ballots via citizenship lists (March 31); DOJ voter roll lawsuits expanded to 30+ states; Florida, South Dakota, Utah enacted proof-of-citizenship laws",
+        "DHS shutdown reached day 47 (longest on record); Iran conflict pushed oil past $120/barrel; Moody's recession probability at 49%; 'No Kings' March 28 protest drew 8-9 million — largest single-day protest in US history",
+        "DOGE terminated $120B in contracts/grants with zero cuts to Musk-linked companies; university funding freezes expanded to Brown, Cornell, Northwestern, Princeton ($2.5B+ new); DEI contractor certification EO requires anti-DEI compliance within 30 days"
+      ],
+      "categoryChanges": [
+        {
+          "category": "elections",
+          "from": 8,
+          "to": 9,
+          "rationale": "March 31 EO directing USPS to gatekeep mail ballots represents direct executive interference in election mechanics; DOJ expanded voter roll demands to 30+ states; three states enacted proof-of-citizenship laws"
+        },
+        {
+          "category": "national-security",
+          "from": 8,
+          "to": 9,
+          "rationale": "DHS shutdown at 47 days degrading TSA/Coast Guard operations; Iran conflict and Hormuz closure create major oil supply shock; Pentagon promotion purges continue with discriminatory pattern"
+        },
+        {
+          "category": "regulatory-stability",
+          "from": 7,
+          "to": 8,
+          "rationale": "Schedule F moved from finalized to active implementation; DEI contractor certification EO creates 30-day compliance deadline with False Claims Act liability; D.C. Circuit ruling enables at-will firing of independent agency heads"
+        },
+        {
+          "category": "government-contracts",
+          "from": 7,
+          "to": 8,
+          "rationale": "DOGE contract terminations reached $71B (10,000+ contracts) plus $49B (16,000 grants) with zero cuts to Musk-linked companies; FAA/Starlink procurement directed verbally to avoid paper trail"
+        },
+        {
+          "category": "public-pressure",
+          "from": 6,
+          "to": 7,
+          "rationale": "DEI contractor certification EO crosses from political pressure to government mandates on corporate behavior; DEI mentions fell 98% across Fortune 100; Fortune 500 DEI evaluation participation dropped 65%"
+        },
+        {
+          "category": "media-freedom",
+          "from": 8,
+          "to": 9,
+          "rationale": "University funding freezes expanded to Brown ($510M), Cornell ($1B+), Northwestern ($790M), Princeton ($210M); RSF ranks US 57th globally; institutional autonomy deteriorated 50% since 2015"
+        }
+      ]
     }
   ]
 }

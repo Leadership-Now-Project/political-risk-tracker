@@ -46,10 +46,10 @@
     },
     {
       "id": "section-122-struck-down",
-      "label": "Courts strike down Section 122 tariffs as lacking legal basis",
+      "label": "CIT strikes down Section 122 tariffs at April 10 oral arguments as lacking balance-of-payments basis",
       "category": "trade-policy",
       "domain": "operating-economic",
-      "likelihood": "moderate",
+      "likelihood": "high",
       "impacts": [
         { "category": "trade-policy", "delta": -1, "reason": "Removes tariffs and further constrains unilateral presidential trade authority" },
         { "category": "rule-of-law", "delta": -1, "reason": "Courts continue enforcing statutory limits on executive action" }
@@ -68,28 +68,6 @@
       ]
     },
     {
-      "id": "tariff-authority-legislation",
-      "label": "Congress grants new standalone tariff authority to the president",
-      "category": "trade-policy",
-      "domain": "operating-economic",
-      "likelihood": "low",
-      "impacts": [
-        { "category": "trade-policy", "delta": 1, "reason": "Codifies broad tariff power that courts have been constraining" },
-        { "category": "regulatory-stability", "delta": 1, "reason": "Legitimizes unpredictable unilateral trade policy" }
-      ]
-    },
-    {
-      "id": "tariff-exemptions",
-      "label": "Major tariff exemptions granted to allied nations under Section 122",
-      "category": "trade-policy",
-      "domain": "operating-economic",
-      "likelihood": "moderate",
-      "impacts": [
-        { "category": "trade-policy", "delta": -1, "reason": "Reduces trade tensions with allies" },
-        { "category": "regulatory-stability", "delta": -1, "reason": "Signals more predictable trade policy direction" }
-      ]
-    },
-    {
       "id": "election-emergency-eo",
       "label": "Executive order declares national emergency over election integrity, mandating hand-counting and re-registration",
       "category": "elections",
@@ -102,35 +80,25 @@
       ]
     },
     {
-      "id": "save-act-filibustered",
-      "label": "SAVE Act proof-of-citizenship requirement filibustered in Senate",
+      "id": "usps-eo-blocked",
+      "label": "Federal court blocks Trump's USPS mail-ballot gatekeeping executive order before 2026 midterms",
       "category": "elections",
       "domain": "rule-of-law",
       "likelihood": "high",
       "impacts": [
-        { "category": "elections", "delta": 0, "reason": "Status quo preserved but becomes campaign wedge for election-fraud narrative" },
-        { "category": "civil-discourse", "delta": 1, "reason": "Fuels claims that elections are 'insecure,' laying groundwork for post-election challenges" }
+        { "category": "elections", "delta": -1, "reason": "Preserves mail-in ballot access for 2026 midterms; court reaffirms limits on executive election interference" },
+        { "category": "rule-of-law", "delta": -1, "reason": "Judicial check on executive overreach in election mechanics" }
       ]
     },
     {
-      "id": "state-voting-restrictions",
-      "label": "Multiple states enact new mail-voting and early-voting restrictions before November",
-      "category": "elections",
-      "domain": "rule-of-law",
-      "likelihood": "high",
-      "impacts": [
-        { "category": "elections", "delta": 1, "reason": "Patchwork of new rules creates voter confusion and suppresses turnout" }
-      ]
-    },
-    {
-      "id": "voting-rights-act",
-      "label": "New Voting Rights Act passes with preclearance requirements",
+      "id": "usps-eo-implemented",
+      "label": "USPS begins implementing mail-ballot citizenship screening before courts intervene",
       "category": "elections",
       "domain": "rule-of-law",
       "likelihood": "low",
       "impacts": [
-        { "category": "elections", "delta": -2, "reason": "Restores federal oversight of election law changes" },
-        { "category": "rule-of-law", "delta": -1, "reason": "Strengthens constitutional voting protections" }
+        { "category": "elections", "delta": 2, "reason": "Millions of voters fail to receive mail ballots; massive disenfranchisement in states reliant on vote-by-mail" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Widespread voter confusion and anger triggers protests and legal challenges" }
       ]
     },
     {
@@ -183,7 +151,7 @@
       "label": "Congress passes legislation limiting federal court jurisdiction over executive actions",
       "category": "rule-of-law",
       "domain": "rule-of-law",
-      "likelihood": "moderate",
+      "likelihood": "high",
       "impacts": [
         { "category": "rule-of-law", "delta": 2, "reason": "Removes judicial oversight of executive branch actions" },
         { "category": "institutional-integrity", "delta": 1, "reason": "Fundamentally alters separation of powers" },
@@ -199,17 +167,6 @@
       "impacts": [
         { "category": "rule-of-law", "delta": 1, "reason": "Creates chilling effect on judicial independence" },
         { "category": "civil-discourse", "delta": 1, "reason": "Further politicizes the judiciary" }
-      ]
-    },
-    {
-      "id": "doj-independence",
-      "label": "DOJ establishes formal barriers between White House and prosecutorial decisions",
-      "category": "rule-of-law",
-      "domain": "rule-of-law",
-      "likelihood": "low",
-      "impacts": [
-        { "category": "rule-of-law", "delta": -2, "reason": "Insulates prosecution from political interference" },
-        { "category": "institutional-integrity", "delta": -1, "reason": "Strengthens norms of independent enforcement" }
       ]
     },
     {
@@ -236,24 +193,26 @@
       ]
     },
     {
-      "id": "venezuela-escalation",
-      "label": "Venezuela intervention becomes sustained military commitment requiring additional deployments",
+      "id": "iran-hormuz-prolonged",
+      "label": "Iran conflict and Strait of Hormuz closure extend through summer, sustaining $120+ oil prices",
       "category": "national-security",
       "domain": "rule-of-law",
-      "likelihood": "moderate",
+      "likelihood": "high",
       "impacts": [
-        { "category": "national-security", "delta": 1, "reason": "Military stretched across domestic and foreign commitments without congressional authorization" },
-        { "category": "fiscal-policy", "delta": 1, "reason": "Unbudgeted military operations strain federal spending" }
+        { "category": "national-security", "delta": 1, "reason": "Military stretched across domestic deployments, Iran operations, and leadership vacancies" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Oil shock drives inflation and unbudgeted military operations strain federal spending" },
+        { "category": "trade-policy", "delta": 1, "reason": "Supply chain disruption from Hormuz closure compounds tariff-related trade friction" }
       ]
     },
     {
-      "id": "intel-reforms",
-      "label": "Intelligence Authorization Act strengthens analyst independence protections",
+      "id": "iran-ceasefire",
+      "label": "Diplomatic resolution reopens Strait of Hormuz, oil prices fall below $90/barrel",
       "category": "national-security",
       "domain": "rule-of-law",
       "likelihood": "low",
       "impacts": [
-        { "category": "national-security", "delta": -1, "reason": "Creates statutory protections for analytic objectivity" }
+        { "category": "national-security", "delta": -1, "reason": "Military commitments reduced; force posture normalizes" },
+        { "category": "fiscal-policy", "delta": -1, "reason": "Lower oil prices ease inflationary pressure and reduce recession probability" }
       ]
     },
     {
@@ -276,16 +235,6 @@
       "impacts": [
         { "category": "media-freedom", "delta": 1, "reason": "Regulatory agencies weaponized as tools of press suppression" },
         { "category": "government-contracts", "delta": 1, "reason": "Demonstrates government willingness to use regulatory power for political retaliation" }
-      ]
-    },
-    {
-      "id": "press-shield-law",
-      "label": "Federal press shield law enacted protecting journalist sources",
-      "category": "media-freedom",
-      "domain": "societal-institutional",
-      "likelihood": "low",
-      "impacts": [
-        { "category": "media-freedom", "delta": -2, "reason": "Provides legal protection for investigative journalism" }
       ]
     },
     {
@@ -380,14 +329,25 @@
       ]
     },
     {
-      "id": "dhs-shutdown-prolonged",
-      "label": "DHS partial shutdown extends through Easter recess into May, degrading TSA and Coast Guard operations",
+      "id": "dhs-shutdown-resolved",
+      "label": "Congress passes two-track DHS funding deal after April 14 recess, ending record 60+ day shutdown",
       "category": "national-security",
       "domain": "rule-of-law",
-      "likelihood": "high",
+      "likelihood": "moderate",
       "impacts": [
-        { "category": "national-security", "delta": 1, "reason": "TSA workforce attrition, Coast Guard operations degraded, port security compromised" },
-        { "category": "civil-discourse", "delta": 1, "reason": "Immigration enforcement standoff between branches deepens partisan divide" }
+        { "category": "national-security", "delta": -1, "reason": "TSA and Coast Guard operations stabilize; port security restored" },
+        { "category": "fiscal-policy", "delta": -1, "reason": "DHS funding certainty reduces shutdown-related economic drag" }
+      ]
+    },
+    {
+      "id": "dhs-shutdown-summer",
+      "label": "DHS shutdown extends into summer as reconciliation process stalls, TSA attrition reaches critical levels",
+      "category": "national-security",
+      "domain": "rule-of-law",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "national-security", "delta": 1, "reason": "TSA workforce attrition becomes irreversible; Coast Guard unable to maintain operations" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Economic damage from airport disruption accelerates; tourism and business travel significantly impacted" }
       ]
     },
     {
@@ -425,22 +385,11 @@
       ]
     },
     {
-      "id": "scotus-tps-ruling",
-      "label": "SCOTUS rules in favor of administration in TPS cases, enabling mass deportation of TPS holders",
-      "category": "civil-discourse",
-      "domain": "rule-of-law",
-      "likelihood": "moderate",
-      "impacts": [
-        { "category": "civil-discourse", "delta": 1, "reason": "Hundreds of thousands of long-term US residents face deportation; massive community disruption" },
-        { "category": "national-security", "delta": 1, "reason": "ICE enforcement operations scale up dramatically, further straining federal-state relations" }
-      ]
-    },
-    {
       "id": "section-122-challenge-injunction",
       "label": "CIT issues preliminary injunction against Section 122 tariffs in state AG or importer lawsuit",
       "category": "trade-policy",
       "domain": "operating-economic",
-      "likelihood": "moderate",
+      "likelihood": "high",
       "impacts": [
         { "category": "trade-policy", "delta": -2, "reason": "All global tariffs suspended pending full litigation; massive relief for importers" },
         { "category": "regulatory-stability", "delta": -1, "reason": "Judicial check on executive trade authority further constrains policy unpredictability" },
@@ -467,6 +416,29 @@
       "impacts": [
         { "category": "elections", "delta": 1, "reason": "Party primaries become loyalty tests rather than policy debates; narrows range of acceptable dissent" },
         { "category": "institutional-integrity", "delta": 1, "reason": "Congressional oversight further weakened as elected officials prioritize presidential loyalty" }
+      ]
+    },
+    {
+      "id": "section-301-tariff-wave",
+      "label": "USTR imposes Section 301 tariffs on 16 economies by July 24, replacing expiring Section 122 tariffs",
+      "category": "trade-policy",
+      "domain": "operating-economic",
+      "likelihood": "high",
+      "impacts": [
+        { "category": "trade-policy", "delta": 1, "reason": "Tariff pipeline ensures no relief even as Section 122 expires; creates permanent tariff cycling through different legal authorities" },
+        { "category": "regulatory-stability", "delta": 1, "reason": "Businesses cannot plan around tariff levels that shift between legal frameworks every few months" }
+      ]
+    },
+    {
+      "id": "may-general-strike",
+      "label": "Planned May 1 nationwide general strike materializes with significant participation, disrupting economic activity",
+      "category": "public-pressure",
+      "domain": "operating-economic",
+      "likelihood": "moderate",
+      "impacts": [
+        { "category": "public-pressure", "delta": 1, "reason": "Unprecedented labor action demonstrates depth of public opposition; businesses caught between government and workforce" },
+        { "category": "civil-discourse", "delta": 1, "reason": "Mass civil disobedience escalates political polarization; government response may provoke further unrest" },
+        { "category": "fiscal-policy", "delta": 1, "reason": "Economic disruption from widespread work stoppage compounds existing recession risk" }
       ]
     },
     {

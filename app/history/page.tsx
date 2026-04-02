@@ -28,6 +28,7 @@ import history202512 from '@/data/history/2025-12-20.json';
 import history202601 from '@/data/history/2026-01-20.json';
 import history202602 from '@/data/history/2026-02-20.json';
 import history202603 from '@/data/history/2026-03-20.json';
+import history202604 from '@/data/history/2026-04-20.json';
 
 const PAGE_SECTIONS = [
   { id: 'overall-trend', label: 'Overall Trend' },
@@ -77,6 +78,7 @@ function HistoryPageContent() {
     history202601 as HistoricalSnapshot,
     history202602 as HistoricalSnapshot,
     history202603 as HistoricalSnapshot,
+    history202604 as HistoricalSnapshot,
   ];
 
   // Build chart data for all categories
