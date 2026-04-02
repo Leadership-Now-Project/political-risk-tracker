@@ -1,23 +1,23 @@
 {
   "date": "2026-03-20",
   "scores": {
-    "elections": 8,
-    "rule-of-law": 10,
-    "national-security": 8,
-    "civil-discourse": 9,
-    "regulatory-stability": 7,
-    "trade-policy": 9,
-    "government-contracts": 7,
-    "fiscal-policy": 9,
+    "elections": 7,
+    "rule-of-law": 8,
+    "national-security": 7,
+    "civil-discourse": 7,
+    "regulatory-stability": 6,
+    "trade-policy": 7,
+    "government-contracts": 6,
+    "fiscal-policy": 7,
     "public-pressure": 6,
-    "media-freedom": 8,
-    "institutional-integrity": 10
+    "media-freedom": 7,
+    "institutional-integrity": 8
   },
   "domainScores": {
-    "rule-of-law": 8.75,
-    "operating-economic": 7.6,
-    "societal-institutional": 9.0
+    "rule-of-law": 7.25,
+    "operating-economic": 6.4,
+    "societal-institutional": 7.5
   },
-  "overallScore": 8.3,
-  "riskLevel": "High"
+  "overallScore": 6.9,
+  "riskLevel": "Elevated"
 }

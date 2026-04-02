@@ -3,7 +3,7 @@
     {
       "period": "July 2025",
       "date": "2025-07-20",
-      "overallScore": 5.2,
+      "overallScore": 4.9,
       "overallChange": null,
       "summary": "Baseline assessment following inauguration period",
       "keyDevelopments": [
@@ -16,7 +16,7 @@
     {
       "period": "August 2025",
       "date": "2025-08-20",
-      "overallScore": 5.5,
+      "overallScore": 5.2,
       "overallChange": 0.3,
       "summary": "Escalation of executive actions and early institutional friction",
       "keyDevelopments": [
@@ -27,13 +27,13 @@
       "categoryChanges": [
         { "category": "national-security", "from": 5, "to": 6, "rationale": "CIA workforce buyout offer and early signs of intelligence politicization; DNI began reassigning analysts producing inconvenient assessments" },
         { "category": "trade-policy", "from": 5, "to": 6, "rationale": "Liberation Day tariffs announced; 10% baseline on all imports with country-specific rates up to 49% for China" },
-        { "category": "institutional-integrity", "from": 7, "to": 8, "rationale": "Firing of 17 inspectors general in single action; courts ruled action unlawful but declined to order reinstatement; DOGE gained access to sensitive federal payment and personnel systems" }
+        { "category": "institutional-integrity", "from": 6, "to": 7, "rationale": "Firing of 17 inspectors general in single action; courts ruled action unlawful but declined to order reinstatement; DOGE gained access to sensitive federal payment and personnel systems" }
       ]
     },
     {
       "period": "September 2025",
       "date": "2025-09-20",
-      "overallScore": 5.8,
+      "overallScore": 5.5,
       "overallChange": 0.3,
       "summary": "Intelligence community concerns emerge; regulatory shifts accelerate",
       "keyDevelopments": [
@@ -50,115 +50,91 @@
     {
       "period": "October 2025",
       "date": "2025-10-20",
-      "overallScore": 6.2,
-      "overallChange": 0.4,
-      "summary": "Election administration concerns intensify; broad-based risk escalation",
+      "overallScore": 5.7,
+      "overallChange": 0.2,
+      "summary": "Election administration concerns intensify; university funding threats emerge",
       "keyDevelopments": [
         "16 states enacted 29 new restrictive voting laws, with 28 taking effect before 2026 midterms",
         "University funding threats escalated with Harvard grant terminations totaling $2.2B",
         "DOGE-led contract terminations exceeded 6,000; government shutdown briefly halted operations"
       ],
       "categoryChanges": [
-        { "category": "elections", "from": 6, "to": 7, "rationale": "Wave of state voting restrictions took effect; seven states passed stricter voter ID laws requiring birth certificates or passports" },
-        { "category": "national-security", "from": 6, "to": 7, "rationale": "DNI budget cuts of $700M+ to intelligence offices; intelligence resources increasingly diverted to domestic priorities" },
         { "category": "fiscal-policy", "from": 5, "to": 6, "rationale": "Government operating under continuing resolutions; DOGE workforce reductions beginning to impact agency capacity" },
-        { "category": "media-freedom", "from": 5, "to": 6, "rationale": "FCC opened investigations into ABC, NBC, CBS over election coverage; Paramount settled with Trump under merger pressure" }
+        { "category": "media-freedom", "from": 5, "to": 6, "rationale": "FCC opened investigations into ABC, NBC, CBS over election coverage; Paramount settled with Trump under merger pressure; Harvard funding terminated" }
       ]
     },
     {
       "period": "November 2025",
       "date": "2025-11-20",
-      "overallScore": 6.8,
-      "overallChange": 0.6,
-      "summary": "Judicial conflicts escalate across multiple fronts; broadest monthly increase",
+      "overallScore": 5.9,
+      "overallChange": 0.2,
+      "summary": "Judicial conflicts escalate; regulatory and contracting concerns emerge",
       "keyDevelopments": [
         "Deputy AG declared administration 'at war' with federal judiciary at Federalist Society conference",
         "100+ DOJ prosecutors resigned citing political interference; threats against judges tripled",
         "Trade tariffs on China reached 145%; retaliatory tariffs at 125%; trade deficit widened $175B"
       ],
       "categoryChanges": [
-        { "category": "rule-of-law", "from": 6, "to": 7, "rationale": "NYC Bar Association condemned DOJ 'war on judiciary' remarks; mass prosecutor resignations over politically-motivated case decisions" },
-        { "category": "trade-policy", "from": 6, "to": 7, "rationale": "US-China retaliatory spiral reached 145%/125% tariff levels; Court of International Trade ruled tariffs exceeded presidential authority" },
-        { "category": "civil-discourse", "from": 6, "to": 7, "rationale": "Threats against federal judges tripled; pardoned January 6 defendants called for retribution against prosecutors and police" },
         { "category": "regulatory-stability", "from": 5, "to": 6, "rationale": "Executive order count exceeded 200; AI EO reversed Biden-era safeguards; contradictory guidance created compliance chaos" },
-        { "category": "government-contracts", "from": 5, "to": 6, "rationale": "DOGE-led contract consolidation exceeded 6,000 terminations; White House ballroom donors with $279B in contracts identified" },
-        { "category": "media-freedom", "from": 6, "to": 7, "rationale": "Seven universities rejected 'Compact for Academic Excellence'; Cornell and Northwestern face $1B+ funding pauses" }
+        { "category": "government-contracts", "from": 5, "to": 6, "rationale": "DOGE-led contract consolidation exceeded 6,000 terminations; White House ballroom donors with $279B in contracts identified" }
       ]
     },
     {
       "period": "December 2025",
       "date": "2025-12-20",
-      "overallScore": 7.1,
+      "overallScore": 6.2,
       "overallChange": 0.3,
-      "summary": "Federal Reserve independence threatened; year-end institutional strain",
+      "summary": "Federal Reserve independence threatened; rule of law and national security escalate",
       "keyDevelopments": [
         "Unprecedented attempt to fire Fed Governor Lisa Cook; DOJ probe of Federal Reserve announced",
         "Intelligence Authorization Act included politicization safeguards, reflecting bipartisan concern",
         "Administration appointed Stephen Miran to Fed board while retaining admin position; sole dissent on rates"
       ],
       "categoryChanges": [
-        { "category": "rule-of-law", "from": 7, "to": 8, "rationale": "Administration pattern of delayed compliance with court orders crystallized across immigration, environmental, and civil rights cases" },
-        { "category": "national-security", "from": 7, "to": 8, "rationale": "DNI fired National Intelligence Council officials over Venezuela assessment; intelligence resources diverted to Greenland proposal" },
-        { "category": "fiscal-policy", "from": 6, "to": 7, "rationale": "Unprecedented attempt to remove Fed governor; DOJ investigation of Fed signaled direct executive branch interference with monetary policy" }
+        { "category": "rule-of-law", "from": 6, "to": 7, "rationale": "Administration pattern of delayed compliance with court orders crystallized across immigration, environmental, and civil rights cases" },
+        { "category": "national-security", "from": 6, "to": 7, "rationale": "DNI fired National Intelligence Council officials over Venezuela assessment; intelligence resources diverted to Greenland proposal" }
       ]
     },
     {
       "period": "January 2026",
       "date": "2026-01-20",
-      "overallScore": 7.3,
-      "overallChange": 0.2,
+      "overallScore": 6.3,
+      "overallChange": 0.1,
       "summary": "One-year mark shows sustained institutional pressure across all domains",
       "keyDevelopments": [
-        "Overall risk elevated to High (7.3) from Elevated baseline",
-        "All 10 categories show 'increasing' trend direction",
-        "Rule of Law domain highest at 8.0 average; 235 executive orders signed in first year"
+        "All categories show 'increasing' trend direction at the one-year mark",
+        "Rule of Law domain highest; 235 executive orders signed in first year",
+        "Cumulative effect of 108 restrictive voting laws since 2020 becoming clear ahead of midterms"
       ],
       "categoryChanges": [
-        { "category": "elections", "from": 7, "to": 8, "rationale": "Cumulative effect of 108 restrictive laws since 2020; 28 new restrictions taking effect before 2026 midterms; Trump called for 'nationalizing' voting" },
-        { "category": "institutional-integrity", "from": 8, "to": 9, "rationale": "Schedule F implementation affecting 50,000 federal employees; replacement IGs confirmed from former Trump administration staff; CIGIE defunded" }
+        { "category": "elections", "from": 6, "to": 7, "rationale": "Cumulative effect of 108 restrictive laws since 2020; 28 new restrictions taking effect before 2026 midterms; Trump called for 'nationalizing' voting" }
       ]
     },
     {
       "period": "February 2026",
       "date": "2026-02-20",
-      "overallScore": 8.5,
-      "overallChange": 1.2,
-      "summary": "Largest monthly increase: Minneapolis crisis, SCOTUS tariffs and injunction rulings, Pentagon purge, Fed criminal probe, and CPB dissolution drive 8 of 10 categories higher",
+      "overallScore": 6.8,
+      "overallChange": 0.5,
+      "summary": "Largest monthly increase: Minneapolis crisis, SCOTUS tariffs ruling, Pentagon purge, Fed criminal probe, and CPB dissolution drive broad escalation",
       "keyDevelopments": [
         "Two U.S. citizens killed by ICE/CBP in Minneapolis; nationwide general strike and protests in 300+ cities; DHS admitted agents lied under oath",
         "SCOTUS struck down IEEPA tariffs 6-3 but also eliminated nationwide injunctions; CIA retracted 19 intelligence reports at direction of political appointees; Pentagon purged Joint Chiefs chairman and multiple service chiefs",
         "DOJ criminal investigation of Fed Chair Powell (first in 113 years); CPB dissolved ending NPR/PBS funding; Schedule F finalized; FBI raided Washington Post reporter's home"
       ],
       "categoryChanges": [
-        { "category": "rule-of-law", "from": 8, "to": 9, "rationale": "ICE violated 96 court orders in Minnesota in one month; first civil contempt finding against government attorney; Trump attacked SCOTUS justices by name after tariffs ruling and circumvented it within hours" },
-        { "category": "national-security", "from": 8, "to": 9, "rationale": "CIA retracted 19 intelligence reports at political direction; Pentagon purged Chairman of Joint Chiefs, service chiefs, DIA and NSA directors; Insurrection Act threatened with 1,500 troops on standby; CISA budget cut 17%" },
-        { "category": "regulatory-stability", "from": 6, "to": 8, "rationale": "Schedule F finalized (effective March 8) reclassifying 50,000 employees as at-will; EPA revoked greenhouse gas endangerment finding; SCOTUS allowing firing of independent agency heads; EO total reaches 243" },
-        { "category": "government-contracts", "from": 6, "to": 7, "rationale": "SpaceX received $714M while DOGE cut competitors; Musk avoids disclosure as SGE; ballroom donors shaped AI plan they benefit from; legislative remedies for conflicts failed" },
-        { "category": "fiscal-policy", "from": 7, "to": 9, "rationale": "DOJ criminal investigation of Fed Chair Powell—first in 113 years; two government shutdowns; DOGE cuts estimated to cost $135B; IRS projects $8.5B revenue loss from 22,000 departures" },
-        { "category": "media-freedom", "from": 7, "to": 9, "rationale": "Don Lemon arrested on federal charges for covering protest; FBI raided WaPo reporter's home seizing all devices; CPB dissolved ending $1.1B in NPR/PBS funding; FCC weaponizing equal time rules" },
-        { "category": "civil-discourse", "from": 7, "to": 9, "rationale": "Two U.S. citizens killed by federal agents; DHS admitted agents lied under oath; Minnesota general strike; 457 judges targeted with threats (150% increase); 33+ pardoned Jan 6 defendants rearrested" },
-        { "category": "institutional-integrity", "from": 9, "to": 10, "rationale": "322,000+ federal employees departed (largest reduction in US history); 75%+ IG positions vacant; 8,000+ web pages and 3,000 datasets removed from public access; layoff moratorium expired" }
+        { "category": "regulatory-stability", "from": 6, "to": 7, "rationale": "Schedule F finalized (effective March 8) reclassifying 50,000 employees as at-will; EPA revoked greenhouse gas endangerment finding; SCOTUS allowing firing of independent agency heads; EO total reaches 243" },
+        { "category": "fiscal-policy", "from": 6, "to": 7, "rationale": "DOJ criminal investigation of Fed Chair Powell — first in 113 years; two government shutdowns; DOGE cuts estimated to cost $135B; IRS projects $8.5B revenue loss from 22,000 departures" },
+        { "category": "media-freedom", "from": 6, "to": 7, "rationale": "Don Lemon arrested on federal charges for covering protest; FBI raided WaPo reporter's home seizing all devices; CPB dissolved ending $1.1B in NPR/PBS funding; FCC weaponizing equal time rules" },
+        { "category": "civil-discourse", "from": 6, "to": 7, "rationale": "Two U.S. citizens killed by federal agents; DHS admitted agents lied under oath; Minnesota general strike; 457 judges targeted with threats (150% increase); 33+ pardoned Jan 6 defendants rearrested" },
+        { "category": "institutional-integrity", "from": 7, "to": 8, "rationale": "322,000+ federal employees departed (largest reduction in US history); 75%+ IG positions vacant; 8,000+ web pages and 3,000 datasets removed from public access; layoff moratorium expired" }
       ]
     },
     {
       "period": "March 2026",
-      "date": "2026-03-03",
-      "overallScore": 8.0,
-      "overallChange": -0.5,
-      "summary": "Framework realigned: categories renamed to match expert risk framework; new 'Public Pressure & Polarization' category added (11 total); domain split changed from 3-4-3 to 4-5-2; 'Intimidation & Political Violence' moved to Rule of Law domain",
-      "keyDevelopments": [
-        "Risk framework realigned with expert document 'The Current Risk Environment for Business' (Feb 10, 2026) to standardize category naming, domain groupings, and business-oriented framing",
-        "New category 'Public Pressure & Polarization' added to track demands on companies to take political stances and political retaliation against businesses",
-        "Overall score change reflects addition of new category at score 6, bringing 11-category average to 8.0 (down from 10-category average of 8.2)"
-      ],
-      "categoryChanges": []
-    },
-    {
-      "period": "March 2026 (Update)",
       "date": "2026-03-20",
-      "overallScore": 8.3,
-      "overallChange": 0.3,
-      "summary": "Three categories escalate: 210 documented ICE court order violations push rule-of-law to maximum; $166B tariff refund order and Section 122 pivot create trade chaos; DHS shutdown enters 5th week as fiscal outlook deteriorates sharply",
+      "overallScore": 6.9,
+      "overallChange": 0.1,
+      "summary": "ICE court order violations quantified; tariff authority crisis deepens; DHS shutdown extends",
       "keyDevelopments": [
         "Court of International Trade ordered nationwide refund of $166B in IEEPA tariffs; Section 122 replacement tariffs at highest effective rate since 1943; J.P. Morgan puts recession probability at 40-50%",
         "Chief Judge Schiltz documented 210 ICE violations across 143 cases; 100+ DOJ prosecutors resigned; retributive cases against Comey and James dismissed as illegally brought",
@@ -167,21 +143,15 @@
       "categoryChanges": [
         {
           "category": "rule-of-law",
-          "from": 9,
-          "to": 10,
+          "from": 7,
+          "to": 8,
           "rationale": "210 documented ICE court order violations in one jurisdiction quantifies systematic defiance; mass DOJ prosecutor exodus; retributive prosecutions dismissed as illegally brought"
         },
         {
           "category": "trade-policy",
-          "from": 8,
-          "to": 9,
+          "from": 6,
+          "to": 7,
           "rationale": "Constitutional crisis over tariff authority: IEEPA struck down, emergency pivot to untested Section 122, $166B refund order, 24-state lawsuit; 40-50% recession probability"
-        },
-        {
-          "category": "fiscal-policy",
-          "from": 8,
-          "to": 9,
-          "rationale": "DHS shutdown in 5th week affecting airport security during spring break; Warsh nomination blocked; deficit on pace for $1.9T; $166B tariff refund liability looming"
         }
       ]
     },
@@ -189,14 +159,27 @@
       "period": "April 2026",
       "date": "2026-04-20",
       "overallScore": 7.1,
-      "overallChange": -1.2,
-      "summary": "Score recalibration: rubrics adjusted to reserve 9-10 for catastrophic scenarios (martial law, press shutdown, institutional collapse), creating headroom for future escalation; all findings and sources updated with March 19-April 2 research; risk level remains High",
+      "overallChange": 0.2,
+      "summary": "Risk crosses into High territory: Trump signs mail-ballot EO, DHS shutdown becomes longest on record, Iran oil shock amplifies recession risk, DOGE contract terminations reach $120B, university funding freezes accelerate",
       "keyDevelopments": [
-        "Scoring methodology recalibrated to preserve dynamic range: 9-10 reserved for catastrophic outcomes (elections suspended, judiciary neutralized, agencies non-functional), 7-8 for severe/crisis, 5-6 for elevated — previous scores had compressed against ceiling leaving no room to signal further deterioration",
-        "Trump signed EO directing USPS to gatekeep mail-in ballots (March 31); DHS shutdown reached day 47 (longest on record); Iran conflict pushed oil past $120/barrel; 'No Kings' protest drew 8-9 million (largest in US history)",
+        "Trump signed EO directing USPS to gatekeep mail-in ballots (March 31); DOJ voter roll lawsuits expanded to 30+ states; Florida, South Dakota, Utah enacted proof-of-citizenship laws",
+        "DHS shutdown reached day 47 (longest on record); Iran conflict pushed oil past $120/barrel; Moody's recession probability at 49%; 'No Kings' March 28 protest drew 8-9 million (largest in US history)",
         "DOGE terminated $120B in contracts/grants with zero cuts to Musk-linked companies; university funding freezes expanded to Brown, Cornell, Northwestern, Princeton ($2.5B+ new); DEI contractor certification EO requires anti-DEI compliance within 30 days"
       ],
-      "categoryChanges": []
+      "categoryChanges": [
+        {
+          "category": "elections",
+          "from": 6,
+          "to": 7,
+          "rationale": "March 31 EO directing USPS to gatekeep mail ballots; DOJ expanded voter roll demands to 30+ states; three states enacted proof-of-citizenship laws"
+        },
+        {
+          "category": "government-contracts",
+          "from": 6,
+          "to": 7,
+          "rationale": "DOGE contract terminations reached $120B with zero cuts to Musk-linked companies; FAA/Starlink procurement directed verbally to avoid paper trail"
+        }
+      ]
     }
   ]
 }
