@@ -3,7 +3,7 @@
   "assessmentPeriod": "2025-04-02 to 2026-04-02",
   "scores": {
     "elections": {
-      "score": 9,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "Trump signed EO 'Ensuring Citizenship Verification and Integrity in Federal Elections' (March 31) directing USPS to gatekeep mail-in ballots via state-provided 'eligible citizen' lists; ACLU filed immediate legal challenge calling it 'likely unconstitutional' (NPR/Votebeat)",
@@ -21,7 +21,7 @@
       "lastUpdated": "2026-04-02"
     },
     "rule-of-law": {
-      "score": 10,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
         "Trump became first sitting president to attend Supreme Court oral arguments (April 1, birthright citizenship case); widely characterized as judicial intimidation; WaPo analysis found administration defied one-in-three court orders across 160 lawsuits (NBC News/Washington Post)",
@@ -39,7 +39,7 @@
       "lastUpdated": "2026-04-02"
     },
     "national-security": {
-      "score": 9,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "DHS shutdown reached day 47 — longest partial shutdown on record; TSA call-out rates hit 12.35% with 4.5-hour wait times at some airports; Trump issued executive memorandum to resume pay bypassing Congress; two-track Republican plan announced but Congress on recess until April 14 (NBC News/CBS News)",
@@ -57,7 +57,7 @@
       "lastUpdated": "2026-04-02"
     },
     "regulatory-stability": {
-      "score": 8,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "Schedule F now active with agencies submitting reclassification petitions to OPM; union coalition filed amended complaint arguing it violates APA and Constitution; no injunction issued as of April 2 (Government Executive/Federal News Network)",
@@ -75,7 +75,7 @@
       "lastUpdated": "2026-04-02"
     },
     "trade-policy": {
-      "score": 9,
+      "score": 7,
       "trend": "stable",
       "keyFindings": [
         "IEEPA $166B refund suspended after CBP stated it cannot comply; new CAPE refund system targeting April 20 go-live; CIT oral arguments on Section 122 tariffs scheduled April 10 with 24-state AG challenge (Thompson Hine/Cherry Bekaert)",
@@ -93,7 +93,7 @@
       "lastUpdated": "2026-04-02"
     },
     "government-contracts": {
-      "score": 8,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "DOGE has terminated 10,000+ contracts ($71B) and nearly 16,000 grants ($49B); none of Musk's companies' contracts were terminated despite SpaceX holding $20B+ in NASA and DoD contracts (HigherGov/Scripps News)",
@@ -111,7 +111,7 @@
       "lastUpdated": "2026-04-02"
     },
     "fiscal-policy": {
-      "score": 9,
+      "score": 7,
       "trend": "stable",
       "keyFindings": [
         "DHS shutdown reached day 47 — longest partial shutdown on record; Congress on recess until April 14; Trump issued executive memorandum to resume TSA pay bypassing Congress; two-track Republican plan announced but untested (NBC News/Federal News Network)",
@@ -129,7 +129,7 @@
       "lastUpdated": "2026-04-02"
     },
     "media-freedom": {
-      "score": 9,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "University funding freezes accelerated: Brown ($510M), Cornell ($1B+), Northwestern ($790M), Princeton ($210M) frozen in recent weeks, joining Harvard ($2.2B); UC system-wide hiring freeze; Columbia settled with $221M payment and policy concessions (Center for American Progress)",
@@ -147,7 +147,7 @@
       "lastUpdated": "2026-04-02"
     },
     "civil-discourse": {
-      "score": 9,
+      "score": 7,
       "trend": "increasing",
       "keyFindings": [
         "Four active federal judges held unprecedented public forum reading death threats aloud (March 19); Chief Justice Roberts warned attacks must stop; U.S. Marshals report 564 threats in FY2025, with 129 judges already named in protective investigations in FY2026 (Washington Post/NBC News)",
@@ -165,7 +165,7 @@
       "lastUpdated": "2026-04-02"
     },
     "institutional-integrity": {
-      "score": 10,
+      "score": 8,
       "trend": "increasing",
       "keyFindings": [
         "Federal workforce losses now exceed 350,000 departed (up from 300,000+ two weeks ago); OPM pursuing further reductions as 'priority number one'; Schedule F active with agencies submitting reclassification petitions for 50,000+ positions (TIME/Federal News Network)",
@@ -183,7 +183,7 @@
       "lastUpdated": "2026-04-02"
     },
     "public-pressure": {
-      "score": 7,
+      "score": 6,
       "trend": "increasing",
       "keyFindings": [
         "Trump signed DEI contractor certification EO (March 26) requiring federal contractors to certify elimination of 'racially discriminatory DEI activities' within 30 days or face contract cancellation and False Claims Act liability; directly pressures every federal contractor to dismantle DEI programs (Gibson Dunn/White House)",
@@ -202,10 +202,10 @@
     }
   },
   "domainScores": {
-    "rule-of-law": 9.25,
-    "operating-economic": 8.2,
-    "societal-institutional": 9.5
+    "rule-of-law": 7.25,
+    "operating-economic": 6.8,
+    "societal-institutional": 7.5
   },
-  "overallScore": 8.8,
+  "overallScore": 7.1,
   "riskLevel": "High"
 }
